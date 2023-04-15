@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on Blog</title>
+    <link>https://nixnehc.github.io/tags/github/</link>
+    <description>Recent content in GitHub on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</managingEditor>
+    <webMaster>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</webMaster>
+    <lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nixnehc.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First post!</title>
+      <link>https://nixnehc.github.io/post/2015-01-04-first-post/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/post/2015-01-04-first-post/</guid>
+      <description>&lt;h4 id=&#34;this-is-my-first-post-how-exciting&#34;&gt;This is my first post, how exciting!&lt;/h4&gt;
+&lt;h4 id=&#34;hhhhh-testing--测试&#34;&gt;hhhhh testing . 测试&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; this is a &lt;span class=&#34;k&#34;&gt;\latex&lt;/span&gt; code 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;sb&#34;&gt;\[&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;   P &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;A &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mid&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; B&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; dfrak{P&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;B&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mid&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; A&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\cdot&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; P&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}{P&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;B&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;\]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;$$
+P (A \mid B) = \dfrac{P(B\mid A) \cdot P(A)}{P(B)}
+$$&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
