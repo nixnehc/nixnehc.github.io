@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tech on Blog</title>
+    <link>https://nixnehc.github.io/tags/tech/</link>
+    <description>Recent content in tech on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</managingEditor>
+    <webMaster>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</webMaster>
+    <lastBuildDate>Tue, 11 Apr 2023 23:03:28 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Is Modal Logic</title>
+      <link>https://nixnehc.github.io/post/2023-04-10-what-is-modal-logic/</link>
+      <pubDate>Tue, 11 Apr 2023 23:03:28 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/post/2023-04-10-what-is-modal-logic/</guid>
+      <description>&lt;p&gt;chatGPT&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

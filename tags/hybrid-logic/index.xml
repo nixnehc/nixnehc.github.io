@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hybrid-logic on Blog</title>
+    <link>https://nixnehc.github.io/tags/hybrid-logic/</link>
+    <description>Recent content in hybrid-logic on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</managingEditor>
+    <webMaster>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</webMaster>
+    <lastBuildDate>Thu, 13 Apr 2023 17:29:29 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/tags/hybrid-logic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hybrid Logic</title>
+      <link>https://nixnehc.github.io/post/2023-05-01-hybrid-logic/</link>
+      <pubDate>Thu, 13 Apr 2023 17:29:29 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/post/2023-05-01-hybrid-logic/</guid>
+      <description>&lt;p&gt;Hybrid Logic: a crash introduction&lt;/p&gt;
+&lt;p&gt;Three slogans:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;11&lt;/li&gt;
+&lt;li&gt;22&lt;/li&gt;
+&lt;li&gt;33&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

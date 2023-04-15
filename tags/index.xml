@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Blog</title>
+    <link>https://nixnehc.github.io/tags/</link>
+    <description>Recent content in Tags on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</managingEditor>
+    <webMaster>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</webMaster>
+    <lastBuildDate>Sat, 15 Apr 2023 16:10:41 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>life</title>
+      <link>https://nixnehc.github.io/tags/life/</link>
+      <pubDate>Sat, 15 Apr 2023 16:10:41 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/tags/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hybrid-logic</title>
+      <link>https://nixnehc.github.io/tags/hybrid-logic/</link>
+      <pubDate>Thu, 13 Apr 2023 17:29:29 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/tags/hybrid-logic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>modal-logic</title>
+      <link>https://nixnehc.github.io/tags/modal-logic/</link>
+      <pubDate>Thu, 13 Apr 2023 17:29:29 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/tags/modal-logic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>talking</title>
+      <link>https://nixnehc.github.io/tags/talking/</link>
+      <pubDate>Tue, 11 Apr 2023 23:03:28 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/tags/talking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tech</title>
+      <link>https://nixnehc.github.io/tags/tech/</link>
+      <pubDate>Tue, 11 Apr 2023 23:03:28 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/tags/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>peripherals</title>
+      <link>https://nixnehc.github.io/tags/peripherals/</link>
+      <pubDate>Sat, 18 Feb 2023 23:04:25 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/tags/peripherals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>travel</title>
+      <link>https://nixnehc.github.io/tags/travel/</link>
+      <pubDate>Mon, 30 Jan 2023 23:05:37 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/tags/travel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>love</title>
+      <link>https://nixnehc.github.io/tags/love/</link>
+      <pubDate>Sat, 17 Oct 2020 22:50:28 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/tags/love/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>example</title>
+      <link>https://nixnehc.github.io/tags/example/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/tags/example/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://nixnehc.github.io/tags/hugo/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>https://nixnehc.github.io/tags/markdown/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
