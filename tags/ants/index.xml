@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ants on Blog</title>
+    <link>https://nixnehc.github.io/tags/ants/</link>
+    <description>Recent content in ants on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</managingEditor>
+    <webMaster>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</webMaster>
+    <lastBuildDate>Sun, 16 Apr 2023 16:37:35 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/tags/ants/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Two Queens</title>
+      <link>https://nixnehc.github.io/page/two-queens/</link>
+      <pubDate>Sun, 16 Apr 2023 16:37:35 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/page/two-queens/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
