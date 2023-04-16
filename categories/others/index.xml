@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</managingEditor>
     <webMaster>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</webMaster>
-    <lastBuildDate>Sat, 18 Feb 2023 23:04:25 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/categories/others/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Apr 2023 16:10:41 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/categories/others/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Strange Friend</title>
+      <link>https://nixnehc.github.io/post/2023-04-15-a-stranger-friend/</link>
+      <pubDate>Sat, 15 Apr 2023 16:10:41 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/post/2023-04-15-a-stranger-friend/</guid>
+      <description>&lt;p&gt;A strange friend&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>MacOS With Philips Eink</title>
       <link>https://nixnehc.github.io/post/2023-02-18-macos-with-philips-eink/</link>
@@ -17,7 +26,7 @@
       <description>&lt;p&gt;简单明了版：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;安装 &lt;code&gt;BetterDisplay&lt;/code&gt; &lt;a href=&#34;https://github.com/waydabber/BetterDisplay&#34;&gt;https://github.com/waydabber/BetterDisplay&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安装 &lt;code&gt;BetterDisplay&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;白天设置为  &lt;code&gt;video-2 level-2&lt;/code&gt;&lt;/p&gt;
