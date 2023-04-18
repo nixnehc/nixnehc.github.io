@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>English on Blog</title>
+    <link>https://nixnehc.github.io/tags/english/</link>
+    <description>Recent content in English on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</managingEditor>
+    <webMaster>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</webMaster>
+    <lastBuildDate>Tue, 18 Apr 2023 09:11:04 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The English expressions in mathematical/logcial proofs</title>
+      <link>https://nixnehc.github.io/post/proof-english/</link>
+      <pubDate>Tue, 18 Apr 2023 09:11:04 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/post/proof-english/</guid>
+      <description>&lt;p&gt;The English expressions in mathematical/logcial proofs&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
