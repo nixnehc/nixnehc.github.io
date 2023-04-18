@@ -3,11 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://nixnehc.github.io/</loc>
-    <lastmod>2023-04-16T18:18:10+08:00</lastmod>
+    <lastmod>2023-04-18T08:28:22+08:00</lastmod>
     <priority>0</priority>
   </url><url>
     <loc>https://nixnehc.github.io/categories/</loc>
-    <lastmod>2023-04-16T18:18:10+08:00</lastmod>
+    <lastmod>2023-04-18T08:28:22+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/tags/latex/</loc>
+    <lastmod>2023-04-18T08:28:22+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/post/latex/</loc>
+    <lastmod>2023-04-18T08:28:22+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/categories/logic/</loc>
+    <lastmod>2023-04-18T08:28:22+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/post/</loc>
+    <lastmod>2023-04-18T08:28:22+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/tags/</loc>
+    <lastmod>2023-04-18T08:28:22+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/tags/tech/</loc>
+    <lastmod>2023-04-18T08:28:22+08:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/page/hahaha/</loc>
     <lastmod>2023-04-16T18:18:10+08:00</lastmod>
@@ -19,9 +37,6 @@
     <lastmod>2023-04-16T18:18:10+08:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/page/</loc>
-    <lastmod>2023-04-16T18:18:10+08:00</lastmod>
-  </url><url>
-    <loc>https://nixnehc.github.io/tags/</loc>
     <lastmod>2023-04-16T18:18:10+08:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/tags/dog/</loc>
@@ -45,25 +60,16 @@
     <loc>https://nixnehc.github.io/post/2023-04-15-a-stranger-friend/</loc>
     <lastmod>2023-04-15T16:10:41+08:00</lastmod>
   </url><url>
-    <loc>https://nixnehc.github.io/post/</loc>
-    <lastmod>2023-04-15T16:10:41+08:00</lastmod>
-  </url><url>
     <loc>https://nixnehc.github.io/post/2023-05-01-hybrid-logic/</loc>
     <lastmod>2023-04-13T17:29:29+08:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/tags/hybrid-logic/</loc>
     <lastmod>2023-04-13T17:29:29+08:00</lastmod>
   </url><url>
-    <loc>https://nixnehc.github.io/categories/logic/</loc>
-    <lastmod>2023-04-13T17:29:29+08:00</lastmod>
-  </url><url>
     <loc>https://nixnehc.github.io/tags/modal-logic/</loc>
     <lastmod>2023-04-13T17:29:29+08:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/tags/talking/</loc>
-    <lastmod>2023-04-11T23:03:28+08:00</lastmod>
-  </url><url>
-    <loc>https://nixnehc.github.io/tags/tech/</loc>
     <lastmod>2023-04-11T23:03:28+08:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/post/2023-04-10-what-is-modal-logic/</loc>
