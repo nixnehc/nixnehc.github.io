@@ -3,34 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://nixnehc.github.io/</loc>
-    <lastmod>2023-04-18T09:11:04+08:00</lastmod>
+    <lastmod>2023-04-20T15:17:11+08:00</lastmod>
     <priority>0</priority>
   </url><url>
     <loc>https://nixnehc.github.io/categories/</loc>
-    <lastmod>2023-04-18T09:11:04+08:00</lastmod>
+    <lastmod>2023-04-20T15:17:11+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/tags/logic/</loc>
+    <lastmod>2023-04-20T15:17:11+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/categories/logic-math/</loc>
+    <lastmod>2023-04-20T15:17:11+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/tags/math/</loc>
+    <lastmod>2023-04-20T15:17:11+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/post/</loc>
+    <lastmod>2023-04-20T15:17:11+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/tags/</loc>
+    <lastmod>2023-04-20T15:17:11+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/post/utrafilter-and-ideal/</loc>
+    <lastmod>2023-04-20T15:17:11+08:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/tags/english/</loc>
     <lastmod>2023-04-18T09:11:04+08:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/post/proof-english/</loc>
-    <lastmod>2023-04-18T09:11:04+08:00</lastmod>
-  </url><url>
-    <loc>https://nixnehc.github.io/tags/logic/</loc>
-    <lastmod>2023-04-18T09:11:04+08:00</lastmod>
-  </url><url>
-    <loc>https://nixnehc.github.io/categories/logic/</loc>
-    <lastmod>2023-04-18T09:11:04+08:00</lastmod>
-  </url><url>
-    <loc>https://nixnehc.github.io/tags/math/</loc>
-    <lastmod>2023-04-18T09:11:04+08:00</lastmod>
-  </url><url>
-    <loc>https://nixnehc.github.io/categories/math/</loc>
-    <lastmod>2023-04-18T09:11:04+08:00</lastmod>
-  </url><url>
-    <loc>https://nixnehc.github.io/post/</loc>
-    <lastmod>2023-04-18T09:11:04+08:00</lastmod>
-  </url><url>
-    <loc>https://nixnehc.github.io/tags/</loc>
     <lastmod>2023-04-18T09:11:04+08:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/tags/latex/</loc>
@@ -84,7 +84,7 @@
     <loc>https://nixnehc.github.io/tags/modal-logic/</loc>
     <lastmod>2023-04-13T17:29:29+08:00</lastmod>
   </url><url>
-    <loc>https://nixnehc.github.io/tags/talking/</loc>
+    <loc>https://nixnehc.github.io/tags/ai/</loc>
     <lastmod>2023-04-11T23:03:28+08:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/post/2023-04-10-what-is-modal-logic/</loc>
@@ -104,9 +104,6 @@
   </url><url>
     <loc>https://nixnehc.github.io/post/2020-10-17-disappointed-in-love-once-again/</loc>
     <lastmod>2020-10-17T22:50:28+08:00</lastmod>
-  </url><url>
-    <loc>https://nixnehc.github.io/tags/example/</loc>
-    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/post/2020-01-01-first-post/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>

@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>logic on Blog</title>
-    <link>https://nixnehc.github.io/tags/logic/</link>
-    <description>Recent content in logic on Blog</description>
+    <title>AI on Blog</title>
+    <link>https://nixnehc.github.io/tags/ai/</link>
+    <description>Recent content in AI on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</managingEditor>
     <webMaster>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</webMaster>
-    <lastBuildDate>Thu, 20 Apr 2023 15:17:11 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/tags/logic/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Utrafilters and Ideals</title>
-      <link>https://nixnehc.github.io/post/utrafilter-and-ideal/</link>
-      <pubDate>Thu, 20 Apr 2023 15:17:11 +0800</pubDate>
-      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
-      <guid>https://nixnehc.github.io/post/utrafilter-and-ideal/</guid>
-      <description>&lt;p&gt;This article will compare utrafilters with ideals.&lt;/p&gt;</description>
-    </item>
-    
+    <lastBuildDate>Tue, 11 Apr 2023 23:03:28 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What Is Modal Logic</title>
       <link>https://nixnehc.github.io/post/2023-04-10-what-is-modal-logic/</link>
