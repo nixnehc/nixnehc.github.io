@@ -66,17 +66,26 @@
     <loc>https://nixnehc.github.io/tags/love/</loc>
     <lastmod>2023-04-16T16:38:21+08:00</lastmod>
   </url><url>
-    <loc>https://nixnehc.github.io/categories/my_pets/</loc>
+    <loc>https://nixnehc.github.io/categories/my-pets/</loc>
     <lastmod>2023-04-16T16:38:21+08:00</lastmod>
   </url><url>
-    <loc>https://nixnehc.github.io/page/two-dogs/</loc>
+    <loc>https://nixnehc.github.io/pets/</loc>
+    <lastmod>2023-04-16T16:38:21+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/pets/two-dogs/</loc>
     <lastmod>2023-04-16T16:38:21+08:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/tags/ants/</loc>
     <lastmod>2023-04-16T16:37:35+08:00</lastmod>
   </url><url>
-    <loc>https://nixnehc.github.io/page/two-queens/</loc>
+    <loc>https://nixnehc.github.io/pets/two-queens/</loc>
     <lastmod>2023-04-16T16:37:35+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/tags/cat/</loc>
+    <lastmod>2023-04-16T16:37:06+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/pets/duoduo/</loc>
+    <lastmod>2023-04-16T16:37:06+08:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/post/2023-04-15-a-stranger-friend/</loc>
     <lastmod>2023-04-15T16:10:41+08:00</lastmod>
@@ -120,10 +129,6 @@
     <loc>https://nixnehc.github.io/tags/markdown/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nixnehc.github.io/page/about/</loc>
-  </url><url>
-    <loc>https://nixnehc.github.io/tags/cat/</loc>
-  </url><url>
-    <loc>https://nixnehc.github.io/page/duoduo/</loc>
+    <loc>https://nixnehc.github.io/about/</loc>
   </url>
 </urlset>
