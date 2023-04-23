@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>recursion-theory on Blog</title>
-    <link>https://nixnehc.github.io/tags/recursion-theory/</link>
-    <description>Recent content in recursion-theory on Blog</description>
+    <title>bullshit on Blog</title>
+    <link>https://nixnehc.github.io/tags/bullshit/</link>
+    <description>Recent content in bullshit on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <managingEditor>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</managingEditor>
     <webMaster>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</webMaster>
-    <lastBuildDate>Fri, 21 Apr 2023 17:35:36 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/tags/recursion-theory/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Apr 2023 17:35:36 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/tags/bullshit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Coding Functions and Dimensional Reduction Attack</title>
       <link>https://nixnehc.github.io/post/coding-function/</link>
