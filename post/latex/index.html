@@ -63,7 +63,7 @@
   "headline": "LaTeX for Logcians: from Zero to Hero",
   "description" : "This is a crash course in LaTeX for myself (continuously updating).\n",
   "inLanguage" : "en",
-  "wordCount":  694 ,
+  "wordCount":  2027 ,
   "datePublished" : "2023-04-18T08:28:22",
   "dateModified" : "2023-04-18T08:28:22",
   "image" : "https:\/\/nixnehc.github.io\/img\/me.jpeg",
@@ -101,6 +101,72 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
   <link rel="stylesheet" href="https://nixnehc.github.io/css/highlight.min.css" /><link rel="stylesheet" href="https://nixnehc.github.io/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+   
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i &lt; all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
 
   </head>
   <body>
@@ -142,11 +208,11 @@
               <a class="navlinks-parent">pets</a>
               <div class="navlinks-children">
                 
-                  <a href="/pets/duoduo/">duoduo</a>
+                  <a href="/page/duoduo/">duoduo</a>
                 
-                  <a href="/pets/two-queens/">two queens</a>
+                  <a href="/page/two-queens/">two queens</a>
                 
-                  <a href="/pets/two-dogs/">two dogs</a>
+                  <a href="/page/two-dogs/">two dogs</a>
                 
               </div>
             </li>
@@ -275,10 +341,10 @@
   <i class="fas fa-calendar"></i>&nbsp;Posted on April 18, 2023
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;5&nbsp;minutes
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;694&nbsp;words
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;2027&nbsp;words
   
   
     
@@ -313,7 +379,7 @@
 <hr>
 <h3 id="basic-settings">Basic Settings</h3>
 <h4 id="basic-settings--for-short-document">basic settings  for short document</h4>
-<p>对于相对短的文档 (如论文、作业等)，可以参照如下配置。其中的宏包 <code>chenxin_chines.sty</code> 是私人定制的，里面包含了一些常用的数学宏包、字体设置等，稍后会有对其内容的详细说明。</p>
+<p>对于较短的文档 (如论文、作业等)，可以参照如下配置。其中的宏包 <code>chenxin_chines.sty</code> 是私人定制的，里面包含了一些常用的数学宏包、字体设置等，稍后会对其内容做详细地说明。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\documentclass</span><span class="na">[UTF8, 11pt, a4paper]</span><span class="nb">{</span>article<span class="nb">}</span>  <span class="c">% 声明文档类
 </span></span></span><span class="line"><span class="cl"><span class="c"></span>
 </span></span><span class="line"><span class="cl"><span class="c">% 加载自己定义的宏包，字体设置等在这个包里
@@ -352,7 +418,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="c">% =========================================
 </span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
 </span></span></code></pre></div><h4 id="basic-settings-for-long-document">basic settings for long document</h4>
-<p>对于相对长的文档，如书籍、毕业论文等，使用一个 <code>.tex</code> 文件有时会太臃肿了，所以一般将一个长文档（按章节）拆分为多个 <code>chxx.tex</code>  文件，然后再用 <code>\input{}</code>  或者 <code>\include{}</code> 命令将它们插入到主文档 <code>main.tex</code> 中。项目目录列举如下：</p>
+<p>对于偏长的文档，如书籍、毕业论文等，使用一个 <code>.tex</code> 文件有时会太臃肿了，所以一般将一个长文档（按 chapter 或 part）拆分为多个 <code>chxx.tex</code>  文件，然后再用 <code>\input{}</code>  或者 <code>\include{}</code> 命令将它们插入到主文档 <code>main.tex</code> 中。项目目录举例如下：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">----- your project ----
 </span></span><span class="line"><span class="cl">	｜-- ch1/
 </span></span><span class="line"><span class="cl">		 |-- ch1.tex  # 存放第一章的内容
@@ -454,7 +520,7 @@
 </span></span><span class="line"><span class="cl"><span class="c">% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 </span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
 </span></span></code></pre></div><h4 id="私人包定制">私人包定制</h4>
-<p><code>chenxin_chinese.sty</code> 文档中是一些常用的包和个人常用的命令缩写，该文件要和<code>xxxx.tex</code>文件放同一个文件夹，即有如下文件夹结构如下：</p>
+<p><code>chenxin_chinese.sty</code> 文档中是一些我常用的包和命令缩写，该文件要和<code>xxxx.tex</code>文件放同一个文件夹，即有如下文件夹结构如下：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">--------- 文件夹结构
 </span></span><span class="line"><span class="cl">   |- xxxx.tex
 </span></span><span class="line"><span class="cl">   |- chenxin_chinese.sty
@@ -714,7 +780,7 @@
                   <ul>
                 
                 
-                    <li><a href="/post/2023-04-10-what-is-modal-logic/">What Is Modal Logic</a></li>
+                    <li><a href="/post/what-is-modal-logic/">What Is Modal Logic</a></li>
                 
               </ul>
 
@@ -726,7 +792,7 @@
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://nixnehc.github.io/post/2023-04-15-a-stranger-friend/" data-toggle="tooltip" data-placement="top" title="A Strange Friend">&larr; Previous Post</a>
+              <a href="https://nixnehc.github.io/post/hybrid-logic/" data-toggle="tooltip" data-placement="top" title="Hybrid Logic">&larr; Previous Post</a>
             </li>
           
           

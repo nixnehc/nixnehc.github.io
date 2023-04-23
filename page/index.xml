@@ -5,6 +5,7 @@
     <link>https://nixnehc.github.io/page/</link>
     <description>Recent content in Pages on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
     <managingEditor>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</managingEditor>
     <webMaster>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</webMaster>
     <lastBuildDate>Sun, 16 Apr 2023 18:18:10 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/page/index.xml" rel="self" type="application/rss+xml" />
@@ -15,6 +16,33 @@
       <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
       <guid>https://nixnehc.github.io/page/hahaha/</guid>
       <description>&lt;p&gt;This page is for Xin, that is, myself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Two Dogs</title>
+      <link>https://nixnehc.github.io/page/two-dogs/</link>
+      <pubDate>Sun, 16 Apr 2023 16:38:21 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/page/two-dogs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>My Two Queens: Wu Zetian and Queen Elizabeth</title>
+      <link>https://nixnehc.github.io/page/two-queens/</link>
+      <pubDate>Sun, 16 Apr 2023 16:37:35 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/page/two-queens/</guid>
+      <description>&lt;p&gt;I love insect, especially the ants. I have two ant farms.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DuoDuo</title>
+      <link>https://nixnehc.github.io/page/duoduo/</link>
+      <pubDate>Sun, 16 Apr 2023 16:37:06 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/page/duoduo/</guid>
+      <description>&lt;p&gt;DuoDuo is a very cute kitty, he is my partner, my all tenderness, and the fluffy dream in my life!&lt;/p&gt;</description>
     </item>
     
   </channel>

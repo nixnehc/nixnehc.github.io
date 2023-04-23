@@ -5,6 +5,7 @@
     <link>https://nixnehc.github.io/tags/recursion-theory/</link>
     <description>Recent content in recursion-theory on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
     <managingEditor>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</managingEditor>
     <webMaster>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</webMaster>
     <lastBuildDate>Fri, 21 Apr 2023 17:35:36 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/tags/recursion-theory/index.xml" rel="self" type="application/rss+xml" />
@@ -14,7 +15,8 @@
       <pubDate>Fri, 21 Apr 2023 17:35:36 +0800</pubDate>
       <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
       <guid>https://nixnehc.github.io/post/coding-function/</guid>
-      <description>&lt;p&gt;今天 (2023,04,21 周五) 下午递归论课上突然讨论到一个问题, 关于编码函数、降维打击、宇宙的连续性等问题, 觉得特别有意思, 遂记之. (ps. 本文全部使用半角标点符号)&lt;/p&gt;</description>
+      <description>&lt;p&gt;今天 (2023,04,21 周五) 下午递归论课上突然讨论到一个问题, 关于编码函数、降维打击、宇宙和世界的连续性等问题， 觉得特别有意思, 遂记之。&lt;/p&gt;
+&lt;p&gt;(ps. 以下用 \( \omega, \omega^+ \) 分别表示&lt;strong&gt;自然数集&lt;/strong&gt;和&lt;strong&gt;正整数集&lt;/strong&gt;)&lt;/p&gt;</description>
     </item>
     
   </channel>
