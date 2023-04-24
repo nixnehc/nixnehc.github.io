@@ -8,7 +8,16 @@
     <language>zh-cn</language>
     <managingEditor>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</managingEditor>
     <webMaster>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</webMaster>
-    <lastBuildDate>Tue, 18 Apr 2023 08:28:22 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/categories/toolkit/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Apr 2023 09:11:04 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/categories/toolkit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>English expressions in Math and Logic</title>
+      <link>https://nixnehc.github.io/post/proof-english/</link>
+      <pubDate>Tue, 18 Apr 2023 09:11:04 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/post/proof-english/</guid>
+      <description>&lt;p&gt;Some English expressions in  Math  and Logic.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>LaTeX for Logicians: from Zero to Hero</title>
       <link>https://nixnehc.github.io/post/latex/</link>
@@ -17,6 +26,15 @@
       <guid>https://nixnehc.github.io/post/latex/</guid>
       <description>&lt;p&gt;This is a crash course in LaTeX for myself (continuously updating).&lt;/p&gt;
 &lt;hr&gt;</description>
+    </item>
+    
+    <item>
+      <title>Terminal</title>
+      <link>https://nixnehc.github.io/post/terminal/</link>
+      <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/post/terminal/</guid>
+      <description></description>
     </item>
     
   </channel>

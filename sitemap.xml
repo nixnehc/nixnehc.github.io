@@ -3,14 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://nixnehc.github.io/</loc>
-    <lastmod>2023-04-24T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-24T16:49:07+08:00</lastmod>
     <priority>0</priority>
+  </url><url>
+    <loc>https://nixnehc.github.io/tags/bullshit/</loc>
+    <lastmod>2023-04-24T16:49:07+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/categories/</loc>
+    <lastmod>2023-04-24T16:49:07+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/tags/life/</loc>
+    <lastmod>2023-04-24T16:49:07+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/categories/others/</loc>
+    <lastmod>2023-04-24T16:49:07+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/post/</loc>
+    <lastmod>2023-04-24T16:49:07+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/tags/</loc>
+    <lastmod>2023-04-24T16:49:07+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/post/2023-04-24-a-new-life/</loc>
+    <lastmod>2023-04-24T16:49:07+08:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/post/2023-04-22-the-harsh-reality/</loc>
     <lastmod>2023-04-22T19:13:11+08:00</lastmod>
-  </url><url>
-    <loc>https://nixnehc.github.io/categories/</loc>
-    <lastmod>2023-04-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/categories/logic-math/</loc>
     <lastmod>2023-04-23T00:00:00+00:00</lastmod>
@@ -18,29 +36,14 @@
     <loc>https://nixnehc.github.io/tags/math/</loc>
     <lastmod>2023-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nixnehc.github.io/post/</loc>
-    <lastmod>2023-04-24T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nixnehc.github.io/tags/repost/</loc>
     <lastmod>2023-04-22T19:13:11+08:00</lastmod>
-  </url><url>
-    <loc>https://nixnehc.github.io/tags/</loc>
-    <lastmod>2023-04-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nixnehc.github.io/tags/life/</loc>
-    <lastmod>2023-04-22T18:41:42+08:00</lastmod>
-  </url><url>
-    <loc>https://nixnehc.github.io/categories/others/</loc>
-    <lastmod>2023-04-22T18:41:42+08:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/tags/poem/</loc>
     <lastmod>2023-04-22T18:41:42+08:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/post/2023-04-22-spring-poetry-no.1/</loc>
     <lastmod>2023-04-22T18:41:42+08:00</lastmod>
-  </url><url>
-    <loc>https://nixnehc.github.io/tags/bullshit/</loc>
-    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/post/coding-function/</loc>
     <lastmod>2023-04-23T00:00:00+00:00</lastmod>
@@ -60,6 +63,9 @@
     <loc>https://nixnehc.github.io/post/proof-english/</loc>
     <lastmod>2023-04-18T09:11:04+08:00</lastmod>
   </url><url>
+    <loc>https://nixnehc.github.io/categories/toolkit/</loc>
+    <lastmod>2023-04-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nixnehc.github.io/tags/latex/</loc>
     <lastmod>2023-04-24T00:00:00+00:00</lastmod>
   </url><url>
@@ -67,9 +73,6 @@
     <lastmod>2023-04-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/tags/tech/</loc>
-    <lastmod>2023-04-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nixnehc.github.io/categories/toolkit/</loc>
     <lastmod>2023-04-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/page/hahaha/</loc>
@@ -131,6 +134,12 @@
   </url><url>
     <loc>https://nixnehc.github.io/post/2020-10-17-disappointed-in-love-once-again/</loc>
     <lastmod>2020-10-17T22:50:28+08:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/tags/cs/</loc>
+    <lastmod>2020-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nixnehc.github.io/post/terminal/</loc>
+    <lastmod>2020-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nixnehc.github.io/post/2020-01-01-first-post/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>

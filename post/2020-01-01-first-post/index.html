@@ -63,7 +63,7 @@
   "headline": "First post!",
   "description" : "This is my first post, how exciting!\n",
   "inLanguage" : "en",
-  "wordCount":  943 ,
+  "wordCount":  882 ,
   "datePublished" : "2020-01-01T00:00:00",
   "dateModified" : "2020-01-01T00:00:00",
   "image" : "https:\/\/nixnehc.github.io\/img\/me.jpeg",
@@ -344,7 +344,7 @@ MathJax.Hub.Config({
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;943&nbsp;words
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;882&nbsp;words
   
   
     
@@ -371,8 +371,11 @@ MathJax.Hub.Config({
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <p>This is my first post, how exciting!</p>
-<h2 id="testing--debugging--测试">testing  debugging  测试</h2>
-<p>this is a \latex code</p>
+<h1 id="testing----测试">testing    测试</h1>
+<h2 id="formulas">formulas</h2>
+<p>this is a \(
+\LaTeX{}
+\) code</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"> <span class="sb">\[</span><span class="nb">
 </span></span></span><span class="line"><span class="cl"><span class="nb">   P </span><span class="o">(</span><span class="nb">A </span><span class="nv">\mid</span><span class="nb"> B</span><span class="o">)</span><span class="nb"> </span><span class="o">=</span><span class="nb"> dfrak{P</span><span class="o">(</span><span class="nb">B</span><span class="nv">\mid</span><span class="nb"> A</span><span class="o">)</span><span class="nb"> </span><span class="nv">\cdot</span><span class="nb"> P</span><span class="o">(</span><span class="nb">A</span><span class="o">)</span><span class="nb">}{P</span><span class="o">(</span><span class="nb">B</span><span class="o">)</span><span class="nb">}
 </span></span></span><span class="line"><span class="cl"><span class="nb"> </span><span class="s">\]</span>
@@ -381,14 +384,15 @@ $$
 P (A \mid B) = \dfrac{P(B\mid A) \cdot P(A)}{P(B)}
 $$</p>
 <p>Completeness:
-$$
+\(
 \Gamma \Vdash \varphi \Leftrightarrow \Gamma \vdash \varphi
-$$</p>
+\)
+and an inline formula: \( E = mc^2 \).</p>
 <p>Basic modal language:
 $$
 \mathcal{L} \ni \varphi \Coloneqq p \mid \neg \varphi \mid (\varphi \lor \varphi) \mid \Diamond \varphi  \qquad (p \in \mathsf{Prop})
 $$</p>
-<p>an inline formula: \( E = mc^2 \)</p>
+<h2 id="images">images</h2>
 <p>This is DuoDuo (小多多靓照):</p>
 
 
@@ -490,13 +494,17 @@ $$</p>
 
 </div>
 
+<p>big images:</p>
+<p><img src="/img/DuoduoHead01.jpg" alt="DuoduoHead01"></p>
+<p><img src="/img/duoduo.jpeg" alt="duoduo"></p>
+<h2 id="media">media</h2>
+<p>This is a song which I like it:</p>
 <!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<p>This is a song which I like it</p>
-<!-- raw HTML omitted -->
+<p>This is a video:</p>
 <hr>
-<h2 id="test-markdown">Test markdown</h2>
-<p>You can write regular <a href="http://markdowntutorial.com/">markdown</a> here and <a href="https://gohugo.io">Hugo</a> will automatically convert it to a nice webpage.  I strongly encourage you to <a href="http://markdowntutorial.com/">take 5 minutes to learn how to write in markdown</a> - it&rsquo;ll teach you how to transform regular text into bold/italics/headings/tables/etc.</p>
+<h1 id="beautiful-hugo-theme-的一些说明文档">Beautiful Hugo theme 的一些说明文档</h1>
+<p>You can write regular <a href="http://markdowntutorial.com/">markdown</a> here and <a href="https://gohugo.io">Hugo</a> will automatically convert it to a nice webpage.</p>
+<p><a href="http://markdowntutorial.com/">take 5 minutes to learn how to write in markdown</a></p>
 <p><strong>Here is some bold text</strong></p>
 <h2 id="here-is-a-secondary-heading">Here is a secondary heading</h2>
 <p>Here&rsquo;s a useless table:</p>
@@ -531,17 +539,9 @@ $$</p>
 </tr>
 </tbody>
 </table>
-<p>How about a yummy crepe?</p>
-<p><img src="http://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg" alt="Crepe"></p>
-<p>Here&rsquo;s a code chunk with syntax highlighting:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="k">return</span><span class="p">(</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">5</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="nx">foo</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-</span></span></code></pre></div><hr>
 <h2 id="code-sample">Code Sample</h2>
 <p>The following are two code samples using syntax highlighting.</p>
-<p>The following is a code sample using triple backticks ( ``` ) code fencing provided in Hugo. This is client side highlighting and does not require any special installation.</p>
+<p>The following is a code sample using triple backticks ( ``` ) code fencing provided in Hugo.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">,</span> <span class="nx">sum</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">num1</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&#34;Enter first number&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">num2</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&#34;Enter second number&#34;</span><span class="p">)</span>
@@ -561,13 +561,11 @@ $$</p>
 </span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="nx">sum</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">num1</span><span class="p">)</span> <span class="o">+</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">num2</span><span class="p">)</span> <span class="c1">// &#34;+&#34; means &#34;add&#34;
 </span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="c1"></span>    <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Sum = &#34;</span> <span class="o">+</span> <span class="nx">sum</span><span class="p">)</span>  <span class="c1">// &#34;+&#34; means combine into a string
 </span></span></span></code></pre></div>
-<hr>
 <h2 id="math-sample">Math Sample</h2>
 <p>KaTeX can be used to generate complex math formulas server-side.</p>
 <p>$$
 \phi = \frac{(1+\sqrt{5})}{2} = 1.6180339887\cdots
 $$</p>
-<h4 id="example-1">Example 1</h4>
 <p>If the text between $$ contains newlines it will rendered in display mode:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$$
 </span></span><span class="line"><span class="cl">f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
@@ -575,21 +573,12 @@ $$</p>
 </span></span></code></pre></div><p>$$
 f(x) = \int_{-\infty}^\infty\hat f(\xi),e^{2 \pi i \xi x},d\xi
 $$</p>
-<h4 id="example-2">Example 2</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$$
-</span></span><span class="line"><span class="cl">\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
-</span></span><span class="line"><span class="cl">$$
-</span></span></code></pre></div><p>$$
-\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
-$$</p>
-<h4 id="example-3">Example 3</h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$$
-</span></span><span class="line"><span class="cl">1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \quad\quad \text{for }\lvert q\rvert&lt;1.
+</span></span><span class="line"><span class="cl">  1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \quad\quad \text{for }\lvert q\rvert&lt;1.
 </span></span><span class="line"><span class="cl">$$
 </span></span></code></pre></div><p>$$
 1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \quad\quad \text{for }\lvert q\rvert&lt;1.
 $$</p>
-<hr>
 <h2 id="photoswipe-gallery-sample">Photoswipe Gallery Sample</h2>
 <p>Beautiful Hugo adds a few custom shortcodes created by <a href="https://www.liwen.id.au/heg/">Li-Wen Yip</a> and <a href="https://github.com/GjjvdBurg/HugoPhotoSwipe">Gert-Jan van den Berg</a> for making galleries with <a href="http://photoswipe.com">PhotoSwipe</a> .</p>
 
@@ -597,6 +586,7 @@ $$</p>
 
 <div class="gallery caption-position-bottom caption-effect-fade hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
 	  
+
   
   
   <div class="box" >
@@ -637,6 +627,7 @@ $$</p>
   </div>
 
 
+
 </div>
 
 <h4 id="example">Example</h4>
@@ -658,9 +649,8 @@ $$</p>
 <li>Many gallery styles for captions and hover effects exist; view the <a href="https://github.com/liwenyip/hugo-easy-gallery/">hugo-easy-gallery GitHub</a> for all options</li>
 <li>Note that this theme will load the photoswipe gallery theme and scripts by default, no need to load photoswipe on your individual pages</li>
 </ul>
-<hr>
 <h2 id="big-image-sample">Big Image Sample</h2>
-<p>bigimg: [{src: &ldquo;/img/triangle.jpg&rdquo;, desc: &ldquo;Triangle&rdquo;}, {src: &ldquo;/img/sphere.jpg&rdquo;, desc: &ldquo;Sphere&rdquo;}, {src: &ldquo;/img/hexagon.jpg&rdquo;, desc: &ldquo;Hexagon&rdquo;}]</p>
+<p><code>bigimg: [{src: &quot;/img/triangle.jpg&quot;, desc: &quot;Triangle&quot;}, {src: &quot;/img/sphere.jpg&quot;, desc: &quot;Sphere&quot;}, {src: &quot;/img/hexagon.jpg&quot;, desc: &quot;Hexagon&quot;}] </code></p>
 <p>The image banners at the top of the page are refered to as &ldquo;bigimg&rdquo; in this theme. They are optional, and one more more can be specified. If more than one is specified, the images rotate every 10 seconds. In the front matter, bigimgs are specified using an array of hashes.</p>
 <p>A single bigimg can be specified in the front matter by the following YAML:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">bigimg: [{src: &#34;/img/triangle.jpg&#34;, desc: &#34;Triangle&#34;}]
@@ -678,6 +668,8 @@ $$</p>
 </span></span><span class="line"><span class="cl">- {src: &#34;/img/sphere.jpg&#34;, desc: &#34;Sphere&#34;}
 </span></span><span class="line"><span class="cl">- {src: &#34;/img/hexagon.jpg&#34;, desc: &#34;Hexagon&#34;}
 </span></span></code></pre></div><p>Additional information can be found <a href="https://rhnh.net/2011/01/31/yaml-tutorial/">in this YAML tutorial</a>.</p>
+<hr>
+<h1 id="blog-撰写方法论">Blog 撰写方法论</h1>
 
         
           <div class="blog-tags">
@@ -758,7 +750,7 @@ $$</p>
           
           
             <li class="next">
-              <a href="https://nixnehc.github.io/post/2020-10-17-disappointed-in-love-once-again/" data-toggle="tooltip" data-placement="top" title="I was disappointed in Love too!">Next Post &rarr;</a>
+              <a href="https://nixnehc.github.io/post/terminal/" data-toggle="tooltip" data-placement="top" title="Terminal">Next Post &rarr;</a>
             </li>
           
         </ul>
