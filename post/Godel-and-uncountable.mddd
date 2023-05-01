@@ -1,0 +1,58 @@
+---
+title: "Godel's incompleteness theorem and Uncountable set"
+subtitle: ""
+
+author: "Xin"
+
+type: ["post", "posts"]
+
+
+date: 2023-04-28
+
+#image: "/img/xxxx.jpg". ## 这是显示在主页上的图片
+bigimg: [{src: "/img/sphere.jpg", desc: "net"}]. ## 这里显示博文页的标题背景图
+
+tags: ["Godel"]      
+      ## life, gitHub, hugo, love, math, logic, modal-logic, peripherals, talking, tech, travel,  family, cat, dog, latex
+categories: ["logic-math"]       
+            ## logic-math , others, my pets, language, toolkit
+
+draft: true
+---
+
+
+
+
+<!--more-->
+
+---
+
+{{< highlight java "linenos=inline">}}
+    this
+{{</ highlight >}}
+ 
+
+
+
+该主题下, 行内公式 用 \\( \\) 包裹, 而不用 \( \) 或者 $ $. 如 \\( E=mc^2  \\).
+
+行间公式用 $$ E = mc^2 $$ 
+$$
+E = mc^2
+$$
+
+#### 图片
+
+![alt 属性文本](图片地址 "可选标题")
+
+该主题支持的画廊模式:
+{{< gallery caption-effect="fade" >}}
+  {{< figure thumb="-thumb" link="/img/xxxx.jpg" >}}
+  {{< figure thumb="-thumb" link="/img/xxxx.jpg" caption="Sphere" >}}
+  {{< figure thumb="-thumb" link="/img/xxxxxx.jpg" caption="Triangle" alt="This is a long comment about a triangle" >}}
+{{< /gallery >}}
+
+另一种类似画廊的方式,且图片居中:
+{{< figure src="/img/章鱼哥的梦想.jpeg" caption="Squidward"  alt="Here also lies my Hopes and Dreams." >}}
+
+#### 代码块

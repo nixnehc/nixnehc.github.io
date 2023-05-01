@@ -63,7 +63,7 @@
   "headline": "LaTeX for Logicians: from Zero to Hero",
   "description" : "This is a crash course in LaTeX for myself (continuously updating).\n",
   "inLanguage" : "en",
-  "wordCount":  2295 ,
+  "wordCount":  2330 ,
   "datePublished" : "2023-04-18T08:28:22",
   "dateModified" : "2023-04-18T08:28:22",
   "image" : "https:\/\/nixnehc.github.io\/img\/me.jpeg",
@@ -346,7 +346,7 @@ MathJax.Hub.Config({
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;5&nbsp;minutes
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;2295&nbsp;words
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;2330&nbsp;words
   
   
     
@@ -470,7 +470,7 @@ MathJax.Hub.Config({
 </span></span><span class="line"><span class="cl">% ========
 </span></span><span class="line"><span class="cl">\section{}
 </span></span></code></pre></div><p>而其中的 <code>main.tex</code> 可参考如下设置：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tex" data-lang="tex"><span class="line"><span class="cl"><span class="c">% ===========================================
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="c">% ===========================================
 </span></span></span><span class="line"><span class="cl"><span class="c">%       My template for long document      ==
 </span></span></span><span class="line"><span class="cl"><span class="c">% ===========================================
 </span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\documentclass</span><span class="na">[UTF8,12pt,a4paper]</span><span class="nb">{</span>report<span class="nb">}</span>  <span class="c">% report 文档类可以用 \chapter 命令
@@ -530,10 +530,10 @@ MathJax.Hub.Config({
 </span></span></span><span class="line"><span class="cl"><span class="c">% =============== 以下插入各章节内容 ===============
 </span></span></span><span class="line"><span class="cl"><span class="c"></span>
 </span></span><span class="line"><span class="cl"><span class="c">% !!!: 相对路径不要用 `./chxxx/xxx`  这种形式，会出奇奇怪怪的问题
-</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\input</span><span class="nb">{</span>ch1/ch1<span class="nb">}</span>
-</span></span><span class="line"><span class="cl"><span class="k">\input</span><span class="nb">{</span>ch2/ch2<span class="nb">}</span>
-</span></span><span class="line"><span class="cl"><span class="k">\input</span><span class="nb">{</span>ch3/ch3<span class="nb">}</span>
-</span></span><span class="line"><span class="cl"><span class="c">% \input{chxxxx/chxxxx}   
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\input</span><span class="nb">{</span>ch1/ch1.tex<span class="nb">}</span>    <span class="c">% 尽量把文件后缀 .tex 写上，不让在单独编译 chxx.tex 等文件时可能会报错
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\input</span><span class="nb">{</span>ch2/ch2.tex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\input</span><span class="nb">{</span>ch3/ch3.tex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="c">% \input{chxxxx/chxxxx.tex}   
 </span></span></span><span class="line"><span class="cl"><span class="c"></span>
 </span></span><span class="line"><span class="cl"><span class="c">% ============== \input 和 \include 的区别：
 </span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="c">%  \include 在读入 &lt;filename&gt; 之前会另起一页，有的时候我们并不需要这样。
@@ -689,7 +689,9 @@ MathJax.Hub.Config({
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c">% ===================  一些带重音符号的常用人名
-</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\godel</span><span class="nb">}{</span>G<span class="k">\&#34;</span><span class="nb">{</span>o<span class="nb">}</span>del<span class="nb">}</span>     <span class="c">% Godel
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\godel</span><span class="nb">}{</span>G<span class="k">\&#34;</span><span class="nb">{</span>o<span class="nb">}</span>del<span class="nb">}</span>              <span class="c">% Godel
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\Los</span><span class="nb">}{</span>Lo<span class="k">\&#39;</span><span class="nb">{</span>s<span class="nb">}}</span>                  <span class="c">% Los
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\lowenheim</span><span class="nb">}{</span>L<span class="k">\&#34;</span><span class="nb">{</span>o<span class="nb">}</span>wenheim<span class="nb">}</span>      <span class="c">% Lowenheim
 </span></span></span><span class="line"><span class="cl"><span class="c"></span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
@@ -800,6 +802,8 @@ forcing symbols: <code>\models, \vdash, \Vdash</code>  \(    \models, \vdash
                   <h4 class="see-also">See also</h4>
                   <ul>
                 
+                
+                    <li><a href="/post/latex-skills/">Latex Skills</a></li>
                 
                     <li><a href="/post/what-is-modal-logic/">What Is Modal Logic</a></li>
                 

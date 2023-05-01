@@ -63,7 +63,7 @@
   "headline": "Terminal",
   "description" : "",
   "inLanguage" : "en",
-  "wordCount":  1318 ,
+  "wordCount":  1365 ,
   "datePublished" : "2020-01-10T00:00:00",
   "dateModified" : "2020-01-10T00:00:00",
   "image" : "https:\/\/nixnehc.github.io\/img\/me.jpeg",
@@ -344,7 +344,7 @@ MathJax.Hub.Config({
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;minutes
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1318&nbsp;words
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1365&nbsp;words
   
   
     
@@ -527,8 +527,13 @@ MathJax.Hub.Config({
 </span></span><span class="line"><span class="cl">\\)
 </span></span></code></pre></div><p>在制定 snippet 的时候，我发现若在 <code>content</code> 节点中输入美元号 <code>$</code> 则不起作用，具体原因未知。
 因此这里用 <code>\\[  \\]</code> 作为行间公式的输入环境。</p>
-<p>注意，<code>KaTeX</code> 有时只支持 <code>\\(  \\)</code> 环境下的行内公式输入，不支持 <code>$  $</code>；
+<p>注意，<code>KaTeX</code> 默认的解析规则是 <code>\\(  \\)</code> 环境下的行内公式输入，不支持 <code>$  $</code> 作为行内公式环境；
 但是 <code>MathJax</code> 则对于这两种模式都支持。（总的来说，<code>KaTeX</code> 和 <code>MathJax</code> 区别并不大，不过前者更快，而后者包含的内容更丰富）</p>
+<hr>
+<h2 id="设置在新标签页打开文件而不在新窗口中打开">设置在新标签页打开文件而不在新窗口中打开</h2>
+<p><code>preferences --&gt; Settings</code> ，在右侧窗口添加 <code>&quot;open_files_in_new_window&quot;: &quot;false&quot;,</code>
+既可。</p>
+<hr>
 
         
           <div class="blog-tags">

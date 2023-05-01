@@ -8,7 +8,25 @@
     <language>zh-cn</language>
     <managingEditor>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</managingEditor>
     <webMaster>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</webMaster>
-    <lastBuildDate>Mon, 24 Apr 2023 16:49:07 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Apr 2023 15:44:16 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Latex Skills</title>
+      <link>https://nixnehc.github.io/post/latex-skills/</link>
+      <pubDate>Wed, 26 Apr 2023 15:44:16 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/post/latex-skills/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>逻辑中的一些开问题【持续更新】</title>
+      <link>https://nixnehc.github.io/post/open-problems-in-logic/</link>
+      <pubDate>Tue, 25 Apr 2023 18:27:52 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/post/open-problems-in-logic/</guid>
+      <description>&lt;p&gt;这个页面记录我在逻辑中遇到的且感兴趣的开放问题。 Long live Logic！&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>the New Life</title>
       <link>https://nixnehc.github.io/post/2023-04-24-a-new-life/</link>
@@ -100,27 +118,6 @@
       <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
       <guid>https://nixnehc.github.io/post/what-is-modal-logic/</guid>
       <description>&lt;p&gt;chatGPT&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>MacOS With Philips Eink</title>
-      <link>https://nixnehc.github.io/post/2023-02-18-macos-with-philips-eink/</link>
-      <pubDate>Sat, 18 Feb 2023 23:04:25 +0800</pubDate>
-      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
-      <guid>https://nixnehc.github.io/post/2023-02-18-macos-with-philips-eink/</guid>
-      <description>&lt;p&gt;简单明了版：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;安装 &lt;code&gt;BetterDisplay&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;白天设置为  &lt;code&gt;video-2 level-2&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;晚上（开启夜间模式时）设置为 &lt;code&gt;video-1 level-5&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;</description>
     </item>
     
     <item>
