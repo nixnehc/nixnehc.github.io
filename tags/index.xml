@@ -8,16 +8,7 @@
     <language>zh-cn</language>
     <managingEditor>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</managingEditor>
     <webMaster>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</webMaster>
-    <lastBuildDate>Wed, 26 Apr 2023 15:44:16 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>latex</title>
-      <link>https://nixnehc.github.io/tags/latex/</link>
-      <pubDate>Wed, 26 Apr 2023 15:44:16 +0800</pubDate>
-      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
-      <guid>https://nixnehc.github.io/tags/latex/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Tue, 25 Apr 2023 18:27:52 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>logic</title>
       <link>https://nixnehc.github.io/tags/logic/</link>
@@ -87,6 +78,15 @@
       <pubDate>Tue, 18 Apr 2023 09:11:04 +0800</pubDate>
       <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
       <guid>https://nixnehc.github.io/tags/english/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>latex</title>
+      <link>https://nixnehc.github.io/tags/latex/</link>
+      <pubDate>Tue, 18 Apr 2023 08:28:22 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/tags/latex/</guid>
       <description></description>
     </item>
     
