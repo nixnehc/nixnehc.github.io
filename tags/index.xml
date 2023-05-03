@@ -8,7 +8,16 @@
     <language>zh-cn</language>
     <managingEditor>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</managingEditor>
     <webMaster>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</webMaster>
-    <lastBuildDate>Tue, 02 May 2023 20:41:56 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nixnehc.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>latex</title>
+      <link>https://nixnehc.github.io/tags/latex/</link>
+      <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/tags/latex/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>intuitionism</title>
       <link>https://nixnehc.github.io/tags/intuitionism/</link>
@@ -100,24 +109,6 @@
     </item>
     
     <item>
-      <title>latex</title>
-      <link>https://nixnehc.github.io/tags/latex/</link>
-      <pubDate>Tue, 18 Apr 2023 08:28:22 +0800</pubDate>
-      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
-      <guid>https://nixnehc.github.io/tags/latex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tech</title>
-      <link>https://nixnehc.github.io/tags/tech/</link>
-      <pubDate>Tue, 18 Apr 2023 08:28:22 +0800</pubDate>
-      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
-      <guid>https://nixnehc.github.io/tags/tech/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>dog</title>
       <link>https://nixnehc.github.io/tags/dog/</link>
       <pubDate>Sun, 16 Apr 2023 16:38:21 +0800</pubDate>
@@ -177,6 +168,15 @@
       <pubDate>Tue, 11 Apr 2023 23:03:28 +0800</pubDate>
       <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
       <guid>https://nixnehc.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tech</title>
+      <link>https://nixnehc.github.io/tags/tech/</link>
+      <pubDate>Tue, 11 Apr 2023 23:03:28 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/tags/tech/</guid>
       <description></description>
     </item>
     

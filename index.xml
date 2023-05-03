@@ -8,7 +8,16 @@
     <language>zh-cn</language>
     <managingEditor>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</managingEditor>
     <webMaster>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</webMaster>
-    <lastBuildDate>Tue, 02 May 2023 20:41:56 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nixnehc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[LaTeX] pdf Encryption</title>
+      <link>https://nixnehc.github.io/post/latex-pdf-encrypt/</link>
+      <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/post/latex-pdf-encrypt/</guid>
+      <description>&lt;p&gt;在 latex 中如何使生成的 pdf 被加密或只读呢？&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>[Notes] Arend Heyting: Intuitionism - an Introduction (1971)</title>
       <link>https://nixnehc.github.io/post/intuitionism/</link>
@@ -95,16 +104,6 @@
     </item>
     
     <item>
-      <title>LaTeX for Logicians: from Zero to Hero</title>
-      <link>https://nixnehc.github.io/post/latex/</link>
-      <pubDate>Tue, 18 Apr 2023 08:28:22 +0800</pubDate>
-      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
-      <guid>https://nixnehc.github.io/post/latex/</guid>
-      <description>&lt;p&gt;This is a crash course in LaTeX for myself (continuously updating).&lt;/p&gt;
-&lt;hr&gt;</description>
-    </item>
-    
-    <item>
       <title>Let&#39;s laugh, hahaha</title>
       <link>https://nixnehc.github.io/page/hahaha/</link>
       <pubDate>Sun, 16 Apr 2023 18:18:10 +0800</pubDate>
@@ -171,6 +170,17 @@
       <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
       <guid>https://nixnehc.github.io/post/a-journey-with-qi/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>[LaTeX] From Zero to Hero - Basic setting</title>
+      <link>https://nixnehc.github.io/post/latex-basic-setting/</link>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/post/latex-basic-setting/</guid>
+      <description>&lt;p&gt;This is a crash course in LaTeX for myself (continuously updating).&lt;/p&gt;
+&lt;p&gt;(© the cover image comes from &lt;a href=&#34;http://www.cervantex.es/taxonomy/term/12&#34;&gt;here&lt;/a&gt;, and the above image is from &lt;a href=&#34;https://tug.org/eplain/art.html&#34;&gt;here&lt;/a&gt;)&lt;/p&gt;
+&lt;hr&gt;</description>
     </item>
     
     <item>
