@@ -11,10 +11,10 @@
     <lastBuildDate>Wed, 03 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nixnehc.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[LaTeX] pdf Encryption</title>
-      <link>https://nixnehc.github.io/post/latex-pdf-encrypt/</link>
+      <link>https://nixnehc.github.io/post/2023-05-03-latex-pdf-encrypt/</link>
       <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
       <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
-      <guid>https://nixnehc.github.io/post/latex-pdf-encrypt/</guid>
+      <guid>https://nixnehc.github.io/post/2023-05-03-latex-pdf-encrypt/</guid>
       <description>&lt;p&gt;在 latex 中如何使生成的 pdf 被加密或只读呢？&lt;/p&gt;</description>
     </item>
     
