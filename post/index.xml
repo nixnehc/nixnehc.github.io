@@ -31,20 +31,6 @@
     </item>
     
     <item>
-      <title>[持续更新] 逻辑中的一些开问题</title>
-      <link>https://nixnehc.github.io/post/open-problems-in-logic/</link>
-      <pubDate>Tue, 25 Apr 2023 18:27:52 +0800</pubDate>
-      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
-      <guid>https://nixnehc.github.io/post/open-problems-in-logic/</guid>
-      <description>&lt;p&gt;这个页面记录我在学习逻辑时，所遇到一些（自认为）有趣的开放问题和研究方向。&lt;/p&gt;
-&lt;p&gt;Long live Logic！&lt;/p&gt;
-&lt;p&gt;❕&lt;strong&gt;免责声明&lt;/strong&gt; &lt;strong&gt;Disclaimer&lt;/strong&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;本人并不知道这些问题在后续有没有被解决，以及这些方向是否有世俗意义上的“前途”或“钱途”。&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
       <title>the New Life</title>
       <link>https://nixnehc.github.io/post/2023-04-24-a-new-life/</link>
       <pubDate>Mon, 24 Apr 2023 16:49:07 +0800</pubDate>
@@ -96,10 +82,10 @@
     
     <item>
       <title>English expressions in Math and Logic</title>
-      <link>https://nixnehc.github.io/post/proof-english/</link>
+      <link>https://nixnehc.github.io/post/english-math-logic/</link>
       <pubDate>Tue, 18 Apr 2023 09:11:04 +0800</pubDate>
       <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
-      <guid>https://nixnehc.github.io/post/proof-english/</guid>
+      <guid>https://nixnehc.github.io/post/english-math-logic/</guid>
       <description>&lt;p&gt;Some English expressions in  Math  and Logic.&lt;/p&gt;</description>
     </item>
     
