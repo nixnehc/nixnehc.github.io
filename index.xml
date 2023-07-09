@@ -8,7 +8,19 @@
     <language>zh-cn</language>
     <managingEditor>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</managingEditor>
     <webMaster>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</webMaster>
-    <lastBuildDate>Wed, 03 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nixnehc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jul 2023 17:25:14 +0800</lastBuildDate><atom:link href="https://nixnehc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>模态逻辑: 一个关于 Box 和 Diamond (或许也有爱情) 的故事</title>
+      <link>https://nixnehc.github.io/post/modal-logic/</link>
+      <pubDate>Sat, 08 Jul 2023 17:25:14 +0800</pubDate>
+      <author>chenxin_hello@outlook.com (Made with ❤️ by Chen Xin)</author>
+      <guid>https://nixnehc.github.io/post/modal-logic/</guid>
+      <description>&lt;h4 id=&#34;序&#34;&gt;序：&lt;/h4&gt;
+&lt;p&gt;以下内容是为7月5日（真是有生之年考过最长的考试了😭），但准备的内容似乎还是太多了，根本写不完。
+望着这些准备好的稿纸，虽无甚洞见，但毕竟是自己一段时间内的心血，想着弃之可惜，遂又加以整理，姑且当作一篇博文让其静静地躺在这里吧。写到这里时却不免又悲从中来，文章尚有「安生立命」之所，作文者亦有焉？&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Disclaimer&lt;/code&gt;: 本文可能会包含事实性的错误🙅&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>[LaTeX] pdf Encryption</title>
       <link>https://nixnehc.github.io/post/2023-05-03-latex-pdf-encrypt/</link>
