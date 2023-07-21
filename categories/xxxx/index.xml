@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xxxx on ChenXin&#39;s Blog</title>
+    <link>http://nixnehc.github.io/categories/xxxx/</link>
+    <description>Recent content in xxxx on ChenXin&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 01 Jul 2021 05:29:53 +0800</lastBuildDate><atom:link href="http://nixnehc.github.io/categories/xxxx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&gt;LaTeX&lt; The Philosophy of Latex</title>
+      <link>http://nixnehc.github.io/posts/2021/07/latex-the-philosophy-of-latex/</link>
+      <pubDate>Thu, 01 Jul 2021 05:29:53 +0800</pubDate>
+      
+      <guid>http://nixnehc.github.io/posts/2021/07/latex-the-philosophy-of-latex/</guid>
+      <description>&lt;p&gt;本文主要包括一些关于 LaTeX 的编写技巧和习惯，以下内容大都来自网络，觉得甚有道理便收集到此处。不定期更新。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,7 +5,7 @@
 <meta name="author" content="ChenXin">
 <meta name="description" content="My portfolio site">
 
-<title>他们毕业了 – ChenXin&#39;s Blog</title>
+<title>&gt;LaTeX&lt; The Philosophy of Latex – ChenXin&#39;s Blog</title>
 
  
 <link rel="stylesheet" href="/css/style.min.cb9f1ec4342fa28f52b5f50f627d5279d7dca21b15825ef876e9619a04fdd6f5.css">
@@ -76,11 +76,11 @@ code.has-jax {
 </nav><main>
     <article class="post">
         <header>
-            <h2>他们毕业了</h2>
+            <h2>&gt;LaTeX&lt; The Philosophy of Latex</h2>
             <p>
-            Posted on <em>July 1, 2023</em>
+            Posted on <em>July 1, 2021</em>
             |
-            Reading time: <em>0 minutes</em>
+            Reading time: <em>2 minutes</em>
             |
             Author: <em>ChenXin</em>
             |
@@ -88,7 +88,7 @@ code.has-jax {
             Included in
                 
             <em>
-            <a class="category" href="/categories/life">##life</a>
+            <a class="category" href="/categories/xxxx">##xxxx</a>
             </em>
                 
             </span>
@@ -98,9 +98,42 @@ code.has-jax {
 
 
         <section class="body">
-            <p>7月1日，大部分人都已经离校，他们终是毕业了。</p>
+            <p>本文主要包括一些关于 LaTeX 的编写技巧和习惯，以下内容大都来自网络，觉得甚有道理便收集到此处。不定期更新。</p>
 <hr>
-<hr>
+<h3 id="-公式部分"># 公式部分</h3>
+<ul>
+<li>行间公式用 <code>\[  \]</code> 并分作三行，便于日后检查。</li>
+<li>行间公式也是句子的一部分，不过被强行短行，因此不要忽略<strong>标点符号</strong>。</li>
+<li>数学粗体用 \bm，当追求不同显示效果时可以用 \mathbf。</li>
+<li>定义符号用 <code>\coloneqq</code> 而不是 <code>:=</code>，后者的冒号会相对等号下移。同理在 BNF 规则中用 <code>\Coloneqq</code>。</li>
+<li>尖括号用 <code>\langle    \rangle</code>。</li>
+<li></li>
+</ul>
+<h3 id="-其他"># 其他</h3>
+<ul>
+<li>数学方面的学术写作参考 Writing Scientific Documents Using LaTeX</li>
+<li>长文档用 <code>\input</code> 或 <code>\include</code> 分出章节，模块话管理还容易调试。</li>
+<li>在不希望分割的词组间用 <code>~</code> 连接，如 <code>this theorem from~\cite{article}</code> （引文不应该出现在首行），<code>Blackburn~et~al~2001</code> （et al 不应该被分开）。</li>
+<li>单行注释用 <code>%</code>，多行注释可以在没行开头用 <code>%</code>，也可以用如下环境
+<pre tabindex="0"><code>    \begin{comment}
+    这是
+    一条
+    多行注释
+    \end{comment}
+</code></pre></li>
+<li></li>
+</ul>
+<h3 id="-texstudio"># TeXStudio</h3>
+<ul>
+<li>字体，从可读性和美观上考量
+<ul>
+<li>macOS 上用 <code>Menlo</code> 字体</li>
+<li>windows 上用 <code>consolas</code> 字体</li>
+<li>linux 上用 <code>dejavu san mono</code> 字体</li>
+</ul>
+</li>
+<li>dd</li>
+</ul>
         </section>
 
         
@@ -112,9 +145,7 @@ code.has-jax {
         <em>
             Tags: 
             
-            <a class="tag" href="/tags/photos">#photos</a>
-            
-            <a class="tag" href="/tags/love">#love</a>
+            <a class="tag" href="/tags/life">#life</a>
             
         </em>
     </span>
@@ -129,9 +160,7 @@ code.has-jax {
             
             <li><a href="/misc/duoduo/">/ᐠ｡ꞈ｡ᐟ\ DuoDuo /ᐠ–ꞈ–ᐟ\</a></li> 
             
-            <li><a href="/misc/two-queens/">My Two Queens</a></li> 
-            
-            <li><a href="/misc/two-dogs/"> ▼(´ᴥ`)▼ 两只名叫「狗」的狗 ▼・ᴥ・▼</a></li> 
+            <li><a href="/about/">About</a></li> 
             
             </ul>
         
