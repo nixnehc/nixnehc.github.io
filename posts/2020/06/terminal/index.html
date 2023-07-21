@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scale">
+<meta name="author" content="ChenXin">
+<meta name="description" content="My portfolio site">
+
+<title>Terminal – ChenXin&#39;s Blog</title>
+
+ 
+<link rel="stylesheet" href="/css/style.min.984c0026db4bc6531d327954cf92f0037d2bdc9f9a30c1b592bea55c21dfe0f6.css">
+
+
+
+
+
+
+
+
+
+
+</head>
+    
+
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
+    
+    <body >
+        <div class="container"><header>
+  <h1>ChenXin&#39;s Blog</h1> 
+</header>
+<nav>
+
+<a href="/">Home</a> 
+<a href="/posts">Archives</a> 
+<a href="/tags">Tags</a> 
+<a href="/categories">Categories</a> 
+<a href="/misc">Misc</a> 
+<a href="/search">Search</a> 
+<a href="/about">About </a> 
+
+</nav><main>
+    <article class="post">
+        <header>
+            <h2>Terminal</h2>
+            <p>
+            Posted on <em>June 1, 2020</em>
+            |
+            Reading time: <em>9 minutes</em>
+            |
+            Author: <em>Xin</em>
+            |
+            <span class="categories"> 
+            Included in
+                
+            <em>
+            <a class="category" href="/categories/toolkit">##toolkit</a>
+            </em>
+                
+            </span>
+            </p>
+        </header>
+
+
+
+        <section class="body">
+            <hr>
+<p>一些常用的终端命令：</p>
+<ul>
+<li><code>clear</code>: 清空当前 terminal 中显示的命令</li>
+<li><code>history</code>: 显示历史指令</li>
+<li><code>cd</code>: 进入目录</li>
+<li><code>pwd</code>: 显示当前目录</li>
+<li><code>ls</code> : 显示当前目录中的文件</li>
+<li><code>mkdir</code>: 创建新的 directory</li>
+</ul>
+<hr>
+<h2 id="sublime-text-配置">Sublime Text 配置</h2>
+<p><code>Sublime Text</code> 是一款优秀的、轻量的且跨平台的文本编辑器。谁用谁知道。</p>
+<h3 id="-snippet-代码片段"># snippet 代码片段</h3>
+<p>Snippets 是可以复用的代码片段模板，输入触发词后按 <code>tab</code> 键就可以得到预制的代码内容。
+这个功能可以帮助我快速输入大量重复内容，极大提高写作效率。</p>
+<p>新建 Snippet，选择菜单：<code>Tools-&gt;Developer-&gt;New Snippet</code>. 随后 Sublime Text 会生成一个 Snippet 模板。</p>
+<pre tabindex="0"><code>&lt;snippet&gt;
+    &lt;content&gt;&lt;![CDATA[
+Hello, ${1:this} is a ${2:snippet}.
+]]&gt;&lt;/content&gt;
+    &lt;!-- Optional: Set a tabTrigger to define how to trigger the snippet --&gt;
+    &lt;!-- &lt;tabTrigger&gt;hello&lt;/tabTrigger&gt; --&gt;
+    &lt;!-- Optional: Set a scope to limit where the snippet will trigger --&gt;
+    &lt;!-- &lt;scope&gt;source.python&lt;/scope&gt; --&gt;
+&lt;/snippet&gt;
+</code></pre><p>将该模版做如下修改：</p>
+<pre tabindex="0"><code>&lt;snippet&gt;
+    &lt;content&gt;&lt;![CDATA[
+Hello, ${1:this} is a ${2:snippet}.
+]]&gt;&lt;/content&gt;
+    &lt;!-- Optional: Set a tabTrigger to define how to trigger the snippet --&gt;
+    &lt;tabTrigger&gt;hello&lt;/tabTrigger&gt;
+    &lt;!-- Optional: Set a scope to limit where the snippet will trigger --&gt;
+    &lt;scope&gt;source.python&lt;/scope&gt;
+&lt;/snippet&gt;
+</code></pre><p>简单介绍一下各节点含义：</p>
+<ul>
+<li><code>content</code> 节点内容表示实际的代码片段。</li>
+<li><code>tabTrigger</code> 节点内容表示用来输入代码片段的快捷字符串，即触发词。</li>
+<li><code>scope</code> 节点内容表示代码片段会在哪种上下文环境下激活,
+<ul>
+<li>比如上面代码定义了 <code>source.python</code>,  意思是这段代码片段会在python语言环境下激活。注意：Scope不是文件扩展名，可以从菜单：<code>Tools-&gt;Developer-&gt;Show Scope Name</code> 查看当前文件扩展名对应的Scope。</li>
+</ul>
+</li>
+</ul>
+<p>把修改后的模板保存为文件 <code>hello.sublime-snippet</code>（保存目录保持默认打开的目录即可）。
+该模版实现的功能是，在 python 环境下，在文件中输入 <code>hello</code>，按下 <code>Tab</code> 键，
+则立刻会在编辑器中得到 <code>Hello, this is a snippet</code>。</p>
+<h4 id="-一个常见问题">## 一个常见问题：</h4>
+<p>针对 <code>Markdown</code> 文件的 Snippet 没有出现在自动补全列表中。
+解决办法是选择菜单 <code>Preferences-&gt;Settings</code>，在右侧的窗口中增加如下设置：</p>
+<pre tabindex="0"><code>&#34;auto_complete_selector&#34;: 
+    &#34;meta.tag - punctuation.definition.tag.begin, 
+    source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc, text&#34;,
+</code></pre><p>附常见语言对应 Scope值：</p>
+<pre tabindex="0"><code>C#: source.cs
+C++: source.c++
+CoffeeScript: source.coffee
+CSS: source.css
+Go: source.go
+Haskell: source.haskell
+HTML: text.html(.basic)
+JSP: text.html.jsp
+Java: source.java
+Java Properties: source.java-props
+Java Doc: text.html.javadoc
+JSON: source.json
+Javascript: source.js
+
+BibTex: source.bibtex
+Latex Log: text.log.latex
+Latex Memoir: text.tex.latex.memoir
+Latex: text.tex.latex
+TeX: text.tex
+
+LESS: source.css.less
+Lisp: source.lisp
+Lua: source.lua
+MakeFile: source.makefile
+
+Markdown: text.html.markdown
+Multi Markdown: text.html.markdown.multimarkdown
+
+Matlab: source.matlab
+Objective-C: source.objc
+Objective-C++: source.objc++
+OCaml campl4: source.camlp4.ocaml
+OCaml: source.ocaml
+OCamllex: source.ocamllex
+Perl: source.perl
+PHP: source.php
+Regular Expression(python): source.regexp.python
+Python: source.python
+R Console: source.r-console
+R: source.r
+Ruby on Rails: source.ruby.rails
+Ruby HAML: text.haml
+SQL(Ruby): source.sql.ruby
+Regular Expression: source.regexp
+RestructuredText: text.restructuredtext
+Ruby: source.ruby
+SASS: source.sass
+Scala: source.scala
+Shell Script: source.shell
+SQL: source.sql
+Stylus: source.stylus
+TCL: source.tcl
+HTML(TCL): text.html.tcl
+Plain text: text.plain
+Textile: text.html.textile
+XML: text.xml
+XSL: text.xml.xsl
+YAML: source.yaml
+</code></pre><p>由此可知，<code>markdown</code> 对应的 scope 值是 <code>text.html.markdown</code>。</p>
+<p>下面我们来设置两个在 <code>markdown</code> 常用的 snippets：行内公式和行间公式。</p>
+<p>首先，行间公式。
+选择菜单：<code>Tools-&gt;Developer-&gt;New Snippet</code>. 照如下修改：</p>
+<pre tabindex="0"><code>------ display_formula ------ （复制时不要复制这一行）
+
+&lt;snippet&gt;
+    &lt;content&gt;&lt;![CDATA[
+\\\[
+    ${1:display_formula}
+\\\]
+]]&gt;&lt;/content&gt;
+    &lt;!-- Optional: Set a tabTrigger to define how to trigger the snippet --&gt;
+    &lt;tabTrigger&gt;dmath&lt;/tabTrigger&gt;
+    &lt;!-- Optional: Set a scope to limit where the snippet will trigger --&gt;
+    &lt;scope&gt;text.html.markdown&lt;/scope&gt;
+&lt;/snippet&gt;
+</code></pre><p>然后将文件按默认路径保存为 <code>display_math.sublime-snippet</code> 。</p>
+<p>其次，行内公式。
+选择菜单：<code>Tools-&gt;Developer-&gt;New Snippet</code>. 照如下修改：</p>
+<pre tabindex="0"><code>------ inline_formula ------ （复制时不要复制这一行）
+
+&lt;snippet&gt;
+    &lt;content&gt;&lt;![CDATA[
+\\\(
+    ${1:inline_formula}
+\\\)
+]]&gt;&lt;/content&gt;
+    &lt;!-- Optional: Set a tabTrigger to define how to trigger the snippet --&gt;
+    &lt;tabTrigger&gt;imath&lt;/tabTrigger&gt;
+    &lt;!-- Optional: Set a scope to limit where the snippet will trigger --&gt;
+    &lt;scope&gt;text.html.markdown&lt;/scope&gt;
+&lt;/snippet&gt;
+</code></pre><p>然后将文件按默认路径保存为 <code>inline_math.sublime-snippet</code> 。</p>
+<p>这样，以后再用 <code>sublime text</code> 编写 <code>markdown</code> 文件时，
+只需要 输入 <code>dmath</code> 和 <code>imath</code> 再按下 <code>Tab</code> 键，就可以在编辑器中得到行间公式和行内公式的输入环境了：</p>
+<pre tabindex="0"><code># dmath + Tab 得到：
+\\[
+  display_formula
+\\]
+
+# imath + Tab 得到：
+\\(
+  inline_formula
+\\)
+</code></pre><p>在制定 snippet 的时候，我发现若在 <code>content</code> 节点中输入美元号 <code>$</code> 则不起作用，具体原因未知。
+因此这里用 <code>\\[  \\]</code> 作为行间公式的输入环境。</p>
+<p>注意，<code>KaTeX</code> 默认的解析规则是 <code>\\(  \\)</code> 环境下的行内公式输入，不支持 <code>\$  \$</code> 作为行内公式环境；
+但是 <code>MathJax</code> 则对于这两种模式都支持。（总的来说，<code>KaTeX</code> 和 <code>MathJax</code> 区别并不大，不过前者更快，而后者包含的内容更丰富）</p>
+<h3 id="-设置在新标签页打开文件而不在新窗口中打开"># 设置在新标签页打开文件而不在新窗口中打开</h3>
+<p><code>preferences --&gt; Settings</code> ，在右侧窗口添加 <code>&quot;open_files_in_new_window&quot;: &quot;false&quot;,</code>
+既可。</p>
+<hr>
+        </section>
+
+        
+        
+    </article>
+
+
+    <span class="tags"> 
+        <em>
+            Tags: 
+            
+            <a class="tag" href="/tags/tech">#tech</a>
+            
+            <a class="tag" href="/tags/cs">#cs</a>
+            
+        </em>
+    </span>
+
+    
+
+    <section class="related">
+         
+        
+    </section>
+
+
+        </main><center>
+<footer>
+  Copyright &copy 2020 - 2023 
+  <br> 
+  Made with 🧡 by Chen Xin
+
+
+
+</footer>
+</center></div>
+    </body>
+</html>
