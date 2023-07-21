@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>pdf on ChenXin&#39;s Blog</title>
-    <link>http://triplegoldchen.github.io/tags/pdf/</link>
+    <link>http://nixnehc.github.io/tags/pdf/</link>
     <description>Recent content in pdf on ChenXin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 03 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://triplegoldchen.github.io/tags/pdf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://nixnehc.github.io/tags/pdf/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>~LaTeX~ pdf Encryption</title>
-      <link>http://triplegoldchen.github.io/posts/2023/05/~latex~-pdf-encryption/</link>
+      <title>&gt;LaTeX&lt; pdf Encryption</title>
+      <link>http://nixnehc.github.io/posts/2023/05/latex-pdf-encryption/</link>
       <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://triplegoldchen.github.io/posts/2023/05/~latex~-pdf-encryption/</guid>
+      <guid>http://nixnehc.github.io/posts/2023/05/latex-pdf-encryption/</guid>
       <description>&lt;p&gt;在 latex 中如何使生成的 pdf 被加密或只读呢？&lt;/p&gt;</description>
     </item>
     

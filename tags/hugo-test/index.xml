@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo-test on ChenXin&#39;s Blog</title>
-    <link>http://triplegoldchen.github.io/tags/hugo-test/</link>
+    <link>http://nixnehc.github.io/tags/hugo-test/</link>
     <description>Recent content in hugo-test on ChenXin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://triplegoldchen.github.io/tags/hugo-test/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="http://nixnehc.github.io/tags/hugo-test/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>~test~ shortcode &lt;postimage&gt; test</title>
-      <link>http://triplegoldchen.github.io/posts/1/01/~test~-shortcode-postimage-test/</link>
+      <title>&gt;test&lt; shortcode &lt;postimage&gt; test</title>
+      <link>http://nixnehc.github.io/posts/1/01/test-shortcode-postimage-test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://triplegoldchen.github.io/posts/1/01/~test~-shortcode-postimage-test/</guid>
+      <guid>http://nixnehc.github.io/posts/1/01/test-shortcode-postimage-test/</guid>
       <description>&lt;p&gt;Here are pictures from my recent trip to South Dakota.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>~test~ Test Markdown</title>
-      <link>http://triplegoldchen.github.io/posts/1/01/~test~-test-markdown/</link>
+      <title>&gt;test&lt; Test Markdown</title>
+      <link>http://nixnehc.github.io/posts/1/01/test-test-markdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://triplegoldchen.github.io/posts/1/01/~test~-test-markdown/</guid>
+      <guid>http://nixnehc.github.io/posts/1/01/test-test-markdown/</guid>
       <description>Markdown Test Page Heading two Heading three Heading four Heading five Heading six Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 Top
 Paragraphs Incididunt ex adipisicing ea ullamco consectetur in voluptate proident fugiat tempor deserunt reprehenderit ullamco id dolore laborum.
