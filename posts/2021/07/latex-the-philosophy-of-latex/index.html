@@ -100,29 +100,56 @@ code.has-jax {
 
 
         <section class="body">
-            <p>本文主要包括一些关于 LaTeX 的编写技巧和习惯，以下内容大都来自网络，觉得甚有道理便收集到此处。不定期更新。</p>
+            <p>本文主要包括一些关于 LaTeX 的编写技巧和习惯。
+这些内容大都来自网络，觉得有道理便收集到此处。不定期更新。</p>
 <hr>
 <h3 id="-公式部分"># 公式部分</h3>
 <ol>
-<li>行间公式用 <code>\[  \]</code> 并分作三行，便于日后检查。</li>
-<li>行间公式也是句子的一部分，不过被强行短行，因此不要忽略<strong>标点符号</strong>。</li>
-<li>数学粗体用 <code>\bm{}</code>，当追求不同显示效果时可以用 <code>\mathbf{}</code>。</li>
-<li><code>:</code> 是一个二元关系符号，以下是一些常见的误用
+<li>
+<p>行间公式用 <code>\[  \]</code> 并分作三行，便于日后检查。<br>
+<code>\[  \]</code> 其实是 <code>equation*</code> 环境的缩写，因此在其中不能用 <code>\\</code> 命令换行。</p>
+</li>
+<li>
+<p>行间公式也是句子的一部分，不过被强行短行，因此不要忽略<strong>标点符号</strong>。</p>
+</li>
+<li>
+<p>数学粗体用 <code>\bm{}</code>，当追求不同显示效果时可以用 <code>\mathbf{}</code>。</p>
+</li>
+<li>
+<p><code>:</code> 是一个二元关系符号，以下是一些常见的误用</p>
+</li>
+</ol>
 <ul>
 <li>定义符号用 <code>\coloneqq</code> 而不是 <code>:=</code>，后者的冒号会相对等号下移。同理在 BNF 规则中用 <code>\Coloneqq</code>。</li>
-<li>写<strong>函数</strong>用 <code>f\colon A \to B</code> 而不能写成 <code>f : A \to B</code>.</li>
+<li>定义<strong>函数</strong>时用 <code>f\colon A \to B</code> 而不要写成 <code>f : A \to B</code>.</li>
 </ul>
+<ol start="5">
+<li>
+<p>尖括号用 <code>\langle    \rangle</code> 而不是直接用大于、小于符号。</p>
 </li>
-<li>尖括号用 <code>\langle    \rangle</code> 而不是直接用大于、小于符号。</li>
-<li><code>\to</code> 和 <code>\rightarrow</code> 是同一个符号，为了简便用前者即可。尤其是在写蕴涵式的时候。</li>
-<li><code>\mid</code> 是一个二元关系，而 <code>|</code> 是一个 math ordinal，因此 BNF 中的分隔线要用前者，如 <code>p \mid \neg \varphi \mid \Diamond \varphi.</code></li>
+<li>
+<p><code>\to</code> 和 <code>\rightarrow</code> 是同一个符号，为了简便用前者即可。尤其是在写蕴涵式的时候。</p>
+</li>
+<li>
+<p><code>\mid</code> 是一个二元关系，而 <code>|</code> 是一个 math ordinal，因此 BNF 中的分隔线要用前者，如 <code>p \mid \neg \varphi \mid \Diamond \varphi.</code></p>
+</li>
 </ol>
-<h3 id="-其他"># 其他</h3>
+<h3 id="-misc"># Misc.</h3>
 <ul>
-<li>数学方面的学术写作参考 Writing Scientific Documents Using LaTeX</li>
-<li><strong>长文档</strong>用 <code>\input</code> 或 <code>\include</code> 分出章节，模块话管理还容易调试。</li>
-<li>在不希望<em>分割</em>的词组间用 <code>~</code> 连接，如 <code>this theorem from~\cite{article}</code> （引文不应该出现在首行），<code>Blackburn~et~al~2001</code> （et al 不应该被分开）。</li>
-<li>单行注释用 <code>%</code>。多行注释可以在每行开头插入 <code>%</code>，也可以用如下环境（注意是 <code>comment</code> 而不是复数 <code>comments</code>）
+<li>
+<p>数学方面的学术写作参考 Writing Scientific Documents Using LaTeX</p>
+</li>
+<li>
+<p><strong>大型文档</strong>用 <code>\input</code> 或 <code>\include</code> 分出章节，模块化管理易于调试。</p>
+</li>
+<li>
+<p>大型项目中，源码的单个 <code>.tex</code> 文件最好不要超过 1000 行，方便校对。</p>
+</li>
+<li>
+<p>在不希望<strong>分割</strong>的词组间用 <code>~</code> 连接，如 <code>this theorem from~\cite{article}</code> （引文不应该出现在首行）；<code>Blackburn~et~al~2001</code> （et al 不应该被分开）。</p>
+</li>
+<li>
+<p>单行注释用 <code>%</code>。多行注释可以在每行开头插入 <code>%</code>，也可以用如下环境（注意是 <code>comment</code> 而不是复数 <code>comments</code>）</p>
 <pre tabindex="0"><code>    \begin{comment}
     这是
     一条
@@ -131,17 +158,25 @@ code.has-jax {
 </code></pre></li>
 <li></li>
 </ul>
-<h3 id="-texstudio"># TeXStudio</h3>
+<h3 id="-编辑器-texstudio"># 编辑器 TeXStudio</h3>
 <ul>
-<li>字体，从可读性和美观上考量
+<li>
+<p>字体，从可读性和美观上考量</p>
 <ul>
 <li>macOS 上用 <code>Menlo</code> 字体</li>
 <li>windows 上用 <code>consolas</code> 字体</li>
 <li>linux 上用 <code>dejavu san mono</code> 字体</li>
 </ul>
 </li>
-<li>要利用其强大的「宏」功能</li>
+<li>
+<p>要利用其强大的「宏」功能</p>
+</li>
+<li>
+<p>用 <code>Ctrl+f</code>、<code>Ctrl+b</code>、<code>Ctrl+n</code>、<code>Ctrl+p</code> 代替方向键，这几个键位虽不如 vim 中那样方便，但胜在 MacOS 上全局通用。 <br>
+记得互换 <code>CapsLock</code> 和 <code>Ctrl</code> 的键位，保护小指健康😘</p>
+</li>
 </ul>
+<hr>
         </section>
 
         
@@ -166,7 +201,13 @@ code.has-jax {
         <h4>Related articles</h4>
             <ul>
             
+            <li><a href="/posts/2023/07/latex-tikz-for-myself/">&gt;LaTeX&lt; Tikz for Myself</a></li> 
+            
             <li><a href="/posts/2023/05/latex-pdf-encryption/">&gt;LaTeX&lt; pdf Encryption</a></li> 
+            
+            <li><a href="/posts/2022/10/%E4%B8%8E%E8%B7%86%E4%BF%B1%E5%90%8C%E5%AD%A6%E7%88%AC%E5%87%A4%E5%87%B0%E5%B1%B1/">与跆俱同学爬凤凰山</a></li> 
+            
+            <li><a href="/posts/2022/01/%E6%B8%B8%E6%B7%87%E6%BE%B3%E5%B2%9B/">游淇澳岛</a></li> 
             
             <li><a href="/posts/2021/06/latex-from-zero-to-hero-basic-setting-%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%85%A5%E5%9C%9F/">&gt;LaTeX&lt;  From Zero to Hero (Basic setting) 从入门到入土</a></li> 
             

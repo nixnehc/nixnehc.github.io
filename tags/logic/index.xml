@@ -6,20 +6,31 @@
     <description>Recent content in logic on ChenXin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 25 Apr 2023 18:27:52 +0800</lastBuildDate><atom:link href="http://nixnehc.github.io/tags/logic/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://nixnehc.github.io/tags/logic/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>( ͡° ͜ʖ ͡°) Open Problems in Logic(s)</title>
-      <link>http://nixnehc.github.io/misc/open-problems-in-logics/</link>
-      <pubDate>Tue, 25 Apr 2023 18:27:52 +0800</pubDate>
+      <title>Some slogans in Logic(s)</title>
+      <link>http://nixnehc.github.io/misc/logic/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://nixnehc.github.io/misc/open-problems-in-logics/</guid>
+      <guid>http://nixnehc.github.io/misc/logic/</guid>
       <description>&lt;figure&gt;&lt;img src=&#34;http://nixnehc.github.io/images/do-you-like-logic.jpg&#34;
          alt=&#34;Do you like logic? ©&#34; width=&#34;400px&#34;/&gt;&lt;figcaption&gt;
             &lt;p&gt;Do you like logic? &lt;a href=&#34;https://i.redd.it/0wo2x6ygpp471.jpg&#34;&gt;©&lt;/a&gt;&lt;/p&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;这个页面记录我在学习逻辑时，所遇到一些（自认为）有趣的开放问题和方向。
+&lt;ul&gt;
+&lt;li&gt;Logic takes my fancy most.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>( ͡° ͜ʖ ͡°) some Open Problems in Logic(s)</title>
+      <link>http://nixnehc.github.io/misc/open-problems-in-logics/</link>
+      <pubDate>Tue, 25 Apr 2023 18:27:52 +0800</pubDate>
+      
+      <guid>http://nixnehc.github.io/misc/open-problems-in-logics/</guid>
+      <description>&lt;p&gt;这个页面记录我在学习逻辑时，所遇到一些（自认为）有趣的开放问题和方向。
 Long live Logic！&lt;/p&gt;</description>
     </item>
     

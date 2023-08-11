@@ -8,6 +8,15 @@
     <language>en</language>
     <lastBuildDate>Wed, 01 Jan 2020 15:17:39 -0500</lastBuildDate><atom:link href="http://nixnehc.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>latex</title>
+      <link>http://nixnehc.github.io/tags/latex/</link>
+      <pubDate>Thu, 27 Jul 2023 16:13:19 +0800</pubDate>
+      
+      <guid>http://nixnehc.github.io/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>cats</title>
       <link>http://nixnehc.github.io/tags/cats/</link>
       <pubDate>Sun, 23 Jul 2023 19:16:41 +0800</pubDate>
@@ -31,6 +40,15 @@
       <pubDate>Mon, 10 Jul 2023 17:25:14 +0800</pubDate>
       
       <guid>http://nixnehc.github.io/tags/modal-logic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cry</title>
+      <link>http://nixnehc.github.io/tags/cry/</link>
+      <pubDate>Sat, 01 Jul 2023 23:31:37 +0800</pubDate>
+      
+      <guid>http://nixnehc.github.io/tags/cry/</guid>
       <description></description>
     </item>
     
@@ -62,11 +80,20 @@
     </item>
     
     <item>
-      <title>latex</title>
-      <link>http://nixnehc.github.io/tags/latex/</link>
-      <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
+      <title>logic</title>
+      <link>http://nixnehc.github.io/tags/logic/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://nixnehc.github.io/tags/latex/</guid>
+      <guid>http://nixnehc.github.io/tags/logic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>notes</title>
+      <link>http://nixnehc.github.io/tags/notes/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://nixnehc.github.io/tags/notes/</guid>
       <description></description>
     </item>
     
@@ -103,15 +130,6 @@
       <pubDate>Tue, 02 May 2023 20:41:56 +0800</pubDate>
       
       <guid>http://nixnehc.github.io/tags/philosophy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>logic</title>
-      <link>http://nixnehc.github.io/tags/logic/</link>
-      <pubDate>Tue, 25 Apr 2023 18:27:52 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/tags/logic/</guid>
       <description></description>
     </item>
     
@@ -220,6 +238,15 @@
       <pubDate>Sat, 01 May 2021 09:11:04 +0800</pubDate>
       
       <guid>http://nixnehc.github.io/tags/english/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>conference</title>
+      <link>http://nixnehc.github.io/tags/conference/</link>
+      <pubDate>Fri, 02 Apr 2021 19:08:21 +0800</pubDate>
+      
+      <guid>http://nixnehc.github.io/tags/conference/</guid>
       <description></description>
     </item>
     

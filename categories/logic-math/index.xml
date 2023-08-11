@@ -13,17 +13,17 @@
       <pubDate>Mon, 10 Jul 2023 17:25:14 +0800</pubDate>
       
       <guid>http://nixnehc.github.io/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/</guid>
-      <description>&lt;p&gt;[序]
-以下内容是为7月5日&lt;code&gt;模态逻辑&lt;/code&gt;考试所准备的草稿，整整考了4个小时，真是有生之年考过最长的考试了😭），但准备的内容似乎还是太多了，根本写不完。
-望着这些准备好的稿纸，虽无甚洞见，但毕竟是自己一段时间内的心血，想着弃之可惜，遂又加以整理，姑且当作一篇博文让其静静地躺在这里吧。写到这里时却不免又悲从中来，文章尚有「安生立命」之所，作文者有焉？&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;写在前面&#34;&gt;写在前面&lt;/h1&gt;
+&lt;p&gt;以下内容是为7月5日 &lt;strong&gt;模态逻辑&lt;/strong&gt; 考试所准备的草稿, 整整考了4个小时, 真是有生之年考过最长的考试了😭, 但准备的内容似乎还是太多了, 根本写不完.
+望着这些准备好的稿纸, 虽无甚洞见, 但毕竟是自己一段时间内的心血, 想着弃之可惜, 遂又加以整理, 姑且当作一篇博文让其静静地躺在这里吧. 写到这里时却不免又悲从中来, 文章尚有「安生立命」之所, 作文者有焉?&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>&gt;Notes&lt; Arend Heyting: Intuitionism - an Introduction (1971) [[[unfinished</title>
-      <link>http://nixnehc.github.io/posts/2023/05/notes-arend-heyting-intuitionism-an-introduction-1971-unfinished/</link>
+      <title>&gt;Notes&lt; Arend Heyting: Intuitionism(1971) &lt;&lt;unfinished&gt;&gt;</title>
+      <link>http://nixnehc.github.io/posts/2023/05/notes-arend-heyting-intuitionism1971-unfinished/</link>
       <pubDate>Tue, 02 May 2023 20:41:56 +0800</pubDate>
       
-      <guid>http://nixnehc.github.io/posts/2023/05/notes-arend-heyting-intuitionism-an-introduction-1971-unfinished/</guid>
+      <guid>http://nixnehc.github.io/posts/2023/05/notes-arend-heyting-intuitionism1971-unfinished/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;你一旦被一个主题的美所打动，就得为之贡献你的一生！&lt;/li&gt;
 &lt;li&gt;是啊！只是我怀疑像直觉主义这样不确定的东西中怎么会有美。&lt;/li&gt;
@@ -32,18 +32,12 @@
     </item>
     
     <item>
-      <title>( ͡° ͜ʖ ͡°) Open Problems in Logic(s)</title>
+      <title>( ͡° ͜ʖ ͡°) some Open Problems in Logic(s)</title>
       <link>http://nixnehc.github.io/misc/open-problems-in-logics/</link>
       <pubDate>Tue, 25 Apr 2023 18:27:52 +0800</pubDate>
       
       <guid>http://nixnehc.github.io/misc/open-problems-in-logics/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;http://nixnehc.github.io/images/do-you-like-logic.jpg&#34;
-         alt=&#34;Do you like logic? ©&#34; width=&#34;400px&#34;/&gt;&lt;figcaption&gt;
-            &lt;p&gt;Do you like logic? &lt;a href=&#34;https://i.redd.it/0wo2x6ygpp471.jpg&#34;&gt;©&lt;/a&gt;&lt;/p&gt;
-        &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;这个页面记录我在学习逻辑时，所遇到一些（自认为）有趣的开放问题和方向。
+      <description>&lt;p&gt;这个页面记录我在学习逻辑时，所遇到一些（自认为）有趣的开放问题和方向。
 Long live Logic！&lt;/p&gt;</description>
     </item>
     
@@ -69,6 +63,37 @@ Long live Logic！&lt;/p&gt;</description>
       <description>&lt;p&gt;[编码函数与降维打击]&lt;/p&gt;
 &lt;p&gt;今天(2023,04,21-周五)下午递归论课上突然讨论到一些问题, 关于编码函数、降维打击、宇宙和世界的连续性等问题，觉得特别有意思, 遂记之。&lt;/p&gt;
 &lt;p&gt;(ps. 为方便偷懒，以下用 \( \omega, \omega^+ \) 分别表示&lt;strong&gt;自然数集&lt;/strong&gt;和&lt;strong&gt;正整数集&lt;/strong&gt;，毕竟 &lt;code&gt;\omega&lt;/code&gt; 比起 &lt;code&gt;\mathbb{N}&lt;/code&gt; 要少按很多下键盘了，不是咩😜)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>中文-English expressions in Math &amp; Logic</title>
+      <link>http://nixnehc.github.io/misc/english-math-logic/</link>
+      <pubDate>Sat, 01 May 2021 09:11:04 +0800</pubDate>
+      
+      <guid>http://nixnehc.github.io/misc/english-math-logic/</guid>
+      <description>&lt;p&gt;Some English expressions in  Logic &amp;amp; Math,
+from papers, textbooks, monographs or articles I used to read.&lt;/p&gt;
+&lt;p&gt;一些习惯用语的中文表达也很重要啦，只能写英文而不会写中文也要完蛋😭&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>爬板障山</title>
+      <link>http://nixnehc.github.io/posts/2021/03/%E7%88%AC%E6%9D%BF%E9%9A%9C%E5%B1%B1/</link>
+      <pubDate>Sat, 13 Mar 2021 19:08:21 +0800</pubDate>
+      
+      <guid>http://nixnehc.github.io/posts/2021/03/%E7%88%AC%E6%9D%BF%E9%9A%9C%E5%B1%B1/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2020模态逻辑会议(北师珠)</title>
+      <link>http://nixnehc.github.io/posts/2020/11/2020%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91%E4%BC%9A%E8%AE%AE%E5%8C%97%E5%B8%88%E7%8F%A0/</link>
+      <pubDate>Sun, 29 Nov 2020 19:08:21 +0800</pubDate>
+      
+      <guid>http://nixnehc.github.io/posts/2020/11/2020%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91%E4%BC%9A%E8%AE%AE%E5%8C%97%E5%B8%88%E7%8F%A0/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</description>
     </item>
     
   </channel>

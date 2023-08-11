@@ -81,7 +81,7 @@ code.has-jax {
             <p>
             Posted on <em>June 1, 2021</em>
             |
-            Reading time: <em>19 minutes</em>
+            Reading time: <em>20 minutes</em>
             |
             Author: <em>Xin</em>
             |
@@ -106,15 +106,9 @@ code.has-jax {
         </figcaption>
 </figure>
 
-<hr>
 <p>This page is a crash course on LaTeX for myself.</p>
 <hr>
-<h3 id="the-philosophy-of-latex">The philosophy of LaTex</h3>
-<ul>
-<li>单个 <code>.tex</code> 文件最好不要超过 1000 行。</li>
-</ul>
-<hr>
-<h3 id="一些常见文件后缀说明">一些常见文件后缀说明</h3>
+<p>一些常见文件后缀说明</p>
 <ul>
 <li><code>.tex</code>: TeX 源文件</li>
 <li><code>.sty</code>: 宏包文件，用 <code>\usepackage{}</code> 命令导入；宏包名与文件名一致</li>
@@ -130,7 +124,7 @@ code.has-jax {
 <li><code>.bib</code>: 参考文献数据库文件</li>
 <li><code>.out</code>: hyperref 宏包生成的 pdf 书签记录文件</li>
 </ul>
-<p>一些命令行：</p>
+<p>一些终端命令：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">latex -v 
 </span></span><span class="line"><span class="cl">xelatex -v   <span class="c1">##查看版本号</span>
 </span></span><span class="line"><span class="cl">
@@ -145,11 +139,11 @@ code.has-jax {
 </span></span></code></pre></div><p>特殊字符/标志：<br>
 <code>\textbackslash</code> :  反斜杠  \<br>
 <code>\dag</code> :    $\dag$<br>
-<code>\copyright</code> :  \(\copyright\)<br>
-<code>\TeX{}</code> : \(  \TeX{} \)<br>
-<code>\LaTeX{}</code> : \(  \LaTeX{} \)</p>
+<code>\copyright</code> :  $\copyright$<br>
+<code>\TeX{}</code> : $\TeX{}$<br>
+<code>\LaTeX{}</code> : $\LaTeX{}$</p>
 <hr>
-<h2 id="basic-settings">Basic Settings</h2>
+<h2 id="basic-settings">[Basic \;Settings]</h2>
 <h3 id="-short-document"># short document</h3>
 <p>对于较短的文档 (如论文、作业等)，可以参照如下配置。其中的宏包 <code>cx.sty</code> 是私人定制的，里面包含了一些常用的数学宏包、字体设置等，稍后会对其内容做详细地说明。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tex" data-lang="tex"><span class="line"><span class="ln"> 1</span><span class="cl"> <span class="k">\documentclass</span><span class="na">[UTF8, 11pt, a4paper]</span><span class="nb">{</span>article<span class="nb">}</span>  <span class="c">% 声明文档类
@@ -174,24 +168,39 @@ code.has-jax {
 </span></span><span class="line"><span class="ln">20</span><span class="cl"> <span class="c">% ================ 导言区结束  ===============
 </span></span></span><span class="line"><span class="ln">21</span><span class="cl"><span class="c"></span> <span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
 </span></span><span class="line"><span class="ln">22</span><span class="cl"> <span class="k">\maketitle</span>          <span class="c">% 显示标题 title
-</span></span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="c"></span> <span class="c">% ================   以下是正文   ============
+</span></span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="c"></span> <span class="c">% ============================================
 </span></span></span><span class="line"><span class="ln">24</span><span class="cl"><span class="c"></span> <span class="k">\tableofcontents</span>    <span class="c">% 生成目录
-</span></span></span><span class="line"><span class="ln">25</span><span class="cl"><span class="c"></span> <span class="c">% ================   正文开始   ==============
-</span></span></span><span class="line"><span class="ln">26</span><span class="cl"><span class="c"></span>
-</span></span><span class="line"><span class="ln">27</span><span class="cl"> <span class="k">\section</span><span class="nb">{</span> section xxx<span class="nb">}</span>
-</span></span><span class="line"><span class="ln">28</span><span class="cl">
-</span></span><span class="line"><span class="ln">29</span><span class="cl"> <span class="k">\subsection</span><span class="nb">{</span> subsection xxx<span class="nb">}</span>
-</span></span><span class="line"><span class="ln">30</span><span class="cl">
-</span></span><span class="line"><span class="ln">31</span><span class="cl"> <span class="k">\subsubsection</span><span class="nb">{</span> subsub....<span class="nb">}</span>
-</span></span><span class="line"><span class="ln">32</span><span class="cl">
-</span></span><span class="line"><span class="ln">33</span><span class="cl"> <span class="c">% ============ 参考文献 bibliography ========
-</span></span></span><span class="line"><span class="ln">34</span><span class="cl"><span class="c"></span> <span class="k">\newpage</span>  <span class="c">% 新页面（如不需要将参考文献另起一页，则注释或删去这行）
-</span></span></span><span class="line"><span class="ln">35</span><span class="cl"><span class="c"></span> <span class="k">\bibliographystyle</span><span class="nb">{</span>plain<span class="nb">}</span>    <span class="c">% 设置参考文献风格，详见有关文档说明
-</span></span></span><span class="line"><span class="ln">36</span><span class="cl"><span class="c"></span> <span class="k">\bibliography</span><span class="nb">{</span>/Users/chenxin/Desktop/chenxin.bib<span class="nb">}</span>    <span class="c">% bib文件地址
-</span></span></span><span class="line"><span class="ln">37</span><span class="cl"><span class="c"></span> <span class="c">% ==================================================================
-</span></span></span><span class="line"><span class="ln">38</span><span class="cl"><span class="c"></span> <span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span></span></span></code></pre></div>
-<h3 id="-long-document"># long document</h3>
-<p>对于偏长的文档，如书籍、毕业论文等，使用一个 <code>.tex</code> 文件有时会太臃肿了，所以一般将一个长文档（按「章节」或「部分」）拆分为多个 <code>chxx.tex</code>  文件，然后再用 <code>\input{}</code>  或者 <code>\include{}</code> 命令将它们插入到主文档 <code>main.tex</code> 中。项目目录举例如下：</p>
+</span></span></span><span class="line"><span class="ln">25</span><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="ln">26</span><span class="cl"> <span class="c">%\listoffigures    % 可生成 图表目录
+</span></span></span><span class="line"><span class="ln">27</span><span class="cl"><span class="c"></span> <span class="c">%\listoftables
+</span></span></span><span class="line"><span class="ln">28</span><span class="cl"><span class="c"></span> <span class="c">% 以下设定可以使得生成的图表目录中有前缀 “表” 和 “图”，
+</span></span></span><span class="line"><span class="ln">29</span><span class="cl"><span class="c"></span> <span class="c">% 如果用上面的两个命令则没有
+</span></span></span><span class="line"><span class="ln">30</span><span class="cl"><span class="c"></span> <span class="nb">{</span>   <span class="k">\let\oldnumberline\numberline</span>
+</span></span><span class="line"><span class="ln">31</span><span class="cl">    <span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\numberline</span><span class="nb">}{</span><span class="k">\figurename</span>~<span class="k">\oldnumberline</span><span class="nb">}</span>
+</span></span><span class="line"><span class="ln">32</span><span class="cl">    <span class="k">\listoffigures</span>
+</span></span><span class="line"><span class="ln">33</span><span class="cl"> <span class="nb">}</span>
+</span></span><span class="line"><span class="ln">34</span><span class="cl"> <span class="nb">{</span>   <span class="k">\let\oldnumberline\numberline</span>
+</span></span><span class="line"><span class="ln">35</span><span class="cl">    <span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\numberline</span><span class="nb">}{</span><span class="k">\tablename</span>~<span class="k">\oldnumberline</span><span class="nb">}</span>
+</span></span><span class="line"><span class="ln">36</span><span class="cl">    <span class="k">\listoftables</span>
+</span></span><span class="line"><span class="ln">37</span><span class="cl"> <span class="nb">}</span>
+</span></span><span class="line"><span class="ln">38</span><span class="cl">
+</span></span><span class="line"><span class="ln">39</span><span class="cl"> <span class="c">% ================   正文开始   ==============
+</span></span></span><span class="line"><span class="ln">40</span><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="ln">41</span><span class="cl"> <span class="k">\section</span><span class="nb">{</span> section xxx<span class="nb">}</span>
+</span></span><span class="line"><span class="ln">42</span><span class="cl">
+</span></span><span class="line"><span class="ln">43</span><span class="cl"> <span class="k">\subsection</span><span class="nb">{</span> subsection xxx<span class="nb">}</span>
+</span></span><span class="line"><span class="ln">44</span><span class="cl">
+</span></span><span class="line"><span class="ln">45</span><span class="cl"> <span class="k">\subsubsection</span><span class="nb">{</span> subsub....<span class="nb">}</span>
+</span></span><span class="line"><span class="ln">46</span><span class="cl">
+</span></span><span class="line"><span class="ln">47</span><span class="cl"> <span class="c">% ============ 参考文献 bibliography ========
+</span></span></span><span class="line"><span class="ln">48</span><span class="cl"><span class="c"></span> <span class="k">\newpage</span>  <span class="c">% 新页面（如不需要将参考文献另起一页，则注释或删去这行）
+</span></span></span><span class="line"><span class="ln">49</span><span class="cl"><span class="c"></span> <span class="k">\bibliographystyle</span><span class="nb">{</span>plain<span class="nb">}</span>    <span class="c">% 设置参考文献风格，详见有关文档说明
+</span></span></span><span class="line"><span class="ln">50</span><span class="cl"><span class="c"></span> <span class="k">\bibliography</span><span class="nb">{</span>/Users/chenxin/Desktop/chenxin.bib<span class="nb">}</span>    <span class="c">% bib文件地址
+</span></span></span><span class="line"><span class="ln">51</span><span class="cl"><span class="c"></span> <span class="c">% ==================================================================
+</span></span></span><span class="line"><span class="ln">52</span><span class="cl"><span class="c"></span> <span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span></span></span></code></pre></div>
+<h3 id="-long-document-大型项目"># long document 大型项目</h3>
+<p>对于偏长的文档，如书籍、毕业论文等，使用一个 <code>.tex</code> 文件有时会太臃肿了，所以一般将一个长文档（按「章节」或「部分」）拆分为多个 <code>chxx.tex</code>  文件，然后再用 <code>\input{}</code>  或者 <code>\include{}</code> 命令将它们插入到主文档 <code>main.tex</code> 中。</p>
+<p>一个大型项目的目录举例如下：</p>
 <pre tabindex="0"><code>----- your project ----
 
 ~/your-project/ % ls
@@ -488,7 +497,7 @@ code.has-jax {
 </li>
 </ol>
 <hr>
-<h2 id="其他常用操作">其他常用操作</h2>
+<h2 id="其他常用操作">[其他常用操作]</h2>
 <h3 id="-插入超链接"># 插入超链接</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="c">% 需要的包
 </span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>hyperref<span class="nb">}</span>
@@ -514,13 +523,12 @@ code.has-jax {
 <ul>
 <li><code>TeXstudio</code> 小彩蛋：在编辑界面里面按 ESC 很多下，会出现一只小黄鸭~~~~</li>
 </ul>
+<hr>
 <figure><img src="/images/tex_lion/tex_lion_2_color.jpg"
          alt="(the Tex mascot lion ©)" width="70%"/><figcaption>
             <p>(the Tex mascot lion <a href="http://www.cervantex.es/taxonomy/term/12">©</a>)</p>
         </figcaption>
 </figure>
-
-<hr>
         </section>
 
         
@@ -545,7 +553,13 @@ code.has-jax {
         <h4>Related articles</h4>
             <ul>
             
+            <li><a href="/posts/2023/07/latex-tikz-for-myself/">&gt;LaTeX&lt; Tikz for Myself</a></li> 
+            
             <li><a href="/posts/2023/05/latex-pdf-encryption/">&gt;LaTeX&lt; pdf Encryption</a></li> 
+            
+            <li><a href="/posts/2022/10/%E4%B8%8E%E8%B7%86%E4%BF%B1%E5%90%8C%E5%AD%A6%E7%88%AC%E5%87%A4%E5%87%B0%E5%B1%B1/">与跆俱同学爬凤凰山</a></li> 
+            
+            <li><a href="/posts/2022/01/%E6%B8%B8%E6%B7%87%E6%BE%B3%E5%B2%9B/">游淇澳岛</a></li> 
             
             <li><a href="/posts/2021/07/latex-the-philosophy-of-latex/">&gt;LaTeX&lt; The Philosophy of Latex</a></li> 
             

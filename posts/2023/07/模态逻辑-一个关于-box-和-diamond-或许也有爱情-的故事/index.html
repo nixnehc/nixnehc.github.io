@@ -81,7 +81,7 @@ code.has-jax {
             <p>
             Posted on <em>July 10, 2023</em>
             |
-            Reading time: <em>27 minutes</em>
+            Reading time: <em>34 minutes</em>
             |
             Author: <em>nixnehc</em>
             |
@@ -100,101 +100,116 @@ code.has-jax {
 
 
         <section class="body">
-            <p>[序]
-以下内容是为7月5日<code>模态逻辑</code>考试所准备的草稿，整整考了4个小时，真是有生之年考过最长的考试了😭），但准备的内容似乎还是太多了，根本写不完。
-望着这些准备好的稿纸，虽无甚洞见，但毕竟是自己一段时间内的心血，想着弃之可惜，遂又加以整理，姑且当作一篇博文让其静静地躺在这里吧。写到这里时却不免又悲从中来，文章尚有「安生立命」之所，作文者有焉？</p>
+            <h1 id="写在前面">写在前面</h1>
+<p>以下内容是为7月5日 <strong>模态逻辑</strong> 考试所准备的草稿, 整整考了4个小时, 真是有生之年考过最长的考试了😭, 但准备的内容似乎还是太多了, 根本写不完.
+望着这些准备好的稿纸, 虽无甚洞见, 但毕竟是自己一段时间内的心血, 想着弃之可惜, 遂又加以整理, 姑且当作一篇博文让其静静地躺在这里吧. 写到这里时却不免又悲从中来, 文章尚有「安生立命」之所, 作文者有焉?</p>
 <p><code>Disclaimer</code>: 本文可能会包含事实性的错误🙅</p>
-<p>此外本文写得相当的随性，中英混杂并且几乎是想到啥就写啥，哈哈哈哈😆😆😆。Paul Halmos 在 <em><strong>Naive Set Theory (1974)</strong></em> 的序言中有句话说得很好，在此处引用是最合适过不的了：</p>
-<blockquote>
-<p>the expert specialist will find nothing new here.</p>
-</blockquote>
+<p>此外本文写得相当的随性, 中英混杂并且几乎是想到啥就写啥, 这算作是某种作者的特权吧, 哈哈哈哈😆😆😆.
+此外为了输入的便捷考虑, 正如您所看到的那样, 除中文繁体的引用符号<code>「」</code>外, 本文全文使用半角标点.</p>
+<p>Paul Halmos 在 <em>Naive Set Theory (1974)</em> 的序言中有句话说得很好,
+在此处引用是最合适过不的了 ——
+“the expert specialist will find nothing new here.”</p>
 <hr>
 <hr>
 <h1 id="模态逻辑-一个关于-box-和-diamond-或许也有爱情-的故事">模态逻辑: 一个关于 Box 和 Diamond (或许也有爱情) 的故事</h1>
-<h2 id="abstract">Abstract</h2>
-<p>上溯亚里士多德，间承中世纪诸哲人，下迄 19 世纪初直至今日，现代模态逻辑可谓缘起于对「必然」、「可能」
-等哲学概念之形式化研究，而繁盛于 CS、语言学、博弈论等诸当代科学跨学科之交融，故上述各门类仍不失模态逻辑及其「周边」(如 Epistemic Logic, Deontic Logic 等) 发展的动因之一。</p>
-<p>本文旨在为模态逻辑提供一个简短的、现代的、数学上的介绍，且不求面面俱到。
-所描绘的对象不妨称之为「抽象模态逻辑」abstract modal logic。
-因此本文的行文风格是技术导向的且包含观念的堆砌。是时候开启旅程了，Long Live Logic！</p>
-<h2 id="1-introduction">1 Introduction</h2>
-<p>本节为全文提供基本的技术背景，包括基本概念和定义以及符号上的约定。用符号 || 表示定义或定理等环境的结束。</p>
-<p><strong>关系结构</strong> \( (W,R) \) (前者是个非空集，后者是该集合上的一个二元关系) 是一种常见的结构，
-是对事物联系的数学抽象，我们可以简单地将关系结构视作<strong>图</strong>，并且 (当 \( W \) 有穷时) 可以将其画下来。
-常见的关系结构有 <em>偏序</em>、<em>树</em>、<em>族谱</em> 等。后面我们会看到，模态逻辑是描述关系结构十分趁手的工具。</p>
-<h3 id="11-languages">1.1 Languages</h3>
-<p>逻辑是门形式化科学，「形式语言」则是逻辑家的武器。本文既然讨论的是模态逻辑，那么什么是模态语言呢？
-为简便起见，本文仅限于「基本命题模态语言」上的讨论。</p>
-<p>首先我们固定一集可数的命题变元集 \( Prop \)（某种程度上也决定了此处的语言是可数的），则基本模态语言由如下 BNF 规则给出：</p>
-<p>$$ \mathcal{L}_\Diamond \ni \varphi ::= p \mid \bot \mid \neg \varphi \mid (\varphi \lor \varphi) \mid \Diamond \varphi $$</p>
-<p>其中 \( p \in Prop \)。 \( \Diamond \) 这个长的像「钻石」的家伙就是所谓的（一元）模态词了，虽然它长得像💎却一点也无后者的「坚贞」。
-\( \bot \) 表示矛盾，对应我们思维中的某些「脏」东西。引入如下符号作为缩写对以后的讨论是有益的：</p>
+<h2 id="-abstract"># Abstract</h2>
+<p>上溯亚里士多德, 间承中世纪诸哲人, 下迄 19 世纪初直至今日,
+现代模态逻辑可谓缘起于对「必然」,「可能」
+等哲学概念之形式化研究, 而繁盛于 CS,语言学,博弈论等诸当代科学跨学科之交融. 故上述各门类仍不失模态逻辑及其「周边」(如 Epistemic Logic, Deontic Logic 等) 发展的动因之一.</p>
+<p>本文旨在为模态逻辑提供一个简短的,现代的,数学上的介绍，且不求面面俱到.
+所描绘的对象不妨称之为「抽象模态逻辑」(abstract modal logic).
+因此本文的行文风格是技术导向的且包含若干观念的堆砌.</p>
+<p>是时候开启旅程了, Long Live (modal) Logic!</p>
+<hr>
+<h2 id="-1--introduction"># 1  Introduction</h2>
+<p>本节为全文提供基本的技术背景, 包括基本的概念和定义以及符号上的约定. 下文中用符号 <code>//</code> 表示定义或定理等环境的结束.</p>
+<p><strong>关系结构</strong> $(W,R)$ (前者被称为<strong>论域</strong>的家伙是个非空集, 后者是论域上的一个二元关系) 是一种常见的结构,
+是对事物联系的数学抽象, 我们可以简单地将关系结构视作<strong>有向图</strong>, 并且(当论域有穷时)可以将其画下来.
+常见的关系结构有 <em>偏序</em>, <em>树</em>, <em>族谱</em> 等. 后面我们会看到, 模态逻辑是描述关系结构十分趁手的工具.</p>
+<h3 id="-11-languages">## 1.1 Languages</h3>
+<p>逻辑是门形式化科学,「形式语言」则是逻辑家的武器. 本文既然讨论的是模态逻辑, 那么什么是模态语言呢?
+为简便起见, 本文仅限于「基本命题模态语言」(即只含一个模态词)上的讨论.</p>
+<p>首先我们固定一集<em>可数</em>的命题变元集  Prop (某种程度上 Prop 是可数的也决定了语言是可数的), 则<strong>基本模态语言</strong>由如下 BNF 规则给出：</p>
+<p>$$ \mathcal{L} \ni \varphi ::= p \mid \bot \mid \neg \varphi \mid (\varphi \lor \varphi) \mid \Diamond \varphi $$</p>
+<p>其中 $p \in$ Prop.
+$\Diamond$ 这个长的像「钻石」的家伙就是所谓的(一元)模态词了, 虽然它长得像💎却一点也无后者的「坚贞」.
+$\bot$ 表示矛盾, 对应我们思维中的某些「脏」东西.
+引入如下符号作为缩写对以后的讨论是有益的：</p>
 <p>$$
-\Box \varphi ::= \neg \Diamond \neg \varphi \qquad \varphi \land \psi ::= \neg (\neg \varphi \lor \neg \psi ) \qquad  \varphi \to \psi ::= \neg \varphi \lor \psi
+\Box \varphi ::= \neg \Diamond \neg \varphi
+$$</p>
+<p>$$ \varphi \land \psi ::= \neg (\neg \varphi \lor \neg \psi ) $$</p>
+<p>$$  \varphi \to \psi ::= \neg \varphi \lor \psi
 $$
-\( \Box \)往往被称为\( \Diamond \)的对偶算子。</p>
-<p>对于上面给出的语言，我们可以在其身上玩出颇多的花样，如定义<strong>模态度</strong>（一个公式中模态算子所嵌套的最大层数）、<strong>子公式</strong>等。正如玫瑰钻石之于爱情或是商人吹捧，显卡之于男人抑或物有所值，形式语言只是一堆符号罢了，
-符号虽也自有其趣味，但恐过于孤独。是时候为形式语言注入点「资本主义」了。</p>
-<h3 id="12-semantics">1.2 Semantics</h3>
-<p>为形式语言的「资本化」这件事逻辑学家们称之为「解释」，用什么来解释模态语言呢？关系结构某中程度是数学上天选之子，
-不过客随主便，在模态逻辑中他们被称之为「框架」和「模型」。</p>
-<p><code>Def.</code> 一个<strong>框架</strong> frame 是二元组 \((W,R)\)，其中 \( W \) 非空，\(R \subseteq W \times W \)。 一个模型是 \(M=(W,R,V)\)，其中 \((W,R)\) 是个框架，\(V\) 是一个从 \(Prop\) 到 \(\wp(W)\)的函数，称之为<strong>赋值</strong>。 ||</p>
-<p>通俗地说，一个模型就是一个<strong>有向图</strong>\((W,R)\)加上对命题变元的注释 (赋值的功能)。<strong>赋值</strong>这东西看起来有点怪异，它有很多其他的定义方式，流行的有如下两种：给定框架\((W,R)\)</p>
+「盒子」$\Box$ 被称为 $\Diamond$ 的对偶算子, 他们惺惺相惜, 但也不总是形影不离, 就像 钻石 和 装饰它的 盒子 那样。</p>
+<p>对于上面给出的语言, 我们可以在其身上玩出颇多的花样, 如定义<strong>模态度</strong>(一个公式中模态算子所嵌套的最大层数),<strong>子公式</strong>等.
+正如玫瑰钻石之于爱情或是商人吹捧, 显卡之于男人抑或物有所值, 形式语言只是一堆符号罢了,
+符号虽也自有其趣味, 但恐过于孤独. 是时候为形式语言注入点「资本主义」了.</p>
+<h3 id="-12-semantics">## 1.2 Semantics</h3>
+<p>为形式语言的「资本化」这件事逻辑学家们称之为「解释」, 用什么来解释模态语言呢? 关系结构某种程度是数学上的天选之子,
+不过客随主便, 在模态逻辑中他们被称之为「框架」和「模型」.</p>
+<p><code>Def.</code> 一个<strong>框架</strong> frame 是二元组 $(W,R)$, 其中 $W$ 非空, $R \subseteq W \times W$.  一个<strong>模型</strong>是 $M=(W,R,V)$, 他由一个框架 $(W,R)$ 装配上 $V$ —— 一个从 Prop 到 $\wp(W)$ 的函数, 称之为<strong>赋值</strong> —— 组成. //</p>
+<p>通俗地说，一个模型就是一个<strong>有向图</strong> $(W,R)$ 加上对这个图的某些注释 (赋值的功能). <strong>赋值</strong>这东西看起来有点怪异, 它有很多其他的定义方式, 流行的有如下两种: 给定框架 $(W,R)$</p>
 <ol>
-<li>\( V: W \times Prop \to \{0,1\} \)</li>
-<li>\( V: W \to \wp(Prop) \)</li>
+<li>$V \colon W \times Prop \to \{0,1\}$</li>
+<li>$V \colon W \to \wp(Prop)$</li>
 </ol>
-<p>对于这里所采用的赋值的定义，一个好处是，此时模型 \(M=(W,R,V)\) 可以很自然地被视为一个<strong>一阶结构</strong>：
+<p>对于这里所采用的赋值的定义, 一个好处是, 此时模型 $M=(W,R,V)$ 可以很自然地被视为一个<strong>一阶结构</strong>：
 $$
 M=(W,R,V(p),V(q),V(r),&hellip;)
 $$
-其中 \(V(p)\) 等恰好对应论域 \(W\) 上的一个<strong>一元谓词</strong>（关系）。</p>
-<p>有了模型，怎么和语言联系起来呢？<strong>可满足</strong>这一概念便应运而生了。</p>
-<p><code>Def.</code> 设 \(w\) 是模型 \(M=(W,R,V)\) 中的一个状态，公式 \(\varphi\) 在 \(w\) 上<em>可满足</em>，记作 \(M,w \Vdash \varphi\), 递归地定义如下：
-$$ M,w \Vdash p \iff w \in V(p) $$
-$$ M,w \Vdash \bot \iff never $$
-$$ M,w \Vdash \neg \varphi \iff not \; M,w \Vdash \varphi$$
-$$ M,w \Vdash \varphi \lor \psi \iff M,w \Vdash \varphi \; or \; M,w \Vdash \psi$$
-$$ M,w \Vdash \Diamond \varphi \iff \exists u \colon Rwu \; \&amp; \; M,w \Vdash \varphi$$
-对于公式集 \(\Sigma\)，用 \(M,w \Vdash \Sigma\) 表示 \(\Sigma\) 中所有的公式都在 \(M,w \) 上可满足。 ||</p>
-<p>可满足这个概念本质上是一种 <em>局部性</em> 的概念，欲在点 \(w\) 上判断公式 \(\Diamond \varphi \) 是否成立，就得沿着 \( R \) 的目光所及之处看看是否有某个“角落” \( u \)，在其中 \( \varphi \) 成立。
-因此模态词可以被视作是对一阶量词的某种限制。这便是所谓的「模态逻辑之局部观」。</p>
-<p>一个框架 \( (W,R) \) 可以产生出无数多的模型 \( (W,R,V) \)，这都是赋值 \( V \) 的作祟，为了消解 \( V \) 捣乱的权利，我们可以制定《有效性法典》。</p>
-<p><code>Def.</code> 任给公式 \( \varphi \)：</p>
+其中 $V(p)$ 等恰好对应论域 $W$ 上的一个<strong>一元谓词</strong>.</p>
+<p>有了模型, 怎么和语言联系起来呢? <strong>可满足</strong> 这个「酒鬼」专门干这种事情.</p>
+<p><code>Def.</code> 设 $w$ 是模型 $M=(W,R,V)$ 中的一个状态, 公式 $\varphi$ 在 $w$ 上<strong>可满足</strong>,
+记作 $M,w \Vdash \varphi$, 递归地定义如下:</p>
+<ol>
+<li>$M,w \Vdash p \iff w \in V(p)$</li>
+<li>$M,w \Vdash \bot \iff never$</li>
+<li>$M,w \Vdash \neg \varphi \iff not \; M,w \Vdash \varphi$</li>
+<li>$M,w \Vdash \varphi \lor \psi \iff M,w \Vdash \varphi \; or \; M,w \Vdash \psi$</li>
+<li>$M,w \Vdash \Diamond \varphi \iff \exists u \colon Rwu \; \&amp; \; M,w \Vdash \varphi$</li>
+</ol>
+<p>对于公式集 $\Sigma$,用 $M,w \Vdash \Sigma$ 表示 $\Sigma$ 中所有的公式都在$M,w$ 上可满足. //</p>
+<p>可满足这个概念本质上是一种 <em>局部性</em> 的概念, 欲在点 $w$ 上判断公式 $\Diamond \varphi$ 是否成立,
+就得沿着 $R$ 的目光所及之处看看是否有某个“角落” $u$, 在其中 $\varphi$ 成立.
+因此模态词可以被视作是对一阶量词的某种限制. 这便是所谓的「模态逻辑之局部观」.</p>
+<p>一个框架 $(W,R)$ 可以产生出无数多的模型 $(W,R,V)$, 这都是赋值 $V$ 在作祟, 为了消解 $V$ 捣乱的权利, 我们制定了《有效性法典》:</p>
+<p><code>Def.</code> 任给公式 $\varphi$ :</p>
 <ul>
-<li>\( \varphi \) 在点框架 \( (F,w) \) 上有效，记作 \( F,w \Vdash \varphi \)，若对于 \( F \) 上的任意赋值 \( V \) 都有 \( (F,V),w\Vdash \varphi \)。</li>
-<li>\( \varphi \) 在框架 \( F \) 上有效，记作 \( F \Vdash \varphi \)，若对于 \( F \) 中的任意点 \( w \) 都有 \( F,w\Vdash \varphi \)。</li>
-<li>\( \varphi \) 在框架类 \( \mathbb{F} \) 上有效，记作 \( \mathbb{F} \Vdash \varphi \)，若对于 \( \mathbb{F} \) 中的任意框架 \( F \) 都有 \( F\Vdash \varphi \)。</li>
-<li>\( \varphi \) 是有效的，记作 \( \Vdash \varphi \)，若 \( \varphi \) 在任意框架类上都有效。    ||</li>
+<li>$\varphi$ 在点框架 $(F,w)$ 上有效，记作 $F,w \Vdash \varphi$, 若对于 $F$ 上的任意赋值 $V$ 都有 $(F,V),w \Vdash \varphi$.</li>
+<li>$\varphi$ 在框架 $F$ 上有效，记作 $F \Vdash \varphi$, 若对于 $F$ 中的任意点 $w$ 都有 $F,w \Vdash \varphi$.</li>
+<li>$\phi$ 在框架类 $\mathbb{F}$ 上有效，记作 $\mathbb{F} \Vdash \phi$, 若对于 $\mathbb{F}$ 中的任意框架 $F$ 都有 $F \Vdash \phi$.</li>
+<li>$\phi$ 是有效的，记作 $\Vdash \phi$, 若 $\phi$ 在任意框架类上都有效. //</li>
 </ul>
-<p>因此，我们的法典制定了4个层次的有效性概念，它们依次递进：
+<p>因此, 我们的《有效性法典》制定了4个层次的有效性概念, 它们依次递进:
 $$
 点框架有效 \to  框架有效  \to 框架类有效  \to 有效
 $$</p>
-<p>在一个框架类 \( \mathbb{F} \) 上所有有效的公式构成 \( \mathbb{F} \) 的逻辑 \( \Delta_\mathbb{F} \) ，换而言之 \( \Delta_\mathbb{F} = \{ \varphi \mid \mathbb{F} \Vdash \varphi \} \) =
-\( \bigcap_{F \in \mathbb{F}} \{ \varphi \mid F \Vdash \varphi \} \) 。</p>
-<p>一些例子总是有益的（虽然此处不欲给出具体的证明）：</p>
+<p>在一个框架类 $\mathbb{F}$ 上所有有效的公式构成 $\mathbb{F}$ 的逻辑 $\Delta_\mathbb{F}$, 换而言之 $\Delta_\mathbb{F} = \{ \varphi \mid \mathbb{F} \Vdash \varphi \}$ =
+$\bigcap_{F \in \mathbb{F}} \{ \varphi \mid F \Vdash \varphi \}$.</p>
+<p>一些例子总是有益的(虽然此处不欲给出具体的证明):</p>
 <ul>
-<li>\( \Box (p \to q) \to (\Box p \to \Box q) \) 在所有的框架类上都是有效的，这个公式有个特殊的名字：<em>K</em> —— 为纪念 Kripke。</li>
-<li>\( \Diamond \Diamond p \to \Diamond p \) (叫做 <em>T</em> 公式) 在传递框架类上有效。</li>
-<li>\( p \to \Box \Diamond p \) (叫做 <em>B</em> 公式，为纪念直觉主义数学家 Brouwer) 在对称框架类上有效。</li>
+<li>$\Box (p \to q) \to (\Box p \to \Box q)$ 在所有的框架类上都是有效的, 这个公式有个特殊的名字: K —— 为纪念 Kripke.</li>
+<li>$\Diamond \Diamond p \to \Diamond p$ (叫做 T 公式) 在传递框架类上有效.</li>
+<li>$p \to \Box \Diamond p$ (叫做 B 公式，为纪念直觉主义数学家 Brouwer) 在对称框架类上有效.</li>
 <li>诸如此类例子数不胜数&hellip;&hellip;</li>
 </ul>
-<p>在运用逻辑的过程中，总期以从某些前提推出某个结论来，并且「逻辑」这个神圣的词保证了这种推理的正确性。因此「后承关系」是逻辑中重点关注的“危险分子”。模态逻辑中有两个这种“危险分子”，即「局部后承」和「全局后承」两兄弟，这里我们主要关注「局部后承」小弟（一个很重要的原因是“打不过”大哥「全局后承」😢😢😢）。</p>
-<p><code>Def.</code> 对于任意公式集 \( \Sigma \cup \{\varphi\} \) 和框架类 \( S \), 称 \(\varphi\) 在 \(S\)上是 \(\Sigma \) 的一个 <em><strong>局部语义后承</strong></em>，记作 \( \Sigma \Vdash_S \varphi \)，
-若对于任意基于 \( S \) 中框架所得到的点模型 \( M,w \) 有：\(M,w \Vdash \Sigma \Rightarrow M,w \Vdash \varphi \)。||</p>
-<h3 id="13-normal-modal-logics">1.3 Normal modal logics</h3>
-<p>前一小节主要是从语义角度讨论逻辑的，但逻辑自有其语形维度，即逻辑也以由一条「语形流水线」生成出来，这类逻辑称之为「正规模态逻辑」。</p>
-<p><code>Def.</code> 一个<em><strong>正规模态逻辑</strong></em> \( \Delta \) 是一个公式集，它包含</p>
+<p>在运用逻辑的过程中, 总期以从某些前提推出某个结论来, 并且「逻辑」这个神圣的词保证了这种推理的正确性. 因此「后承关系」是逻辑中重点关注的“危险分子”.
+模态逻辑中有两个这种“危险分子”, 即「局部后承」和「全局后承」两兄弟, 这里我们主要关注「局部后承」小弟(一个很重要的原因是“打不过”大哥「全局后承」😢😢😢).</p>
+<p><code>Def.</code> 对于任意公式集 $Sigma \cup \{\varphi\}$ 和框架类 $S$, 称 $\varphi$ 在 $S$ 上是 $\Sigma$ 的一个 <em><strong>局部语义后承</strong></em>，记作 $\Sigma \Vdash_S \varphi$,
+若对于任意基于 $S$ 中框架所得到的点模型 $M,w$ 有: $M,w \Vdash \Sigma \Rightarrow M,w \Vdash \varphi$. //</p>
+<h3 id="-13-normal-modal-logics">## 1.3 Normal modal logics</h3>
+<p>前一小节主要是从语义角度讨论逻辑的, 但逻辑自有其语形维度, 即逻辑也由一条「语形流水线」生成出来, 这类流水线有很多, 我们来看看最繁忙的那条吧, 它叫做「正规模态逻辑」.</p>
+<p><code>Def.</code> 一个<em><strong>正规模态逻辑</strong></em> $\Delta$ 是一个公式集, 它包含</p>
 <ol>
-<li>所有命题重言式、K公理 \( \Box (p \to q) \to (\Box p \to \Box q) \)、Dual公理 \( \Diamond p \leftrightarrow \neg \Box \neg p \).</li>
-<li>对 分离规则 MP，代入规则 Sub 和必然化规则 Gen 封闭。 ||</li>
+<li>所有命题重言式、K公理 $\Box (p \to q) \to (\Box p \to \Box q)$, Dual公理 $\Diamond p \leftrightarrow \neg \Box \neg p$.</li>
+<li>对 分离规则 MP，代入规则 Sub 和必然化规则 Gen 封闭. //</li>
 </ol>
-<p>$$
-MP: \dfrac{\varphi, \varphi \to \psi}{\psi}  \quad Sub: \dfrac{\varphi}{\sigma(\varphi)}
-\quad Gen:\dfrac{\varphi}{\Box\varphi}
-$$
-其中 \(\sigma\) 是一个代入函数。这3条规则对语义上的概念有不同的保持性，下表是个总结：</p>
+<p>$$ MP: \dfrac{\varphi, \varphi \to \psi}{\psi}  $$
+$$ Sub: \dfrac{\varphi}{\sigma(\varphi)}  $$
+$$ Gen:\dfrac{\varphi}{\Box\varphi} $$
+其中 $\sigma$ 是一个代入函数, 就是将一个公式中的命题变元的所有出现同时替换为某个公式.
+这3条规则对语义上的概念有不同的保持性, 下表是个总结:</p>
 <table>
 <thead>
 <tr>
@@ -225,48 +240,104 @@ $$
 </tr>
 </tbody>
 </table>
-<p>因此，从各种角度看，MP 都是我们最忠诚的好伙伴，我们可以在各个场合无条件的“利用”它😏😏</p>
-<h2 id="2-modal-model-theory--frame-theory">2 Modal model theory &amp; frame theory</h2>
-<p>模型——这个赋予形式语言意义的家伙在逻辑研究中处于核心地位之一。正所谓「一生二，二生三」，从已有模型也可以构造出新模型来。
-但数学的世界中并不总是「新人胜旧人」，这一特点称之为 <strong>不变性</strong>，读者愿意的话，念做「不变心」也未尝不可。</p>
-<h3 id="21-三类模型操作">2.1 三类模型操作</h3>
-<p>称两个点模型 \(M,w\) 和 \(N,u\) 是 <strong>模态等价的</strong>，记作 \( M,w \equiv N,u\)，如果在其上为真的公式相同，即 \( \{\varphi \mid M,w \Vdash \varphi \} = \{\varphi \mid N,u \Vdash \varphi \} \)。模态等价是考验两个点模型是否一条心的最高标准。有三种常见的使模型「不变心」的操作：不交并、生成子模型、受限射。</p>
+<p>因此, 从各种角度看, MP 都是我们最忠诚的好伙伴, 我们可以在各个场合无条件的“利用”它😏😏</p>
+<hr>
+<h2 id="-2-modal-model-theory--一丢丢-frame-theory"># 2 Modal model theory &amp; 一丢丢 frame theory</h2>
+<p>模型 —— 这个赋予形式语言意义的家伙在逻辑研究中处于核心地位之一. 正所谓「一生二, 二生三」, 从已有模型也可以构造出新模型来.
+但数学的世界中并不总是「新人胜旧人」, 这一特点称之为 <strong>不变性</strong>, 读者愿意的话, 念做「不变心」也未尝不可.</p>
+<h3 id="-21-三类模型操作">## 2.1 三类模型操作</h3>
+<p>称两个点模型 $M,w$ 和 $N,u$ 是 <strong>模态等价的</strong>，记作 $M,w \equiv N,u$, 如果在其上为真的公式相同, 即 $\{\varphi \mid M,w \Vdash \varphi \} = \{\varphi \mid N,u \Vdash \varphi \}$. 模态等价是考验两个点模型是否一条心的最高标准. 有三种常见的使模型「不变心」的操作: 不交并, 生成子模型, 受限射.</p>
 <ol>
-<li>给定一堆论域彼此不相交的模型 \( \{M_i\}_{i \in I} \)，其<strong>不交并</strong>是它们的合体：
-\( \biguplus M_i = (W,R,V) \)，其中 \( W,R \) 和 \(V\)是那堆模型论域、通达关系和赋值的并。</li>
-<li>模型 \(M=(W,R,V)\) 的一个<strong>生成子模型</strong>是 \( M&rsquo;=(W’,R’,V’) \)，其中 \(W&rsquo; \subseteq W\) 且对 \(R\) 封闭，\(R&rsquo;,V&rsquo;\) 都是原来的 \(R,V\) 在新论域下的限制</li>
-<li>任给两个模型 \(M=(W,R,V)\) 和 \( M&rsquo;=(W’,R’,V’) \)，函数 \( f \colon W \to W&rsquo;\) 是从 \(M\) 到 \(M&rsquo;\) 的一个<strong>受限射</strong>，若其满足：
-<ul>
-<li>\(w\) 和 \(f(w)\) 满足同样的命题变元；</li>
-<li>ddddddd</li>
-<li>ddd<br>
-当  是满射时， <strong>受限射像</strong>。</li>
-</ul>
+<li>
+<p>给定一堆论域彼此不相交的模型 $\{M_i\}_{i \in I}$, 其 <strong>不交并</strong> 是它们的合体:
+$\biguplus M_i = (W,R,V)$, 其中 $W,R$ 和 $V$ 是那堆模型论域, 通达关系和赋值的并.</p>
+</li>
+<li>
+<p>模型 $M=(W,R,V)$ 的一个 <strong>生成子模型</strong> 是 $M&rsquo;=(W’,R’,V’)$, 其中 $W&rsquo; \subseteq W$ 且对 $R$ 封闭，$R&rsquo;,V&rsquo;$ 都是原来的 $R,V$ 在新论域下的限制.</p>
+</li>
+<li>
+<p>任给两个模型 $M=(W,R,V)$ 和 $M&rsquo;=(W’,R’,V’)$, 函数 $f \colon W \to W&rsquo;$ 是从 $M$ 到 $M&rsquo;$ 的一个 <strong>受限射</strong>, 若其满足:</p>
 </li>
 </ol>
-<p>如前文所述，这三种操作都可以让模型（们）“心”不变，即施归纳于公式易得如下结论：</p>
-<p><code>Thm.</code>  <em>模态可满足性在不交并、生成子模型和受限射下保持不变。</em> 形式地说：</p>
+<ul>
+<li>\(w\) 和 \(f(w)\) 满足同样的命题变元;</li>
+<li>$f$ 是一个同态;</li>
+<li>若 $R&rsquo;f(a)v$, 那么 $\exists b \in W, f(b)=v, Rab$;<br>
+当 $f$ 是满射时, $M&rsquo;$ 被称之为 $M$ 的 <strong>受限射像</strong>.</li>
+</ul>
+<p>如前文所述, 这三种操作都可以让模型(们)的“心”不变, 即施归纳于公式易得如下结论：</p>
+<p><code>Thm.</code>  <em>模态可满足性在不交并,生成子模型和受限射下保持不变</em> 形式地说：</p>
 <ol>
-<li>ddd</li>
-<li>ddd</li>
-<li>ddd 。||</li>
+<li>$M_i, w \Vdash \phi$ iff $\biguplus M_i, w \Vdash \phi$.</li>
+<li>$M,w \Vdash \phi$ iff $M&rsquo;, w \Vdash \phi$ ($M&rsquo;$ 是一个 $M$ 的生成子模型).</li>
+<li>$M,w \Vdash \phi$ iff $N, f(w) \Vdash \phi$ ($f$ 是一个从 $M&rsquo;$ 到 $M$ 的受限射).//</li>
 </ol>
-<h3 id="22-bisimulations">2.2 Bisimulations</h3>
+<h3 id="-22-bisimulations">## 2.2 Bisimulations</h3>
 <p>上面的三种操作虽看似各不相干，但 互模拟 这一概念揭示了三者背后的共性。</p>
 <p><code>Def.</code>   <strong>互模拟</strong></p>
-<p><strong>互模拟的</strong>。</p>
-<h3 id="23-标准翻译和刻画定理">2.3 标准翻译和刻画定理</h3>
-<h3 id="24-一丢丢-corresponding-theory">2.4 一丢丢 corresponding theory</h3>
-<h2 id="3-completeness-theory">3 Completeness theory</h2>
-<h3 id="31-basic-concepts">3.1 basic concepts</h3>
-<h3 id="32-canonical-model-and-its-applications">3.2 Canonical model and its applications</h3>
-<h3 id="33-two-limited-results">3.3 Two limited results</h3>
-<h2 id="4-conclusion-ml-vs-fol">4 Conclusion: ML vs FOL</h2>
-<p>ML是非经典逻辑中的“显学”，而FOL则是经典逻辑的霸主。我们已经看到，在模型层面，ML可以被视为FOL的一个片段 ——
-且是可判定的片段。「标准翻译」为我们比较模态公式和一阶公式提供了桥梁。而「互模拟」之于ML恰如「部分同构」之于FOL，
-最终带我们走向了 van Benthem 刻画定理这一优美的结论。ML在此间亦显示出了表达了和计算复杂性上的均衡。</p>
-<p>另一方面，由于模态有效性本质上是个二阶概念，ML和FOL所能刻画的框架类各有所长。Sahlqvist 公式和 Goldblatt-Thomason 定理是对应理论中著名的成果。</p>
-<p>下表给出 ML 和 FOL 就某些性质给出的一个不全面的比较：</p>
+<p><strong>互模拟的</strong>。
+//</p>
+<p>互模拟的定义稍微陌生, 某种程度上是因为它是一种<em>余归纳</em>定义, 而不是常见的归纳定义. 不交并,生成子模型,受限射只是互模拟的特殊情形:</p>
+<p><code>Prop.</code></p>
+<p>而受限射与互模拟的最大区别在于, 前者是一个函数, 而后者是一个二元关系. //</p>
+<p>不出意料, 互模拟本身也保持不变性:</p>
+<p><code>Thm.</code>   //</p>
+<p>一个有趣的问题是, 上述定理的逆命题成立吗? 非也, 一个经典的反例是 [[fig:</p>
+<h3 id="23--标准翻译和刻画定理">2.3 ## 标准翻译和刻画定理</h3>
+<h3 id="24--一丢丢-corresponding-theory">2.4 ## 一丢丢 corresponding theory</h3>
+<hr>
+<h2 id="-3-completeness-theory"># 3 Completeness theory</h2>
+<p>本节主要叙述正规模态逻辑的完全性理论及其主要证明技术.
+抽象地说, 一个正规模态逻辑无非是满足一些封闭条件的公式集而已, 但往往可以从语形和语义这两个方面来刻画这个集合.
+完全性(加上可靠性)则告诉我们这两种刻画方式是等价的.</p>
+<p>本节用以证明完全性的技术可以概括为 completeness-via-canonicity, 其核心工具是「典范模型」.
+而我们将会看到, 在用典范模型证明完全性的过程中, 实则体现了如下口号:
+$$\text{truth = membership}. $$</p>
+<h3 id="-31-basic-concepts">## 3.1 basic concepts</h3>
+<p>我们依旧在基本模态逻辑语言下讨论各种逻辑.</p>
+<p><code>Def.</code> (Modal Logics, normal modal logics) 一个<strong>模态逻辑</strong>是包含所有命题重言式且对 MP,Sub 规则封闭的公式集. 用 $\vdash_\Delta \phi$ 表示 $\phi$ 属于逻辑 $\Delta$,
+并称 $\phi$ 为逻辑 $\Delta$ 的一条<strong>定理</strong>.  若 $\Delta$ 额外包含 K 公理 和 Dual 公理, 且对 Gen规则 封闭, 则称 $\Delta$ 是<strong>正规的</strong>. //</p>
+<p>在逻辑 $\Delta$ 中, 称 $\phi$ 从 $\Gamma$ 中可推演, 记作 $\Gamma \vdash_\Delta \phi$, 如果存在 $\Gamma$ 的有穷子集 $\Sigma$ 使得 $\vdash_\Delta \bigwedge \Sigma \to \phi$ (当 $\Sigma$ 为空集时, $\bigwedge \Sigma = \bot$).
+$\Gamma$ 是在 $\Delta$ 中是<strong>一致的</strong>, 若 $\Gamma \not \vdash_\Delta \bot$  .</p>
+<p>以下不加证明地列出一些关于推演的元性质, 这些性质虽然平平无奇, 却也不失为完全性证明地小帮手:</p>
+<p><code>Prop.</code>  对于任意逻辑 $\Delta$ 和任意公式集 $\Gamma$:</p>
+<ol>
+<li>$\Gamma$ 不$\Delta$一致 iff 存在公式 $\phi$, $\Gamma \vdash_\Delta \phi \land \neg \phi$  iff  对于任意公式 $\psi$, $\Gamma \vdash_\Delta \phi$  .</li>
+<li>$\Gamma \not \vdash_\Delta \phi \Rightarrow$ $\Gamma \cup \{\neg \phi\}$ 是  $\Delta$一致的.</li>
+<li>$\Gamma$是$\Delta$一致的 iff $\Gamma$的每个有穷子集都是一致的. //</li>
+</ol>
+<p>「演绎定理」在模态逻辑中是否成立是个老生常谈的问题了, 如果采用上面推演的定义, 则演绎定理成立.
+反之, 如采用经典逻辑中用有穷公式序列的方式来定义推演, 则演绎定理通常在模态逻辑中便不复存在了. 其中的要点是 Gen 规则能否用在前提集上.</p>
+<p><code>Thm.</code>(演绎定理)  //</p>
+<p>最小的正规逻辑记作 <strong>K</strong>, 用 <strong>K</strong>$AA&rsquo;A&rsquo;&rsquo;\cdots$ 表示包含 $\{A,A&rsquo;, A&rsquo;&rsquo;, \dots\}$ 的最小的正规逻辑. 这些公式有时被称之为<strong>特征公理</strong>. 一些著名的特征公理列举如下:</p>
+<ul>
+<li>D: $\Box p \to \Diamond p$</li>
+<li>T: $\Box p \to p$</li>
+<li>B: $p \to \Box \Diamond p$</li>
+<li>4: $\Box p \to \Box \Box p$</li>
+<li>5: $\Box p \to \Box \Diamond p$</li>
+</ul>
+<p>通过这些公理, 可以得到如下的正规逻辑:<br>
+D := KD<br>
+T := KT<br>
+B := KTB<br>
+S4 := KT4<br>
+S5 := KT45<br>
+实际上, 所有正规逻辑相对于集合的包含关系形成一个「完全格」(complete lattice).</p>
+<p>回到本节主线, 下面给出可靠性和完全性的形式定义:</p>
+<p><code>Def.</code> (Soundness, Completeness)</p>
+<p>. //</p>
+<h3 id="-32-canonical-model-and-its-applications">## 3.2 Canonical model and its applications</h3>
+<h3 id="-33-two-limited-results">## 3.3 Two limited results</h3>
+<hr>
+<h2 id="4--conclusion-ml-vs-fol">4 ## Conclusion: ML vs FOL</h2>
+<p>ML是非经典逻辑中的“显学”, 而FOL则是经典逻辑中的常青树. 我们已经看到, 在模型层面,
+「标准翻译」为我们比较模态公式和一阶公式提供了桥梁,
+ML可以被视为FOL的一个片段 —— ML可以被嵌入到 $FO^2$ 中.
+而「互模拟」之于ML恰如「部分同构」之于FOL,
+最终我们可以走向 van Benthem 刻画定理这一优美的结论. ML在此间亦显示出了表达了和计算复杂性上的均衡.</p>
+<p>另一方面, 由于模态有效性本质上是个二阶概念, ML和FOL所能刻画的框架类各有所长. Sahlqvist 公式和 Goldblatt-Thomason 定理是对应理论中著名的成果.</p>
+<p>下表给出 ML 和 FOL 就某些性质给出的一个不全面的比较:</p>
 <table>
 <thead>
 <tr>
@@ -278,7 +349,7 @@ $$
 <tbody>
 <tr>
 <td style="text-align:center">completeness</td>
-<td style="text-align:center">存在不完全的逻辑</td>
+<td style="text-align:center">有不完全的逻辑</td>
 <td style="text-align:center">✅</td>
 </tr>
 <tr>
@@ -287,12 +358,12 @@ $$
 <td style="text-align:center">✅</td>
 </tr>
 <tr>
-<td style="text-align:center">Downward-Lowenheim-Skolem</td>
+<td style="text-align:center">⬇️Lowenheim-Skolem</td>
 <td style="text-align:center">✅</td>
 <td style="text-align:center">✅</td>
 </tr>
 <tr>
-<td style="text-align:center">Decidability</td>
+<td style="text-align:center">decidability</td>
 <td style="text-align:center">✅</td>
 <td style="text-align:center">❌</td>
 </tr>
@@ -313,34 +384,34 @@ $$
 </tr>
 </tbody>
 </table>
-<p>最后谨以 蓝皮书 中的三个 slogans 结束此文：</p>
-<blockquote>
+<p>最后谨以《蓝皮书》中的三个 slogans 结束此文：</p>
 <ol>
 <li>Modal languages are simple yet ecpressive languages for talking about relation structures.</li>
 <li>Modal languages provide an internal, local perspective on relational structures.</li>
 <li>Modal languages are not isolated formal systems.</li>
 </ol>
-</blockquote>
-<p>是以诸前辈罔莫孜孜而勤之，方立今时 ML 之地位，吾夙夜以勉。</p>
-<h3 id="ref">Ref.</h3>
+<p>是以诸前辈罔莫孜孜而勤之, 方立今时 ML 之地位, 吾夙夜以勉.</p>
+<hr>
+<h3 id="-ref"># Ref.</h3>
 <ol>
 <li>Blackburen <em>et al</em>. <em><strong>Modal Logic</strong></em>, 2001</li>
 <li>Blackburen <em>et al</em>. <em><strong>Handbook of Modal Logic</strong></em>, 2007</li>
 <li>van Benthem, <em><strong>Modal Logic: A contemporary view</strong></em>, <a href="https://iep.utm.edu/modal-lo/">IEP-webpage</a></li>
 </ol>
-<h3 id="acknowledgement">Acknowledgement</h3>
-<p>我曾从很多人那里学习过模态逻辑。感谢王轶老师将我我引向模态逻辑；感谢袁永锋老师和梁小龙师兄教授我递归论，这推动我从不同的角度加深了对逻辑的理解；感谢陈锦盛老师重新🔥我对学术对热枕，且我总能不时从您那里汲取到营养。</p>
-<p>感谢和我一起学习逻辑的诸同学们：王莉菲、李齐宣、陈子豪、覃立行、李韵冰，我从各位那里皆习得了不同的优秀品质。</p>
-<p>最后 nixnehc 感谢逻辑 —— 你(们)为其本无意义的人生增添了很多慰藉。Agian, <em>Long Live Logic</em>!</p>
 <hr>
-<p>(2023年7月10日整理于海琴六号，时志鹏回乡工作，祖平去云南游玩，锦涛哥回重庆备考，钟浩俊博诸人皆已离去。
-哎，好梦由来最易醒)</p>
+<h3 id="acknowledgement">Acknowledgement</h3>
+<p>我曾从很多人那里学习过逻辑和模态逻辑. 感谢王轶老师将我引向模态逻辑; 感谢袁永锋老师和梁小龙师兄教授我递归论, 这推动我从不同的角度观看逻辑世界; 感谢陈锦盛老师重新燃起我对学术对热枕, 且我总能不时从您那里汲取到营养.</p>
+<p>感谢和我一起学习逻辑的诸同学们: 王莉菲, 李齐宣, 陈子豪, 覃立行, 李韵冰, 我从各位那里皆习得了不同的优秀品质, 以及共同渡过了一段遥远的且美好的时光.</p>
+<p>最后陈鑫感谢逻辑 —— 你(们)为其本无意义的人生增添了许多慰藉.
+Agian, <em>Long Live Logic</em>!</p>
+<hr>
+<p>(2023年7月10日整理于海琴六号, 时志鹏回乡工作, 祖平去云南游玩, 锦涛哥回重庆备考, 钟浩俊博诸人皆已离去. 叹, 「好梦由来最易醒」)</p>
 <p>本文存在的意义:
-<figure><img src="/img/%e7%ab%a0%e9%b1%bc%e5%93%a5%e7%9a%84%e6%a2%a6%e6%83%b3.jpeg"
+<figure><img src="/images/%e7%ab%a0%e9%b1%bc%e5%93%a5%e7%9a%84%e6%a2%a6%e6%83%b31.jpg"
          alt="Here also lies my Hopes and Dreams."/>
 </figure>
 </p>
-<p><img src="/img/%E7%AB%A0%E9%B1%BC%E5%93%A5%E7%9A%84%E6%A2%A6%E6%83%B3.jpeg" alt="ddddd" title="dddddd"></p>
+<hr>
         </section>
 
         
@@ -361,6 +432,19 @@ $$
 
     <section class="related">
          
+        
+        <h4>Related articles</h4>
+            <ul>
+            
+            <li><a href="/posts/2021/04/%E7%9C%8B%E6%98%86%E6%9B%B2/">看昆曲</a></li> 
+            
+            <li><a href="/posts/2021/03/%E7%88%AC%E6%9D%BF%E9%9A%9C%E5%B1%B1/">爬板障山</a></li> 
+            
+            <li><a href="/posts/2021/01/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%90%83%E6%A4%B0%E5%AD%90%E9%B8%A1/">第一次吃椰子鸡🥥🐓</a></li> 
+            
+            <li><a href="/posts/2020/11/2020%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91%E4%BC%9A%E8%AE%AE%E5%8C%97%E5%B8%88%E7%8F%A0/">2020模态逻辑会议(北师珠)</a></li> 
+            
+            </ul>
         
     </section>
 
