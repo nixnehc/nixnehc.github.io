@@ -8,7 +8,7 @@
 <title>&gt;LaTeX&lt;  From Zero to Hero (Basic setting) 从入门到入土 – ChenXin&#39;s Blog</title>
 
  
-<link rel="stylesheet" href="/css/style.min.fbcd7175108d662240bf247a58a721b688d8699d5b8d92f93d2d17336b176e15.css">
+<link rel="stylesheet" href="/css/style.min.9a08ef59cddf03e769f22bf3d470cf06e049c284db74d66884c1466f17672b40.css">
 
 
 
@@ -65,13 +65,13 @@ code.has-jax {
 </header>
 <nav>
 
-<a href="/">Home</a> 
-<a href="/posts">Archives</a> 
-<a href="/tags">Tags</a> 
-<a href="/categories">Categories</a> 
-<a href="/misc">Misc</a> 
-<a href="/search">Search</a> 
-<a href="/about">About </a> 
+<a href="/">Home</a>·  
+<a href="/posts">Archives</a>·
+<a href="/categories">Categories</a>·
+<a href="/tags">Tags</a>·
+<a href="/misc">Misc</a>·
+<a href="/search">Search</a>·
+<a href="/about">About </a>
 
 </nav><main>
     <article class="post">
@@ -79,18 +79,13 @@ code.has-jax {
             <div class="list">
             <h2>&gt;LaTeX&lt;  From Zero to Hero (Basic setting) 从入门到入土</h2>
             <p>
-            Posted on <em>June 1, 2021</em>
-            |
-            Reading time: <em>20 minutes</em>
-            |
-            Author: <em>Xin</em>
-            |
+            ✍️ 2021-06-01|
+            ⏳ 21 minutes|
+            🧐 Xin|
             <span class="categories"> 
-            Included in
+            💾 
                 
-            <em>
             <a class="category" href="/categories/toolkit">##toolkit</a>
-            </em>
                 
             </span>
             </p>
@@ -519,7 +514,23 @@ code.has-jax {
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">\ul</span><span class="nb">{</span> 要下划线的内容 <span class="nb">}</span>
 </span></span></code></pre></div><p>不建议用 <code>ulem</code> 包中的 <code>\uline{}</code> 命令，因为这种会改变 <code>\emph{}</code> 的样式。</p>
-<hr>
+<h3 id="-附录参考文献等附录设置"># 附录、参考文献等附录设置</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-TeX" data-lang="TeX"><span class="line"><span class="cl"><span class="k">\section*</span><span class="nb">{</span>附录<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\addcontentsline</span><span class="nb">{</span>toc<span class="nb">}{</span>section<span class="nb">}{</span>附录<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% or in Book, Report documentclass:
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="k">\chapter*</span><span class="nb">{</span>附录<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\addcontentsline</span><span class="nb">{</span>toc<span class="nb">}{</span>chapter<span class="nb">}{</span>附录<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">%\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="k">\section*</span><span class="nb">{</span>参考文献<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\addcontentsline</span><span class="nb">{</span>toc<span class="nb">}{</span>section<span class="nb">}{</span>参考文献<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="c">% or 
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\chapter*</span><span class="nb">{</span>参考文献<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\addcontentsline</span><span class="nb">{</span>toc<span class="nb">}{</span>chapter<span class="nb">}{</span>参考文献<span class="nb">}</span>
+</span></span></code></pre></div><hr>
 <ul>
 <li><code>TeXstudio</code> 小彩蛋：在编辑界面里面按 ESC 很多下，会出现一只小黄鸭~~~~</li>
 </ul>
@@ -532,17 +543,15 @@ code.has-jax {
         </section>
 
         
-        
     </article>
 
 
     <span class="tags"> 
-        <em>
-            Tags: 
-            
-            <a class="tag" href="/tags/latex">#latex</a>
-            
-        </em>
+        🏷️  
+        
+        <a class="tag" href="/tags/latex">#latex</a>
+        
+        
     </span>
 
     
@@ -550,29 +559,36 @@ code.has-jax {
     <section class="related">
          
         
-        <h4>Related articles</h4>
+    Related articles:
             <ul>
             
-            <li><a href="/posts/2023/07/latex-tikz-for-myself/">&gt;LaTeX&lt; Tikz for Myself</a></li> 
+            <li><a href="/posts/2023/07/latex-tikz-for-myself/">&gt;LaTeX&lt; Tikz for Myself</a>
+            </li> 
             
-            <li><a href="/posts/2023/05/latex-pdf-encryption/">&gt;LaTeX&lt; pdf Encryption</a></li> 
+            <li><a href="/posts/2023/05/latex-pdf-encryption/">&gt;LaTeX&lt; pdf Encryption</a>
+            </li> 
             
-            <li><a href="/posts/2022/10/%E4%B8%8E%E8%B7%86%E4%BF%B1%E5%90%8C%E5%AD%A6%E7%88%AC%E5%87%A4%E5%87%B0%E5%B1%B1/">与跆俱同学爬凤凰山</a></li> 
+            <li><a href="/posts/2022/10/%E4%B8%8E%E8%B7%86%E4%BF%B1%E5%90%8C%E5%AD%A6%E7%88%AC%E5%87%A4%E5%87%B0%E5%B1%B1/">与跆俱同学爬凤凰山</a>
+            </li> 
             
-            <li><a href="/posts/2022/01/%E6%B8%B8%E6%B7%87%E6%BE%B3%E5%B2%9B/">游淇澳岛</a></li> 
+            <li><a href="/posts/2022/01/%E6%B8%B8%E6%B7%87%E6%BE%B3%E5%B2%9B/">游淇澳岛</a>
+            </li> 
             
-            <li><a href="/posts/2021/07/latex-the-philosophy-of-latex/">&gt;LaTeX&lt; The Philosophy of Latex</a></li> 
+            <li><a href="/posts/2021/07/latex-the-philosophy-of-latex/">&gt;LaTeX&lt; The Philosophy of Latex</a>
+            </li> 
             
             </ul>
         
     </section>
 
 
+
+
         </main><center>
 <footer>
-  Copyright &copy 2020 - 2023 
+  Copyright &copy; 2023 
   <br> 
-  Made with 🧡 by Chen Xin
+  Made with 🧡 by <a href="https://chenxinhello.github.io" target="_blank">ChenXin</a>
 
 
 

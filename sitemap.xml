@@ -6,6 +6,18 @@
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url><url>
+    <loc>http://nixnehc.github.io/misc/logic-misc/</loc>
+    <lastmod>2023-08-01T16:38:21+08:00</lastmod>
+  </url><url>
+    <loc>http://nixnehc.github.io/categories/logic-math/</loc>
+    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://nixnehc.github.io/tags/note/</loc>
+    <lastmod>2023-08-01T16:38:21+08:00</lastmod>
+  </url><url>
+    <loc>http://nixnehc.github.io/misc/</loc>
+    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://nixnehc.github.io/posts/2023/07/latex-tikz-for-myself/</loc>
     <lastmod>2023-07-27T16:13:19+08:00</lastmod>
   </url><url>
@@ -33,12 +45,6 @@
     <loc>http://nixnehc.github.io/search/</loc>
     <lastmod>2023-07-16T19:31:04+08:00</lastmod>
   </url><url>
-    <loc>http://nixnehc.github.io/opensource/</loc>
-    <lastmod>2023-07-16T14:35:30+08:00</lastmod>
-  </url><url>
-    <loc>http://nixnehc.github.io/categories/logic-math/</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://nixnehc.github.io/tags/modal-logic/</loc>
     <lastmod>2023-07-10T17:25:14+08:00</lastmod>
   </url><url>
@@ -59,9 +65,6 @@
   </url><url>
     <loc>http://nixnehc.github.io/posts/2023/06/%E5%8C%97%E9%97%A8%E5%A4%96%E7%9A%84%E5%8F%AF%E7%88%B1%E5%B0%8F%E7%8B%97/</loc>
     <lastmod>2023-06-30T19:17:20+08:00</lastmod>
-  </url><url>
-    <loc>http://nixnehc.github.io/misc/</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://nixnehc.github.io/misc/laugh/</loc>
     <lastmod>2023-08-01T00:00:00+00:00</lastmod>
@@ -210,13 +213,14 @@
     <loc>http://nixnehc.github.io/tags/</loc>
     <lastmod>2020-01-01T15:17:39-05:00</lastmod>
   </url><url>
+    <loc>http://nixnehc.github.io/about/</loc>
+    <lastmod>0001-01-01T15:17:39-05:00</lastmod>
+  </url><url>
     <loc>http://nixnehc.github.io/posts/1/01/test-headings-and-toc/</loc>
   </url><url>
     <loc>http://nixnehc.github.io/posts/1/01/test-shortcode-postimage-test/</loc>
   </url><url>
     <loc>http://nixnehc.github.io/posts/1/01/test-test-markdown/</loc>
-  </url><url>
-    <loc>http://nixnehc.github.io/about/</loc>
   </url><url>
     <loc>http://nixnehc.github.io/tags/hugo-test/</loc>
   </url>

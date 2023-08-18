@@ -6,7 +6,16 @@
     <description>Recent content on ChenXin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Jul 2023 16:13:19 +0800</lastBuildDate><atom:link href="http://nixnehc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Aug 2023 16:38:21 +0800</lastBuildDate><atom:link href="http://nixnehc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> 一些有关逻辑学的乱七八糟的笔记 -_-</title>
+      <link>http://nixnehc.github.io/misc/logic-misc/</link>
+      <pubDate>Tue, 01 Aug 2023 16:38:21 +0800</pubDate>
+      
+      <guid>http://nixnehc.github.io/misc/logic-misc/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>&gt;LaTeX&lt; Tikz for Myself</title>
       <link>http://nixnehc.github.io/posts/2023/07/latex-tikz-for-myself/</link>
@@ -35,15 +44,6 @@
       
       <guid>http://nixnehc.github.io/search/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Opensource</title>
-      <link>http://nixnehc.github.io/opensource/</link>
-      <pubDate>Sun, 16 Jul 2023 14:35:30 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/opensource/</guid>
-      <description>My Open Source on GitHub:</description>
     </item>
     
     <item>
@@ -353,6 +353,19 @@ tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>About</title>
+      <link>http://nixnehc.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 15:17:39 -0500</pubDate>
+      
+      <guid>http://nixnehc.github.io/about/</guid>
+      <description>This is ChenXin, a guy doesn&amp;rsquo;t like to post moments in WeChat, welcome to my blog!
+You may confuse that the word nixnehc in URLs of this blog, I just left an easter egg here, and I&amp;rsquo;ll reveal the answer in the end of this page.
+INFJ-A (I called that &amp;lsquo;16-Personality Religion&amp;rsquo; which Yuqian「昱倩」introduced it to me)
+I&amp;rsquo;m extremely loyal to my family!
+I have long hair but short wit.</description>
+    </item>
+    
+    <item>
       <title>&gt;test&lt; headings and toc</title>
       <link>http://nixnehc.github.io/posts/1/01/test-headings-and-toc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -381,19 +394,6 @@ Table of contents Table of contents The start The middle The end Mauris viverra 
 Top
 Paragraphs Incididunt ex adipisicing ea ullamco consectetur in voluptate proident fugiat tempor deserunt reprehenderit ullamco id dolore laborum.
 Officia dolore laborum aute incididunt commodo nisi velit est est elit et dolore elit exercitation. Enim aliquip magna id ipsum aliquip consectetur ad nulla quis. Incididunt pariatur dolor consectetur cillum enim velit cupidatat laborum quis ex.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://nixnehc.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://nixnehc.github.io/about/</guid>
-      <description>This is ChenXin, a guy doesn&amp;rsquo;t like to post moments in WeChat, welcome to my blog!
-You may confuse that the word nixnehc in URLs of this blog, I just left an easter egg here, and I&amp;rsquo;ll reveal the answer in the end of this page.
-INFJ-A (I called that &amp;lsquo;16-Personality Religion&amp;rsquo; which Yuqian「昱倩」introduced it to me) 一种浅显的批评：自我标签化是无能的人类让自己从人群中脱颖而出的简单技巧。这也是我为啥称之为「十六人格宗教」
-I&amp;rsquo;m extremely loyal to my family!
-I have long hair but short wit.</description>
     </item>
     
   </channel>
