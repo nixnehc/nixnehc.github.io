@@ -6,75 +6,52 @@
     <description>Recent content in latex on ChenXin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Jul 2023 16:13:19 +0800</lastBuildDate><atom:link href="http://nixnehc.github.io/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jan 0002 00:00:00 +0000</lastBuildDate><atom:link href="http://nixnehc.github.io/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>&gt;LaTeX&lt; Tikz for Myself</title>
-      <link>http://nixnehc.github.io/posts/2023/07/latex-tikz-for-myself/</link>
-      <pubDate>Thu, 27 Jul 2023 16:13:19 +0800</pubDate>
+      <title>&gt;LaTeX&lt;  From Zero to Hero (Basic setting)</title>
+      <link>http://nixnehc.github.io/posts/2/01/latex-from-zero-to-hero-basic-setting/</link>
+      <pubDate>Tue, 01 Jan 0002 00:00:00 +0000</pubDate>
       
-      <guid>http://nixnehc.github.io/posts/2023/07/latex-tikz-for-myself/</guid>
-      <description>&lt;p&gt;最近在写毕业论文，免不了画一些图，虽说 &lt;a href=&#34;https://www.mathcha.io/editor&#34;&gt;mathcha&lt;/a&gt;这类是好东西，但还是太弱了。
-&lt;code&gt;Tikz&lt;/code&gt; 理论上什么图都可以画，这里列举一些 &lt;code&gt;Tikz&lt;/code&gt; 宏包的使用例子，
-来源的话都是从各个网站上面搬运的，择其善者而摘之。&lt;/p&gt;
-&lt;p&gt;不定期更新。&lt;/p&gt;</description>
+      <guid>http://nixnehc.github.io/posts/2/01/latex-from-zero-to-hero-basic-setting/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;http://nixnehc.github.io/images/tex_lion/tex_lion_relax.png&#34;
+         alt=&#34;(so cute lion, isn&amp;amp;rsquo;t it? ©)&#34; width=&#34;100%&#34;/&gt;&lt;figcaption&gt;
+            &lt;p&gt;(so cute lion, isn&amp;rsquo;t it? &lt;a href=&#34;https://tug.org/eplain/art.html&#34;&gt;©&lt;/a&gt;)&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;[\LaTeX{}：从入门到入土]&lt;/p&gt;
+&lt;p&gt;This page is a crash course on $\LaTeX{}$ for myself.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>&gt;LaTeX&lt; pdf Encryption</title>
-      <link>http://nixnehc.github.io/posts/2023/05/latex-pdf-encryption/</link>
-      <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
+      <link>http://nixnehc.github.io/posts/2/01/latex-pdf-encryption/</link>
+      <pubDate>Tue, 01 Jan 0002 00:00:00 +0000</pubDate>
       
-      <guid>http://nixnehc.github.io/posts/2023/05/latex-pdf-encryption/</guid>
+      <guid>http://nixnehc.github.io/posts/2/01/latex-pdf-encryption/</guid>
       <description>&lt;p&gt;在 latex 中如何使生成的 pdf 被加密或只读呢？&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>与跆俱同学爬凤凰山</title>
-      <link>http://nixnehc.github.io/posts/2022/10/%E4%B8%8E%E8%B7%86%E4%BF%B1%E5%90%8C%E5%AD%A6%E7%88%AC%E5%87%A4%E5%87%B0%E5%B1%B1/</link>
-      <pubDate>Fri, 07 Oct 2022 16:13:19 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2022/10/%E4%B8%8E%E8%B7%86%E4%BF%B1%E5%90%8C%E5%AD%A6%E7%88%AC%E5%87%A4%E5%87%B0%E5%B1%B1/</guid>
-      <description>&lt;p&gt;最近在写毕业论文，免不了画一些图，虽说 &lt;a href=&#34;https://www.mathcha.io/editor&#34;&gt;mathcha&lt;/a&gt;这类是好东西，但还是太弱了。
-&lt;code&gt;Tikz&lt;/code&gt; 理论上什么图都可以画，这里列举一些 &lt;code&gt;Tikz&lt;/code&gt; 宏包的使用例子，
-来源的话都是从各个网站上面搬运的，择其善者而摘之。&lt;/p&gt;
-&lt;p&gt;不定期更新。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>游淇澳岛</title>
-      <link>http://nixnehc.github.io/posts/2022/01/%E6%B8%B8%E6%B7%87%E6%BE%B3%E5%B2%9B/</link>
-      <pubDate>Sun, 09 Jan 2022 16:13:19 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2022/01/%E6%B8%B8%E6%B7%87%E6%BE%B3%E5%B2%9B/</guid>
-      <description>&lt;p&gt;最近在写毕业论文，免不了画一些图，虽说 &lt;a href=&#34;https://www.mathcha.io/editor&#34;&gt;mathcha&lt;/a&gt;这类是好东西，但还是太弱了。
-&lt;code&gt;Tikz&lt;/code&gt; 理论上什么图都可以画，这里列举一些 &lt;code&gt;Tikz&lt;/code&gt; 宏包的使用例子，
-来源的话都是从各个网站上面搬运的，择其善者而摘之。&lt;/p&gt;
-&lt;p&gt;不定期更新。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>&gt;LaTeX&lt; The Philosophy of Latex</title>
-      <link>http://nixnehc.github.io/posts/2021/07/latex-the-philosophy-of-latex/</link>
-      <pubDate>Thu, 01 Jul 2021 05:29:53 +0800</pubDate>
+      <link>http://nixnehc.github.io/posts/2/01/latex-the-philosophy-of-latex/</link>
+      <pubDate>Tue, 01 Jan 0002 00:00:00 +0000</pubDate>
       
-      <guid>http://nixnehc.github.io/posts/2021/07/latex-the-philosophy-of-latex/</guid>
+      <guid>http://nixnehc.github.io/posts/2/01/latex-the-philosophy-of-latex/</guid>
       <description>&lt;p&gt;本文主要包括一些关于 LaTeX 的编写技巧和习惯。
 这些内容大都来自网络，觉得有道理便收集到此处。不定期更新。&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>&gt;LaTeX&lt;  From Zero to Hero (Basic setting) 从入门到入土</title>
-      <link>http://nixnehc.github.io/posts/2021/06/latex-from-zero-to-hero-basic-setting-%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%85%A5%E5%9C%9F/</link>
-      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      <title>&gt;LaTeX&lt; Tikz for Myself</title>
+      <link>http://nixnehc.github.io/posts/2/01/latex-tikz-for-myself/</link>
+      <pubDate>Tue, 01 Jan 0002 00:00:00 +0000</pubDate>
       
-      <guid>http://nixnehc.github.io/posts/2021/06/latex-from-zero-to-hero-basic-setting-%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%85%A5%E5%9C%9F/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;http://nixnehc.github.io/images/tex_lion/tex_lion_relax.png&#34;
-         alt=&#34;(this lion so cute, isn&amp;amp;rsquo;t it? ©)&#34; width=&#34;100%&#34;/&gt;&lt;figcaption&gt;
-            &lt;p&gt;(this lion so cute, isn&amp;rsquo;t it? &lt;a href=&#34;https://tug.org/eplain/art.html&#34;&gt;©&lt;/a&gt;)&lt;/p&gt;
-        &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;This page is a crash course on LaTeX for myself.&lt;/p&gt;</description>
+      <guid>http://nixnehc.github.io/posts/2/01/latex-tikz-for-myself/</guid>
+      <description>&lt;p&gt;写论文免不了画一些图，虽说 &lt;a href=&#34;https://www.mathcha.io/editor&#34;&gt;mathcha&lt;/a&gt; 这类有点用，但还是太弱了。
+&lt;code&gt;Tikz&lt;/code&gt; 理论上什么图都可以画，这里列举一些 &lt;code&gt;Tikz&lt;/code&gt; 宏包的使用例子，
+来源的话都是从各个网站上面搬运的，择其善者而摘之。&lt;/p&gt;
+&lt;p&gt;不定期更新。&lt;/p&gt;</description>
     </item>
     
   </channel>

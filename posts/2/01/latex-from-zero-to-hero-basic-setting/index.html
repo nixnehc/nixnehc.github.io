@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scale">
+<meta name="author" content="ChenXin">
+<meta name="description" content="My portfolio site">
+
+<title>&gt;LaTeX&lt;  From Zero to Hero (Basic setting) – ChenXin&#39;s Blog</title>
+
+ 
+<link rel="stylesheet" href="/css/style.min.fc208af41259a09afcc3486943dba75c9715c14095fefd02f6a65175f82508ed.css">
+
+
+
+
+
+
+
+
+
+
+</head>
+    
+
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
+    
+    <body >
+        <div class="container"><header>
+  <h1>ChenXin&#39;s Blog</h1> 
+</header>
+<nav>
+
+<a href="/">Home</a>·  
+<a href="/posts">Archives</a>·
+<a href="/categories">Categories</a>·
+<a href="/tags">Tags</a>·
+<a href="/misc">Misc</a>·
+<a href="/search">Search</a>·
+<a href="/about">About </a>
+
+</nav><main>
+    <article class="post">
+        <header>
+            <div class="list">
+            <h2>&gt;LaTeX&lt;  From Zero to Hero (Basic setting)</h2>
+            <p>
+            ✍️ 0002-01-01
+            ⏳ 21 minutes
+            🥸 CHEN 
+            <span class="categories"> 
+            💾 
+            <a class="category" href="/categories/toolkit">##toolkit</a>
+                
+            </span>
+            </p>
+            </div>
+        </header>
+
+
+
+        <section class="body">
+            <figure><img src="/images/tex_lion/tex_lion_relax.png"
+         alt="(so cute lion, isn&amp;rsquo;t it? ©)" width="100%"/><figcaption>
+            <p>(so cute lion, isn&rsquo;t it? <a href="https://tug.org/eplain/art.html">©</a>)</p>
+        </figcaption>
+</figure>
+
+<p>[\LaTeX{}：从入门到入土]</p>
+<p>This page is a crash course on $\LaTeX{}$ for myself.</p>
+<hr>
+<p>一些常见文件后缀说明</p>
+<ul>
+<li><code>.tex</code>: TeX 源文件</li>
+<li><code>.sty</code>: 宏包文件，用 <code>\usepackage{}</code> 命令导入；宏包名与文件名一致</li>
+<li><code>.cls</code>: 文档类，用 <code>\documentclass{}</code> 命令导入；文档类名称与文件名一致</li>
+<li><code>.log</code>: 编译日志</li>
+<li><code>.toc</code>: 存放章节名称，在下一次编译时读入以产生目录</li>
+<li><code>.lof</code>: 类似于 <code>.toc</code>，生成插图目录</li>
+<li><code>.lot</code>: 生成表格目录</li>
+<li><code>.aux</code>: 存放各种标签引用信息，生成交叉引用</li>
+<li><code>.bbl</code>: 参考文献记录文件</li>
+<li><code>.blg</code>: 参考文献编译日志</li>
+<li><code>.bst</code>: 参考文献格式模板</li>
+<li><code>.bib</code>: 参考文献数据库文件</li>
+<li><code>.out</code>: hyperref 宏包生成的 pdf 书签记录文件</li>
+</ul>
+<p>一些终端命令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">latex -v 
+</span></span><span class="line"><span class="cl">xelatex -v   <span class="c1">##查看版本号</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">tlmgr update --all        <span class="c1">##或者 </span>
+</span></span><span class="line"><span class="cl">tlmgr update --self--all   <span class="c1">##更新所有宏包</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">texdoc ctex  <span class="c1">##打开 CTEX 宏包手册，可以用 texdoc 命令查看任何说明文档</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">texdoc lshort-zh   <span class="c1">## 打开《一份(不太)简短的 LATEX2ε 介绍》</span>
+</span></span><span class="line"><span class="cl">texdoc graphicx    <span class="c1">## 获取有关插图方面的帮助</span>
+</span></span><span class="line"><span class="cl">                   <span class="c1">## 支持的插图格式有: eps,pdf,png,jpeg,bmp</span>
+</span></span></code></pre></div><p>特殊字符/标志：<br>
+<code>\textbackslash</code> :  反斜杠  \<br>
+<code>\dag</code> :    $\dag$<br>
+<code>\copyright</code> :  $\copyright$<br>
+<code>\TeX{}</code> : $\TeX{}$<br>
+<code>\LaTeX{}</code> : $\LaTeX{}$</p>
+<hr>
+<h2 id="basic-settings">[Basic \;Settings]</h2>
+<h3 id="-short-document"># short document</h3>
+<p>对于较短的文档 (如论文、作业等)，可以参照如下配置。其中的宏包 <code>cx.sty</code> 是私人定制的，里面包含了一些常用的数学宏包、字体设置等，稍后会对其内容做详细地说明。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tex" data-lang="tex"><span class="line"><span class="ln"> 1</span><span class="cl"> <span class="k">\documentclass</span><span class="na">[UTF8, 11pt, a4paper]</span><span class="nb">{</span>article<span class="nb">}</span>  <span class="c">% 声明文档类
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="c"></span> <span class="c">% 文档类是一个提前设计好的用于排版某种特定格式的latex宏集，类似于 Office 中的模版。
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"> <span class="c">% 加载自己定义的宏包，字体设置等在这个包里
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="c"></span> <span class="k">\usepackege</span><span class="nb">{</span>cx<span class="nb">}</span> 
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"> <span class="c">% 设置页边距：
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="c"></span> <span class="k">\usepackage</span><span class="nb">{</span>geometry<span class="nb">}</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"> <span class="k">\geometry</span><span class="nb">{</span>a4paper,left=2.5cm,right=2.5cm,top=2cm,bottom=2cm<span class="nb">}</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">
+</span></span><span class="line"><span class="ln">11</span><span class="cl"> <span class="c">% 设置行距、段距
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="c"></span> <span class="k">\linespread</span><span class="nb">{</span>1<span class="nb">}</span>    <span class="c">% 1 倍行距
+</span></span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="c"></span> <span class="k">\setlength</span><span class="nb">{</span><span class="k">\parskip</span><span class="nb">}{</span>0.5em<span class="nb">}</span>    <span class="c">% 段间距
+</span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl"> <span class="c">% ========================================
+</span></span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="c"></span> <span class="k">\title</span><span class="nb">{</span> The Title<span class="nb">}</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl"> <span class="k">\author</span><span class="nb">{</span>first author  <span class="k">\\</span> second author<span class="nb">}</span>
+</span></span><span class="line"><span class="ln">18</span><span class="cl"> <span class="k">\date</span><span class="nb">{}</span>     <span class="c">% 如需显示日期，在 {} 内填入 \today 或指定的日期
+</span></span></span><span class="line"><span class="ln">19</span><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="ln">20</span><span class="cl"> <span class="c">% ================ 导言区结束  ===============
+</span></span></span><span class="line"><span class="ln">21</span><span class="cl"><span class="c"></span> <span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+</span></span><span class="line"><span class="ln">22</span><span class="cl"> <span class="k">\maketitle</span>          <span class="c">% 显示标题 title
+</span></span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="c"></span> <span class="c">% ============================================
+</span></span></span><span class="line"><span class="ln">24</span><span class="cl"><span class="c"></span> <span class="k">\tableofcontents</span>    <span class="c">% 生成目录
+</span></span></span><span class="line"><span class="ln">25</span><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="ln">26</span><span class="cl"> <span class="c">%\listoffigures    % 可生成 图表目录
+</span></span></span><span class="line"><span class="ln">27</span><span class="cl"><span class="c"></span> <span class="c">%\listoftables
+</span></span></span><span class="line"><span class="ln">28</span><span class="cl"><span class="c"></span> <span class="c">% 以下设定可以使得生成的图表目录中有前缀 “表” 和 “图”，
+</span></span></span><span class="line"><span class="ln">29</span><span class="cl"><span class="c"></span> <span class="c">% 如果用上面的两个命令则没有
+</span></span></span><span class="line"><span class="ln">30</span><span class="cl"><span class="c"></span> <span class="nb">{</span>   <span class="k">\let\oldnumberline\numberline</span>
+</span></span><span class="line"><span class="ln">31</span><span class="cl">    <span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\numberline</span><span class="nb">}{</span><span class="k">\figurename</span>~<span class="k">\oldnumberline</span><span class="nb">}</span>
+</span></span><span class="line"><span class="ln">32</span><span class="cl">    <span class="k">\listoffigures</span>
+</span></span><span class="line"><span class="ln">33</span><span class="cl"> <span class="nb">}</span>
+</span></span><span class="line"><span class="ln">34</span><span class="cl"> <span class="nb">{</span>   <span class="k">\let\oldnumberline\numberline</span>
+</span></span><span class="line"><span class="ln">35</span><span class="cl">    <span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\numberline</span><span class="nb">}{</span><span class="k">\tablename</span>~<span class="k">\oldnumberline</span><span class="nb">}</span>
+</span></span><span class="line"><span class="ln">36</span><span class="cl">    <span class="k">\listoftables</span>
+</span></span><span class="line"><span class="ln">37</span><span class="cl"> <span class="nb">}</span>
+</span></span><span class="line"><span class="ln">38</span><span class="cl">
+</span></span><span class="line"><span class="ln">39</span><span class="cl"> <span class="c">% ================   正文开始   ==============
+</span></span></span><span class="line"><span class="ln">40</span><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="ln">41</span><span class="cl"> <span class="k">\section</span><span class="nb">{</span> section xxx<span class="nb">}</span>
+</span></span><span class="line"><span class="ln">42</span><span class="cl">
+</span></span><span class="line"><span class="ln">43</span><span class="cl"> <span class="k">\subsection</span><span class="nb">{</span> subsection xxx<span class="nb">}</span>
+</span></span><span class="line"><span class="ln">44</span><span class="cl">
+</span></span><span class="line"><span class="ln">45</span><span class="cl"> <span class="k">\subsubsection</span><span class="nb">{</span> subsub....<span class="nb">}</span>
+</span></span><span class="line"><span class="ln">46</span><span class="cl">
+</span></span><span class="line"><span class="ln">47</span><span class="cl"> <span class="c">% ============ 参考文献 bibliography ========
+</span></span></span><span class="line"><span class="ln">48</span><span class="cl"><span class="c"></span> <span class="k">\newpage</span>  <span class="c">% 新页面（如不需要将参考文献另起一页，则注释或删去这行）
+</span></span></span><span class="line"><span class="ln">49</span><span class="cl"><span class="c"></span> <span class="k">\bibliographystyle</span><span class="nb">{</span>plain<span class="nb">}</span>    <span class="c">% 设置参考文献风格，详见有关文档说明
+</span></span></span><span class="line"><span class="ln">50</span><span class="cl"><span class="c"></span> <span class="k">\bibliography</span><span class="nb">{</span>/Users/chenxin/Desktop/chenxin.bib<span class="nb">}</span>    <span class="c">% bib文件地址
+</span></span></span><span class="line"><span class="ln">51</span><span class="cl"><span class="c"></span> <span class="c">% ==================================================================
+</span></span></span><span class="line"><span class="ln">52</span><span class="cl"><span class="c"></span> <span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span></span></span></code></pre></div>
+<h3 id="-long-document-大型项目"># long document 大型项目</h3>
+<p>对于偏长的文档，如书籍、毕业论文等，使用一个 <code>.tex</code> 文件有时会太臃肿了，所以一般将一个长文档（按「章节」或「部分」）拆分为多个 <code>chxx.tex</code>  文件，然后再用 <code>\input{}</code>  或者 <code>\include{}</code> 命令将它们插入到主文档 <code>main.tex</code> 中。</p>
+<p>一个大型项目的目录举例如下：</p>
+<pre tabindex="0"><code>----- your project ----
+
+~/your-project/ % ls
+
+├── ch1/
+    └── ch1.tex             # 存放第一章的内容
+    ...
+├── chxx/
+    └── chxx.tex            # 存放第xx章第内容
+├── img/                    # 存放所有插图
+├── cx.sty                  # 配置自己常用的宏包
+├── main.tex                # 主文档
+├── main.pdf                # 生成的pdf 文档
+└── xxx.bib                 # 参考文献  
+# 未列出的还有tex生成的其他文件（如日志、引用样式等）
+</code></pre><p>而其中的</p>
+<p><code>chxx.tex</code> 文件只需以 <code>\chpter{}</code> 开头即可：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tex" data-lang="tex"><span class="line"><span class="ln"> 1</span><span class="cl"> <span class="c">% chxx.tex 这是第xx章第内容
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="c"></span> <span class="c">% 如果使用的文档类不是 report 或者 book 的话，则不能使用如下 \chapter{} 命令， 
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="c"></span> <span class="c">% 可以改用 \section{}
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"> <span class="k">\chapter</span><span class="nb">{</span> the title <span class="nb">}</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"> <span class="c">% ========
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="c"></span> <span class="k">\section</span><span class="nb">{}</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">
+</span></span><span class="line"><span class="ln">10</span><span class="cl"> <span class="k">\subsection</span><span class="nb">{}</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">
+</span></span><span class="line"><span class="ln">12</span><span class="cl"> <span class="c">% ========
+</span></span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="c"></span> <span class="k">\section</span><span class="nb">{}</span></span></span></code></pre></div>
+<p>而其中的 <code>main.tex</code> 可参考如下设置：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="c">% ===========================================
+</span></span></span><span class="line"><span class="cl"><span class="c">%       My template for long document      
+</span></span></span><span class="line"><span class="cl"><span class="c">% ===========================================
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\documentclass</span><span class="na">[UTF8,12pt,a4paper]</span><span class="nb">{</span>report<span class="nb">}</span>  
+</span></span><span class="line"><span class="cl"><span class="c">% 在 report 或 book 文档类可以用 \chapter 命令
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="k">\usepackage</span><span class="nb">{</span>cx<span class="nb">}</span>    <span class="c">% 加载自己定义的宏包
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="c">% 设置页边距：
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>geometry<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\geometry</span><span class="nb">{</span>a4paper,left=2cm,right=2cm,top=1cm,bottom=2cm<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% 行距、段距设置
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\linespread</span><span class="nb">{</span>1<span class="nb">}</span>                 <span class="c">% 1 倍行距
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\setlength</span><span class="nb">{</span><span class="k">\parskip</span><span class="nb">}{</span>0.5em<span class="nb">}</span>    <span class="c">% 段间距
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="c">% 设置全文脚注连续编号
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\counterwithout*</span><span class="nb">{</span>footnote<span class="nb">}{</span>chapter<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% ####### 以下设置本文中常用的缩写 #########
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\da</span><span class="nb">}{</span><span class="k">\downarrow</span><span class="nb">}</span>    <span class="c">% 混合语言中的 down arrow
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\h</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>H<span class="nb">}}</span>    <span class="c">% 混合语言 H (美术体)
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\nom</span><span class="nb">}{</span><span class="k">\mathsf</span><span class="nb">{</span>NOM<span class="nb">}}</span> <span class="c">% 专名集 (无衬线体)
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="c">% 框架 和 模型  (哥特体字母)
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\F</span><span class="nb">}{</span><span class="k">\mathfrak</span><span class="nb">{</span>F<span class="nb">}}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\M</span><span class="nb">}{</span><span class="k">\mathfrak</span><span class="nb">{</span>M<span class="nb">}}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\T</span><span class="nb">}{</span><span class="k">\mathfrak</span><span class="nb">{</span>T<span class="nb">}}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\G</span><span class="nb">}{</span><span class="k">\mathfrak</span><span class="nb">{</span>G<span class="nb">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\Prop</span><span class="nb">}{</span><span class="k">\mathsf</span><span class="nb">{</span>Prop<span class="nb">}}</span>       <span class="c">% 命题变元集 (无衬线体)
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\K</span><span class="nb">}{</span><span class="k">\mathbf</span><span class="nb">{</span>K<span class="nb">}}</span>             <span class="c">% 极小正规逻辑 K  (粗体)
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\iffd</span><span class="nb">}{</span> :<span class="k">\Leftrightarrow</span> <span class="nb">}</span>  <span class="c">% 定义中的 iff 符号
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="c">% rule
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\der</span><span class="nb">}{</span> <span class="k">\;</span> / <span class="k">\;</span><span class="nb">}</span>             <span class="c">% der is derivation
+</span></span></span><span class="line"><span class="cl"><span class="c">% e.g MP: \varphi, (\varphi \to \psi)  \der   \psi
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="c">%  模型操作 (cf. 模态蓝皮书)
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\dju</span><span class="nb">}{</span><span class="k">\biguplus</span><span class="nb">_</span>i<span class="nb">}</span>           <span class="c">% disjoint union
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\gsm</span><span class="nb">}{</span><span class="k">\rightarrowtail</span><span class="nb">}</span>       <span class="c">% generated submodel
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bm</span><span class="nb">}{</span><span class="k">\twoheadrightarrow</span><span class="nb">}</span>     <span class="c">% bounded morphic image
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\meq</span><span class="nb">}{</span><span class="k">\leftrightsquigarrow</span><span class="nb">}</span>  <span class="c">% modal equivalence
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="c">% =====================  标题部分 ================
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\title</span><span class="nb">{</span> the Title <span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\author</span><span class="nb">{</span> your name<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\date</span><span class="nb">{}</span>   <span class="c">% 或者 \date{\today}
+</span></span></span><span class="line"><span class="cl"><span class="c">% ===================== 导言区结束 ================
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\maketitle</span>    <span class="c">% 生成标题
+</span></span></span><span class="line"><span class="cl"><span class="c">% ===============================================
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl">这是前言页 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">the preface page
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% ===============================================
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\tableofcontents</span>    <span class="c">% 生成目录
+</span></span></span><span class="line"><span class="cl"><span class="c">% =============== 以下插入各章节的内容 ===============
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="c">% !!!: 相对路径不要用 `./chxxx/xxx`  这种形式，会出奇奇怪怪的问题
+</span></span></span><span class="line"><span class="cl"><span class="c">% 可以不写文件后缀 .tex 
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="k">\input</span><span class="nb">{</span>ch1/ch1.tex<span class="nb">}</span>    
+</span></span><span class="line"><span class="cl"><span class="k">\input</span><span class="nb">{</span>ch2/ch2.tex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\input</span><span class="nb">{</span>ch3/ch3.tex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\input</span><span class="nb">{</span>chxxxx/chxxxx.tex<span class="nb">}</span>   
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% ============== \input 和 \include 的区别：
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="c">%  \include{&lt;filename&gt;} 在读入 &lt;filename&gt; 之前会另起一页，有的时候我们并不需要这样。
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="c">%  用 \input 命令，它纯粹是把文件里的内容插入;
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="c">%  总的来说，写书籍类的文稿用 \include{}, 而文章等短文稿用 \input{}
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% ==================== 参考文献 ===================
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newpage</span>
+</span></span><span class="line"><span class="cl"><span class="k">\bibliographystyle</span><span class="nb">{</span>plain<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\bibliography</span><span class="nb">{</span>/Users/chenxin/Desktop/chenxin.bib<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="c">% ===============================================
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</span></span></code></pre></div><h4 id="-一些小问题">## 一些小问题</h4>
+<p>当我们创建好 <code>ch1.tex</code> 且将其 \input 到主文档 <code>main.tex</code> 后，此时编译主文档，如果顺利的话
+就一切正常。不过当首次单独编译 <code>ch1.tex</code> 时可能会报错（原因未知），
+一个解决方案是先关闭所有文件，然后再打开，这时再单独编译 <code>ch1.tex</code> 就会正常了。</p>
+<p>注意，单独编译 <code>ch1.tex</code> 并不会生产独立的 pdf 文件。如果想达到这种功能，见后续的 post.</p>
+<h3 id="-私人包定制"># 私人包定制</h3>
+<p><code>cx.sty</code> 文档中是一些本人常用的包和命令缩写，并不具有普适性，仅供参考。
+该文件要和 <code>xxxx.tex</code> 文件放在同一个文件夹内，即至少会有如下文件夹结构如下：</p>
+<pre tabindex="0"><code>--------- 文件夹结构 ---------
+   |—— xxxx.tex
+   |—— cx.sty
+</code></pre><p>配置自己的 <code>xxxx.sty</code> 文档：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="c">%   cx.sty 文件具体内容
+</span></span></span><span class="line"><span class="cl"><span class="c">%   本宏包在tex文件中的名称：
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\NeedsTeXFormat</span><span class="nb">{</span>LaTeX2e<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\ProvidesPackage</span><span class="nb">{</span>cx<span class="nb">}</span>[2022/07/15 my LaTeX package]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% =====================  1. 一些预置宏包 ==================
+</span></span></span><span class="line"><span class="cl"><span class="c">% == 各类数学宏包
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>amsmath<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\usepackage</span><span class="nb">{</span>amsthm<span class="nb">}</span>      <span class="c">% amsthm 最好在 amsmath 后面加载
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>amssymb<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\usepackage</span><span class="nb">{</span>mathtools<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\usepackage</span><span class="nb">{</span>amsfonts<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\usepackage</span><span class="nb">{</span>wasysym<span class="nb">}</span>     <span class="c">% 该包使得 \Diamond，\Box 比较好看，更敦厚些
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>stmaryrd<span class="nb">}</span>    <span class="c">% \llbracket \rrbracket
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>mathrsfs<span class="nb">}</span>    <span class="c">% 提供数学环境下的花体字母
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="c">% 以下命令设置定理类环境的结束符号，本列中为 $\dashv$
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\makeatletter</span>
+</span></span><span class="line"><span class="cl"><span class="k">\def\@</span>endtheorem<span class="nb">{</span><span class="k">\hfill</span> <span class="s">$</span><span class="nv">\dashv</span><span class="s">$</span> <span class="k">\endtrivlist\@</span>endpefalse <span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\makeatother</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% 这两个忘记是干啥的啦。。。
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\usepackage</span><span class="nb">{</span>framed<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% 使用外部超链接
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>url<span class="nb">}</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% 交叉引用和参考文献
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>cite<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\usepackage</span><span class="nb">{</span>hyperref<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\hypersetup</span><span class="nb">{</span>
+</span></span><span class="line"><span class="cl">    colorlinks=true,
+</span></span><span class="line"><span class="cl">    linkcolor=blue,
+</span></span><span class="line"><span class="cl">    filecolor=green,      
+</span></span><span class="line"><span class="cl">    urlcolor=brown,
+</span></span><span class="line"><span class="cl">    citecolor=cyan, <span class="nb">}</span>     <span class="c">% 超链接文字的颜色设置：
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="c">%    图片设置
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>graphicx<span class="nb">}</span>     <span class="c">% 插图宏包
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>float<span class="nb">}</span>        <span class="c">% 设置图片浮动位置的宏包
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>subfigure<span class="nb">}</span>    <span class="c">% 插入多图时用子图显示的宏包
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="k">\usepackage</span><span class="nb">{</span>caption<span class="nb">}</span>      <span class="c">% 这个包可以使用 \caption*{} ，将图片的标题不编号
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="k">\usepackage</span><span class="nb">{</span>times<span class="nb">}</span>        <span class="c">% 使用Times New Roman字体
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="c">% 页面多栏；用于实现在同一页中实现不同的分栏
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>multicol<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% 注脚宏包
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>footmisc<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% 文本框，十分强大
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>tcolorbox<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\tcbuselibrary</span><span class="nb">{</span>skins, breakable, theorems<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% ======================  字体设定, 尽量别随意变动 =======
+</span></span></span><span class="line"><span class="cl"><span class="c">% == 英文
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>fontspec<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\setmainfont</span><span class="na">[Mapping=text-text]</span><span class="nb">{</span>Times New Roman<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\setsansfont</span><span class="na">[Mapping=text-text]</span><span class="nb">{</span>Tahoma<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\setmonofont</span><span class="nb">{</span>Courier New<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% == 中文
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\usepackage</span><span class="na">[CJKchecksingle,CJKnumber]</span><span class="nb">{</span>xeCJK<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\setCJKmainfont</span><span class="nb">{</span>Songti SC<span class="nb">}</span>[ BoldFont = Songti SC Black , ItalicFont = Kai ]
+</span></span><span class="line"><span class="cl"><span class="k">\setCJKsansfont</span><span class="nb">{</span>Songti SC<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\setCJKmonofont</span><span class="nb">{</span>Songti SC<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% ===================== 中文的定理类环境 ===================
+</span></span></span><span class="line"><span class="cl"><span class="c">% == 定理、定义、引理等都统一连续编号
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="k">\theoremstyle</span><span class="nb">{</span>remark<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="c">% \theoremstyle{style} 中， style 参数有3种：
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="c">% plain：定理名称是正体，定理内容是斜体
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="c">% definition：定理名称和内容都是正体
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="c">% remark：定理名称是斜体，定理内容是正体
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="k">\newtheorem</span><span class="nb">{</span>thm<span class="nb">}{</span><span class="k">\bf</span><span class="nb">{</span>定理<span class="nb">}}</span>[section]   <span class="c">% 定理，以小结为单位进行连续编号。
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                                      <span class="c">% 按需要可以把方括号中的 section 改为 chapter
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newtheorem</span><span class="nb">{</span>def.<span class="nb">}</span>[thm]<span class="nb">{</span><span class="k">\bf</span><span class="nb">{</span>定义<span class="nb">}}</span>      <span class="c">% 定义
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newtheorem</span><span class="nb">{</span>lemma<span class="nb">}</span>[thm]<span class="nb">{</span><span class="k">\bf</span><span class="nb">{</span>引理<span class="nb">}}</span>     <span class="c">% 引理
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newtheorem</span><span class="nb">{</span>corollary<span class="nb">}</span>[thm]<span class="nb">{</span><span class="k">\bf</span><span class="nb">{</span>推论<span class="nb">}}</span> <span class="c">% 推论
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newtheorem</span><span class="nb">{</span>prop<span class="nb">}</span>[thm]<span class="nb">{</span><span class="k">\bf</span><span class="nb">{</span>命题<span class="nb">}}</span>      <span class="c">% 命题
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newtheorem</span><span class="nb">{</span>example<span class="nb">}</span>[thm]<span class="nb">{</span><span class="k">\bf</span><span class="nb">{</span>例<span class="nb">}}</span>     <span class="c">% 例子
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newtheorem</span><span class="nb">{</span>note<span class="nb">}</span>[thm]<span class="nb">{</span><span class="k">\textit</span><span class="nb">{</span>注记<span class="nb">}}</span>  <span class="c">% 注记
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">%  由于 \Box 在模态逻辑中的崇高地位，特此将证毕符号 QED 改成黑色的正方形
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\qedsymbol</span><span class="nb">}{</span><span class="s">$</span><span class="nv">\blacksquare</span><span class="s">$</span><span class="nb">}</span>    
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% ============= 一些数学环境中常用的符号自定义缩写 ==============
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\IFF</span><span class="nb">}{</span><span class="k">\text</span><span class="nb">{</span> 当且仅当 <span class="nb">}}</span>        <span class="c">% 中文“当且将当”  
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\iffs</span> <span class="nb">}{</span><span class="k">\;\Leftrightarrow\;</span><span class="nb">}</span>   <span class="c">% 数学环境中的iff 
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\iffz</span><span class="nb">}{</span><span class="s">$</span><span class="nb"> </span><span class="nv">\iffs</span><span class="nb"> </span><span class="nv">\;</span><span class="nb"> </span><span class="s">$</span><span class="nb">}</span>           <span class="c">% 正文环境中的iff   
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\then</span><span class="nb">}{</span><span class="k">\text</span><span class="nb">{</span><span class="k">\;</span><span class="s">$</span><span class="nv">\Rightarrow</span><span class="s">$</span><span class="k">\;</span><span class="nb">}}</span>  <span class="c">% “如果，那么”   
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="c">%  bisimulation 符号   \bisimilar
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bisimilar</span><span class="nb">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">{</span><span class="k">\;</span><span class="nb">{</span><span class="k">\raisebox</span><span class="nb">{</span>.3ex<span class="nb">}</span>[0mm][0mm]<span class="nb">{</span><span class="k">\ensuremath</span><span class="nb">{</span><span class="k">\medspace\underline</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">{</span><span class="k">\!\leftrightarrow\!</span><span class="nb">}</span><span class="k">\medspace</span><span class="nb">}}}</span><span class="k">\;</span><span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\lang</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>L<span class="nb">}}</span>      <span class="c">% 语言L (美术体)
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="c">% 数学环境中的破折号   \dd
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\mathchardef\mhyphen</span>=&#34;2D
+</span></span><span class="line"><span class="cl"><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\dd</span><span class="nb">}{</span><span class="k">\mhyphen</span><span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% 中文文档类小结标题左对齐
+</span></span></span><span class="line"><span class="cl"><span class="c">% \CTEXsetup[format={\Large\bfseries}]{section}
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% =======================  画图设置 ===============================
+</span></span></span><span class="line"><span class="cl"><span class="c">%\usetikzlibrary{automata, arrows, positioning}
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="k">\usepackage</span><span class="nb">{</span>tikz<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\usetikzlibrary</span><span class="nb">{</span>arrows,calc,patterns,positioning,shapes<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\usetikzlibrary</span><span class="nb">{</span>decorations.pathmorphing<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\tikzset</span><span class="nb">{</span>
+</span></span><span class="line"><span class="cl">    modal/.style=<span class="nb">{</span>&gt;=stealth&#39;,shorten &gt;=1pt,shorten &lt;=1pt,auto,
+</span></span><span class="line"><span class="cl">        node distance=1.5cm,semithick<span class="nb">}</span>,
+</span></span><span class="line"><span class="cl">    world/.style=<span class="nb">{</span>circle,draw,minimum size=1cm,fill=gray!15<span class="nb">}</span>,
+</span></span><span class="line"><span class="cl">    point/.style=<span class="nb">{</span>circle,draw,fill=black,inner sep=0.5mm<span class="nb">}</span>,
+</span></span><span class="line"><span class="cl">    reflexive/.style=<span class="nb">{</span>-&gt;,in=120,out=60,loop,looseness=#1<span class="nb">}</span>,
+</span></span><span class="line"><span class="cl">    reflexive/.default=<span class="nb">{</span>5<span class="nb">}</span>,
+</span></span><span class="line"><span class="cl">    reflexive point/.style=<span class="nb">{</span>-&gt;,in=135,out=45,loop,looseness=#1<span class="nb">}</span>,
+</span></span><span class="line"><span class="cl">    reflexive point/.default=<span class="nb">{</span>25<span class="nb">}</span>,
+</span></span><span class="line"><span class="cl"><span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% ===================  一些带重音符号的常用人名
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\godel</span><span class="nb">}{</span>G<span class="k">\&#34;</span><span class="nb">{</span>o<span class="nb">}</span>del<span class="nb">}</span>              <span class="c">% Godel      \godel
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\Los</span><span class="nb">}{</span>Lo<span class="k">\&#39;</span><span class="nb">{</span>s<span class="nb">}}</span>                  <span class="c">% Los        \los
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\lowenheim</span><span class="nb">}{</span>L<span class="k">\&#34;</span><span class="nb">{</span>o<span class="nb">}</span>wenheim<span class="nb">}</span>      <span class="c">% Lowenheim  \lowenheim
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% ======================================================================
+</span></span></span><span class="line"><span class="cl"><span class="c">%% End of file `chenxin_chinese.sty&#39;.
+</span></span></span></code></pre></div><hr>
+<h2 id="symbols">Symbols</h2>
+<h3 id="-logical-symbols"># logical symbols</h3>
+<ol>
+<li>boolean formulae：<code>\neg, \!\sim, \lor, \land, \to, \bot, \top</code>
+<ul>
+<li>\(
+\neg \varphi,  \sim \varphi, \varphi \lor \psi, \varphi\land\psi, \varphi\to\psi, \bot, \top
+\)</li>
+</ul>
+</li>
+<li>modalities: <code>\Box, \Diamond, \nabla, \trialngle</code>:
+<ul>
+<li>\( \Box \phi, \Diamond \phi, \nabla \phi, \triangle \phi \)</li>
+</ul>
+</li>
+<li>forcing symbols: <code>\models, \vDash, \vdash, \Vdash</code>:
+<ul>
+<li>\( \models, \vDash, \vdash, \Vdash \)</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="其他常用操作">[其他常用操作]</h2>
+<h3 id="-插入超链接"># 插入超链接</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="c">% 需要的包
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>hyperref<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\hypersetup</span><span class="nb">{</span>colorlinks=true, linkcolor=blue, filecolor=blue,urlcolor=blue, citecolor=cyan,<span class="nb">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="c">% 两种引用方法
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>1. <span class="k">\url</span><span class="nb">{</span>http://www.hello.com<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">2. <span class="k">\href</span><span class="nb">{</span>http://www.hello.com<span class="nb">}{</span>Hello<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% 如果是邮箱的话，加入mailto命令即可:
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\href</span><span class="nb">{</span>mailto:xxxxx@gmail.com<span class="nb">}{</span>xxxxx@gmail.com<span class="nb">}</span>
+</span></span></code></pre></div><h3 id="-画-kripke-models"># 画 Kripke models:</h3>
+<ul>
+<li>画一些简单的模型看这个就够了：<a href="http://www.actual.world/resources/tex/doc/TikZ.pdf">A Quick TikZ Guide for Modal Logicians</a> (Alex Kocurek, 2020)</li>
+<li><a href="https://github.com/rzach/ptolemaic-astronomy">Diagrams of sphere models for variably strict conditionals</a> (Richard Zach 2018)</li>
+</ul>
+<h3 id="-下划线"># 下划线</h3>
+<p>一般用 <code>\underline{}</code> 命令，但是一个致命缺点是不能自动换行。一种解决方案如下</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\usepackage</span><span class="nb">{</span>soul<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">\ul</span><span class="nb">{</span> 要下划线的内容 <span class="nb">}</span>
+</span></span></code></pre></div><p>不建议用 <code>ulem</code> 包中的 <code>\uline{}</code> 命令，因为这种会改变 <code>\emph{}</code> 的样式。</p>
+<h3 id="-附录参考文献等附录设置"># 附录、参考文献等附录设置</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-TeX" data-lang="TeX"><span class="line"><span class="cl"><span class="k">\section*</span><span class="nb">{</span>附录<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\addcontentsline</span><span class="nb">{</span>toc<span class="nb">}{</span>section<span class="nb">}{</span>附录<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% or in Book, Report documentclass:
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="k">\chapter*</span><span class="nb">{</span>附录<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\addcontentsline</span><span class="nb">{</span>toc<span class="nb">}{</span>chapter<span class="nb">}{</span>附录<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">%\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="k">\section*</span><span class="nb">{</span>参考文献<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\addcontentsline</span><span class="nb">{</span>toc<span class="nb">}{</span>section<span class="nb">}{</span>参考文献<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="c">% or 
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\chapter*</span><span class="nb">{</span>参考文献<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\addcontentsline</span><span class="nb">{</span>toc<span class="nb">}{</span>chapter<span class="nb">}{</span>参考文献<span class="nb">}</span>
+</span></span></code></pre></div><hr>
+<ul>
+<li><code>TeXstudio</code> 小彩蛋：在编辑界面里面按 ESC 很多下，会出现一只小黄鸭~~~~</li>
+</ul>
+<hr>
+<figure><img src="/images/tex_lion/tex_lion_2_color.jpg"
+         alt="(the Tex mascot lion ©)" width="70%"/><figcaption>
+            <p>(the Tex mascot lion <a href="http://www.cervantex.es/taxonomy/term/12">©</a>)</p>
+        </figcaption>
+</figure>
+        </section>
+
+        
+    </article>
+
+    <hr>
+    <span class="tags"> 
+        🏷️  
+        
+        <a class="tag" href="/tags/latex">#latex</a>
+        
+        
+    </span>
+
+    
+
+    <section class="related">
+         
+        
+    <h4>Related articles:</h4>
+            <ul>
+            
+            <li><a href="/posts/2/01/latex-the-philosophy-of-latex/">&gt;LaTeX&lt; The Philosophy of Latex</a>
+            </li> 
+            
+            <li><a href="/posts/2/01/latex-tikz-for-myself/">&gt;LaTeX&lt; Tikz for Myself</a>
+            </li> 
+            
+            <li><a href="/posts/2/01/latex-pdf-encryption/">&gt;LaTeX&lt; pdf Encryption</a>
+            </li> 
+            
+            </ul>
+        
+    </section>
+
+
+
+
+        </main><center>
+<footer>
+  Copyright &copy; 2023 
+  <br> 
+  Made with 🧡 by <a href="https://chenxinhello.github.io" target="_blank">ChenXin</a>
+
+
+
+</footer>
+</center></div>
+    </body>
+</html>

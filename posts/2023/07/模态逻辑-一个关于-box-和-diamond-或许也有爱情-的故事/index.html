@@ -8,7 +8,7 @@
 <title>模态逻辑: 一个关于 Box 和 Diamond (或许也有爱情) 的故事 – ChenXin&#39;s Blog</title>
 
  
-<link rel="stylesheet" href="/css/style.min.9a08ef59cddf03e769f22bf3d470cf06e049c284db74d66884c1466f17672b40.css">
+<link rel="stylesheet" href="/css/style.min.fc208af41259a09afcc3486943dba75c9715c14095fefd02f6a65175f82508ed.css">
 
 
 
@@ -79,12 +79,11 @@ code.has-jax {
             <div class="list">
             <h2>模态逻辑: 一个关于 Box 和 Diamond (或许也有爱情) 的故事</h2>
             <p>
-            ✍️ 2023-07-10|
-            ⏳ 34 minutes|
-            🧐 nixnehc|
+            ✍️ 2023-07-10
+            ⏳ 46 minutes
+            🥸 Xin 
             <span class="categories"> 
             💾 
-                
             <a class="category" href="/categories/logic-math">##logic &amp; math</a>
                 
             </span>
@@ -95,25 +94,26 @@ code.has-jax {
 
 
         <section class="body">
-            <h1 id="写在前面">写在前面</h1>
-<p>以下内容是为7月5日 <strong>模态逻辑</strong> 考试所准备的草稿, 整整考了4个小时, 真是有生之年考过最长的考试了😭, 但准备的内容似乎还是太多了, 根本写不完.
+            <p>[写在前面]
+以下内容是为7月5日 <strong>模态逻辑</strong> 考试所准备的草稿, 整整考了4个小时, 真是有生之年考过最长的考试了😭, 但准备的内容似乎还是太多了, 根本写不完.
 望着这些准备好的稿纸, 虽无甚洞见, 但毕竟是自己一段时间内的心血, 想着弃之可惜, 遂又加以整理, 姑且当作一篇博文让其静静地躺在这里吧. 写到这里时却不免又悲从中来, 文章尚有「安生立命」之所, 作文者有焉?</p>
 <p><code>Disclaimer</code>: 本文可能会包含事实性的错误🙅</p>
 <p>此外本文写得相当的随性, 中英混杂并且几乎是想到啥就写啥, 这算作是某种作者的特权吧, 哈哈哈哈😆😆😆.
-此外为了输入的便捷考虑, 正如您所看到的那样, 除中文繁体的引用符号<code>「」</code>外, 本文全文使用半角标点.</p>
+此外为了输入的便捷考虑, 正如您所看到的那样, 除中文繁体的引用符号<code>「」</code>外, 全文使用半角标点.</p>
 <p>Paul Halmos 在 <em>Naive Set Theory (1974)</em> 的序言中有句话说得很好,
-在此处引用是最合适过不的了 ——
-“the expert specialist will find nothing new here.”</p>
+在此处引用是最合适过不的了:</p>
+<blockquote>
+<p>the expert specialist will find nothing new here.</p>
+</blockquote>
 <hr>
-<hr>
-<h1 id="模态逻辑-一个关于-box-和-diamond-或许也有爱情-的故事">模态逻辑: 一个关于 Box 和 Diamond (或许也有爱情) 的故事</h1>
+<h1 id="模态逻辑-一个关于-box-和-diamond-或许也有爱情-的故事">[模态逻辑: 一个关于 \;Box\; 和 \;Diamond\; (或许也有爱情) 的故事]</h1>
 <h2 id="-abstract"># Abstract</h2>
 <p>上溯亚里士多德, 间承中世纪诸哲人, 下迄 19 世纪初直至今日,
 现代模态逻辑可谓缘起于对「必然」,「可能」
 等哲学概念之形式化研究, 而繁盛于 CS,语言学,博弈论等诸当代科学跨学科之交融. 故上述各门类仍不失模态逻辑及其「周边」(如 Epistemic Logic, Deontic Logic 等) 发展的动因之一.</p>
-<p>本文旨在为模态逻辑提供一个简短的,现代的,数学上的介绍，且不求面面俱到.
+<p>本文旨在为模态逻辑提供一个简短的,数学上的介绍，不求面面俱到.
 所描绘的对象不妨称之为「抽象模态逻辑」(abstract modal logic).
-因此本文的行文风格是技术导向的且包含若干观念的堆砌.</p>
+故本文的行文风格是技术导向的且包含若干观念的堆砌.</p>
 <p>是时候开启旅程了, Long Live (modal) Logic!</p>
 <hr>
 <h2 id="-1--introduction"># 1  Introduction</h2>
@@ -123,49 +123,54 @@ code.has-jax {
 常见的关系结构有 <em>偏序</em>, <em>树</em>, <em>族谱</em> 等. 后面我们会看到, 模态逻辑是描述关系结构十分趁手的工具.</p>
 <h3 id="-11-languages">## 1.1 Languages</h3>
 <p>逻辑是门形式化科学,「形式语言」则是逻辑家的武器. 本文既然讨论的是模态逻辑, 那么什么是模态语言呢?
-为简便起见, 本文仅限于「基本命题模态语言」(即只含一个模态词)上的讨论.</p>
-<p>首先我们固定一集<em>可数</em>的命题变元集  Prop (某种程度上 Prop 是可数的也决定了语言是可数的), 则<strong>基本模态语言</strong>由如下 BNF 规则给出：</p>
+为简便起见, 本文仅限于「基本命题模态语言」(即只含一个一元模态词)上的讨论.</p>
+<p>首先我们固定一集 <em>可数</em> 的命题变元集  Prop (某种程度上 Prop 是可数的也决定了语言是可数的), 则<strong>基本模态语言</strong>由如下 BNF 规则给出：</p>
 <p>$$ \mathcal{L} \ni \varphi ::= p \mid \bot \mid \neg \varphi \mid (\varphi \lor \varphi) \mid \Diamond \varphi $$</p>
 <p>其中 $p \in$ Prop.
-$\Diamond$ 这个长的像「钻石」的家伙就是所谓的(一元)模态词了, 虽然它长得像💎却一点也无后者的「坚贞」.
+$\Diamond$ 这个长的像「钻石」的家伙就是所谓的(一元)模态词了, 虽然它长得像💎却一点也无后者的(由消费主义吹鼓起来的)「坚贞」.
 $\bot$ 表示矛盾, 对应我们思维中的某些「脏」东西.
 引入如下符号作为缩写对以后的讨论是有益的：</p>
-<p>$$
-\Box \varphi ::= \neg \Diamond \neg \varphi
-$$</p>
-<p>$$ \varphi \land \psi ::= \neg (\neg \varphi \lor \neg \psi ) $$</p>
-<p>$$  \varphi \to \psi ::= \neg \varphi \lor \psi
-$$
-「盒子」$\Box$ 被称为 $\Diamond$ 的对偶算子, 他们惺惺相惜, 但也不总是形影不离, 就像 钻石 和 装饰它的 盒子 那样。</p>
+<ul>
+<li>
+<p>$\Box \varphi := \neg \Diamond \neg \varphi$</p>
+</li>
+<li>
+<p>$\varphi \land \psi := \neg (\neg \varphi \lor \neg \psi )$</p>
+</li>
+<li>
+<p>$\varphi \to \psi := \neg \varphi \lor \psi$</p>
+</li>
+</ul>
+<p>「盒子」$\Box$ 被称为 $\Diamond$ 的<strong>对偶算子</strong>, 他们惺惺相惜, 却也不总是形影不离, 就像 钻石 和 装饰它的 盒子 那样。</p>
 <p>对于上面给出的语言, 我们可以在其身上玩出颇多的花样, 如定义<strong>模态度</strong>(一个公式中模态算子所嵌套的最大层数),<strong>子公式</strong>等.
 正如玫瑰钻石之于爱情或是商人吹捧, 显卡之于男人抑或物有所值, 形式语言只是一堆符号罢了,
 符号虽也自有其趣味, 但恐过于孤独. 是时候为形式语言注入点「资本主义」了.</p>
 <h3 id="-12-semantics">## 1.2 Semantics</h3>
 <p>为形式语言的「资本化」这件事逻辑学家们称之为「解释」, 用什么来解释模态语言呢? 关系结构某种程度是数学上的天选之子,
 不过客随主便, 在模态逻辑中他们被称之为「框架」和「模型」.</p>
-<p><code>Def.</code> 一个<strong>框架</strong> frame 是二元组 $(W,R)$, 其中 $W$ 非空, $R \subseteq W \times W$.  一个<strong>模型</strong>是 $M=(W,R,V)$, 他由一个框架 $(W,R)$ 装配上 $V$ —— 一个从 Prop 到 $\wp(W)$ 的函数, 称之为<strong>赋值</strong> —— 组成. //</p>
-<p>通俗地说，一个模型就是一个<strong>有向图</strong> $(W,R)$ 加上对这个图的某些注释 (赋值的功能). <strong>赋值</strong>这东西看起来有点怪异, 它有很多其他的定义方式, 流行的有如下两种: 给定框架 $(W,R)$</p>
+<p><code>Def.</code> 一个<strong>框架(frame)</strong> 是二元组 $(W,R)$, 其中 $W$ 非空, $R \subseteq W \times W$.  一个<strong>模型</strong>是 $M=(W,R,V)$, 他由一个框架 $(W,R)$ 装配上 $V$ —— 一个从 Prop 到 $\wp(W)$ 的函数, 称之为<strong>赋值</strong> —— 组成. //</p>
+<p>通俗地说，一个模型就是一个<strong>有向图</strong> $(W,R)$ 加上对这个图的某些注释 (赋值干的活). <strong>赋值</strong>这东西看起来有点怪异, 它有很多其他的定义方式, 较流行的有如下两种: 给定框架 $(W,R)$</p>
 <ol>
 <li>$V \colon W \times Prop \to \{0,1\}$</li>
-<li>$V \colon W \to \wp(Prop)$</li>
+<li>$V \colon W \to \wp(Prop)$ (这时赋值往往被称为「加标函数」)</li>
 </ol>
-<p>对于这里所采用的赋值的定义, 一个好处是, 此时模型 $M=(W,R,V)$ 可以很自然地被视为一个<strong>一阶结构</strong>：
+<p>对于上述所采用的赋值定义, 一个直接的好处是, 此时模型 $M=(W,R,V)$ 可以很自然地被视为一个<strong>一阶结构</strong>：
 $$
 M=(W,R,V(p),V(q),V(r),&hellip;)
 $$
-其中 $V(p)$ 等恰好对应论域 $W$ 上的一个<strong>一元谓词</strong>.</p>
-<p>有了模型, 怎么和语言联系起来呢? <strong>可满足</strong> 这个「酒鬼」专门干这种事情.</p>
+其中 $V(p),V(q),V(r),&hellip;$ 恰好对应论域 $W$ 上的<strong>一元谓词</strong>.</p>
+<p>有了模型, 怎么和语言联系起来呢? <strong>可满足,真值条件</strong> 等人专门干这种事情.</p>
 <p><code>Def.</code> 设 $w$ 是模型 $M=(W,R,V)$ 中的一个状态, 公式 $\varphi$ 在 $w$ 上<strong>可满足</strong>,
 记作 $M,w \Vdash \varphi$, 递归地定义如下:</p>
 <ol>
-<li>$M,w \Vdash p \iff w \in V(p)$</li>
-<li>$M,w \Vdash \bot \iff never$</li>
-<li>$M,w \Vdash \neg \varphi \iff not \; M,w \Vdash \varphi$</li>
-<li>$M,w \Vdash \varphi \lor \psi \iff M,w \Vdash \varphi \; or \; M,w \Vdash \psi$</li>
-<li>$M,w \Vdash \Diamond \varphi \iff \exists u \colon Rwu \; \&amp; \; M,w \Vdash \varphi$</li>
+<li>$M,w \Vdash p \Leftrightarrow w \in V(p)$</li>
+<li>$M,w \Vdash \bot \Leftrightarrow never$</li>
+<li>$M,w \Vdash \neg \varphi \Leftrightarrow not \; M,w \Vdash \varphi$</li>
+<li>$M,w \Vdash \varphi \lor \psi \Leftrightarrow M,w \Vdash \varphi \; or \; M,w \Vdash \psi$</li>
+<li>$M,w \Vdash \Diamond \varphi \Leftrightarrow \exists u \colon Rwu \; \&amp; \; M,w \Vdash \varphi$</li>
 </ol>
 <p>对于公式集 $\Sigma$,用 $M,w \Vdash \Sigma$ 表示 $\Sigma$ 中所有的公式都在$M,w$ 上可满足. //</p>
-<p>可满足这个概念本质上是一种 <em>局部性</em> 的概念, 欲在点 $w$ 上判断公式 $\Diamond \varphi$ 是否成立,
+<p>可满足这个概念本质上是一种 <em>局部性</em> 概念, 吾欲在点 $w$ 上判断公式 $\Diamond \varphi$ 是否成立,
 就得沿着 $R$ 的目光所及之处看看是否有某个“角落” $u$, 在其中 $\varphi$ 成立.
 因此模态词可以被视作是对一阶量词的某种限制. 这便是所谓的「模态逻辑之局部观」.</p>
 <p>一个框架 $(W,R)$ 可以产生出无数多的模型 $(W,R,V)$, 这都是赋值 $V$ 在作祟, 为了消解 $V$ 捣乱的权利, 我们制定了《有效性法典》:</p>
@@ -176,12 +181,11 @@ $$
 <li>$\phi$ 在框架类 $\mathbb{F}$ 上有效，记作 $\mathbb{F} \Vdash \phi$, 若对于 $\mathbb{F}$ 中的任意框架 $F$ 都有 $F \Vdash \phi$.</li>
 <li>$\phi$ 是有效的，记作 $\Vdash \phi$, 若 $\phi$ 在任意框架类上都有效. //</li>
 </ul>
-<p>因此, 我们的《有效性法典》制定了4个层次的有效性概念, 它们依次递进:
+<p>因此, 我们的《有效性法典》制定了4个等级的有效性公民, 他们的权利依次递进:
 $$
 点框架有效 \to  框架有效  \to 框架类有效  \to 有效
 $$</p>
-<p>在一个框架类 $\mathbb{F}$ 上所有有效的公式构成 $\mathbb{F}$ 的逻辑 $\Delta_\mathbb{F}$, 换而言之 $\Delta_\mathbb{F} = \{ \varphi \mid \mathbb{F} \Vdash \varphi \}$ =
-$\bigcap_{F \in \mathbb{F}} \{ \varphi \mid F \Vdash \varphi \}$.</p>
+<p>一个框架类 $\mathbb{F}$ 上的所有有效式构成 $\mathbb{F}$ 的逻辑 $\Delta_\mathbb{F}$, 换而言之 $\Delta_\mathbb{F} = \{ \varphi \mid \mathbb{F} \Vdash \varphi \}$.</p>
 <p>一些例子总是有益的(虽然此处不欲给出具体的证明):</p>
 <ul>
 <li>$\Box (p \to q) \to (\Box p \to \Box q)$ 在所有的框架类上都是有效的, 这个公式有个特殊的名字: K —— 为纪念 Kripke.</li>
@@ -190,8 +194,8 @@ $\bigcap_{F \in \mathbb{F}} \{ \varphi \mid F \Vdash \varphi \}$.</p>
 <li>诸如此类例子数不胜数&hellip;&hellip;</li>
 </ul>
 <p>在运用逻辑的过程中, 总期以从某些前提推出某个结论来, 并且「逻辑」这个神圣的词保证了这种推理的正确性. 因此「后承关系」是逻辑中重点关注的“危险分子”.
-模态逻辑中有两个这种“危险分子”, 即「局部后承」和「全局后承」两兄弟, 这里我们主要关注「局部后承」小弟(一个很重要的原因是“打不过”大哥「全局后承」😢😢😢).</p>
-<p><code>Def.</code> 对于任意公式集 $Sigma \cup \{\varphi\}$ 和框架类 $S$, 称 $\varphi$ 在 $S$ 上是 $\Sigma$ 的一个 <em><strong>局部语义后承</strong></em>，记作 $\Sigma \Vdash_S \varphi$,
+模态逻辑中有两个这种“危险分子”, 即「局部后承」和「全局后承」两兄弟, 这里我们主要关注「局部后承」小弟(一个很重要的原因是“打不过”大哥「全局后承」😢).</p>
+<p><code>Def.</code> 对于任意公式集 $\Sigma \cup \{\varphi\}$ 和框架类 $S$, 称 $\varphi$ 在 $S$ 上是 $\Sigma$ 的一个 <em><strong>局部语义后承</strong></em>，记作 $\Sigma \Vdash_S \varphi$,
 若对于任意基于 $S$ 中框架所得到的点模型 $M,w$ 有: $M,w \Vdash \Sigma \Rightarrow M,w \Vdash \varphi$. //</p>
 <h3 id="-13-normal-modal-logics">## 1.3 Normal modal logics</h3>
 <p>前一小节主要是从语义角度讨论逻辑的, 但逻辑自有其语形维度, 即逻辑也由一条「语形流水线」生成出来, 这类流水线有很多, 我们来看看最繁忙的那条吧, 它叫做「正规模态逻辑」.</p>
@@ -200,10 +204,12 @@ $\bigcap_{F \in \mathbb{F}} \{ \varphi \mid F \Vdash \varphi \}$.</p>
 <li>所有命题重言式、K公理 $\Box (p \to q) \to (\Box p \to \Box q)$, Dual公理 $\Diamond p \leftrightarrow \neg \Box \neg p$.</li>
 <li>对 分离规则 MP，代入规则 Sub 和必然化规则 Gen 封闭. //</li>
 </ol>
-<p>$$ MP: \dfrac{\varphi, \varphi \to \psi}{\psi}  $$
-$$ Sub: \dfrac{\varphi}{\sigma(\varphi)}  $$
-$$ Gen:\dfrac{\varphi}{\Box\varphi} $$
-其中 $\sigma$ 是一个代入函数, 就是将一个公式中的命题变元的所有出现同时替换为某个公式.
+<ul>
+<li>$MP: \dfrac{\varphi, \varphi \to \psi}{\psi}$</li>
+<li>$Sub: \dfrac{\varphi}{\sigma(\varphi)}$</li>
+<li>$ Gen:\dfrac{\varphi}{\Box\varphi}$</li>
+</ul>
+<p>其中 $\sigma$ 是一个代入函数, 就是将一个公式中同一个命题变元的所有出现同时替换为某个公式.
 这3条规则对语义上的概念有不同的保持性, 下表是个总结:</p>
 <table>
 <thead>
@@ -245,7 +251,7 @@ $$ Gen:\dfrac{\varphi}{\Box\varphi} $$
 <ol>
 <li>
 <p>给定一堆论域彼此不相交的模型 $\{M_i\}_{i \in I}$, 其 <strong>不交并</strong> 是它们的合体:
-$\biguplus M_i = (W,R,V)$, 其中 $W,R$ 和 $V$ 是那堆模型论域, 通达关系和赋值的并.</p>
+$\biguplus M_i = (W,R,V)$, 其中 $W,R$ 和 $V$ 是各个模型论域, 通达关系和赋值的并.</p>
 </li>
 <li>
 <p>模型 $M=(W,R,V)$ 的一个 <strong>生成子模型</strong> 是 $M&rsquo;=(W’,R’,V’)$, 其中 $W&rsquo; \subseteq W$ 且对 $R$ 封闭，$R&rsquo;,V&rsquo;$ 都是原来的 $R,V$ 在新论域下的限制.</p>
@@ -258,7 +264,7 @@ $\biguplus M_i = (W,R,V)$, 其中 $W,R$ 和 $V$ 是那堆模型论域, 通达关
 <li>\(w\) 和 \(f(w)\) 满足同样的命题变元;</li>
 <li>$f$ 是一个同态;</li>
 <li>若 $R&rsquo;f(a)v$, 那么 $\exists b \in W, f(b)=v, Rab$;<br>
-当 $f$ 是满射时, $M&rsquo;$ 被称之为 $M$ 的 <strong>受限射像</strong>.</li>
+当 $f$ 是满射时, $M&rsquo;$ 称之为 $M$ 的 <strong>受限射像</strong>.</li>
 </ul>
 <p>如前文所述, 这三种操作都可以让模型(们)的“心”不变, 即施归纳于公式易得如下结论：</p>
 <p><code>Thm.</code>  <em>模态可满足性在不交并,生成子模型和受限射下保持不变</em> 形式地说：</p>
@@ -269,17 +275,148 @@ $\biguplus M_i = (W,R,V)$, 其中 $W,R$ 和 $V$ 是那堆模型论域, 通达关
 </ol>
 <h3 id="-22-bisimulations">## 2.2 Bisimulations</h3>
 <p>上面的三种操作虽看似各不相干，但 互模拟 这一概念揭示了三者背后的共性。</p>
-<p><code>Def.</code>   <strong>互模拟</strong></p>
-<p><strong>互模拟的</strong>。
-//</p>
-<p>互模拟的定义稍微陌生, 某种程度上是因为它是一种<em>余归纳</em>定义, 而不是常见的归纳定义. 不交并,生成子模型,受限射只是互模拟的特殊情形:</p>
-<p><code>Prop.</code></p>
-<p>而受限射与互模拟的最大区别在于, 前者是一个函数, 而后者是一个二元关系. //</p>
+<p><code>Def.</code>  任何两个模型$M=(W,R,V), M&rsquo;=(W&rsquo;,R&rsquo;,V&rsquo;)$, 二者间的一个<strong>互模拟</strong>是非空关系$Z \subseteq W \times W&rsquo;$, 满足</p>
+<ul>
+<li>若$wZw&rsquo;$, 则这两点满足相同的命题变元;</li>
+<li>若$wZw&rsquo;,Rwu$, 则存在$u&rsquo;\in W&rsquo;: R&rsquo;w&rsquo;u&rsquo;$ 且 $uZu&rsquo;$;</li>
+<li>若$wZw&rsquo;,R&rsquo;w&rsquo;u&rsquo;$, 则存在$u\in W: Rwu$ 且 $uZu&rsquo;$;</li>
+</ul>
+<p>被模型间互模拟关系相连结的两个点$w,w&rsquo;$称之为是<strong>互模拟的</strong>, 记作$w \rightleftarrows w&rsquo;$。//</p>
+<p>互模拟的定义或许稍微陌生, 某种程度上是因为它是一种<em>余归纳</em>定义, 而不是常见的归纳定义.</p>
+<p>不交并,生成子模型,受限射只是互模拟的特殊情形. 其中受限射与互模拟的定义极为相似,
+二者最大区别在于, 前者是一个函数, 而后者是一个二元关系. //</p>
 <p>不出意料, 互模拟本身也保持不变性:</p>
-<p><code>Thm.</code>   //</p>
-<p>一个有趣的问题是, 上述定理的逆命题成立吗? 非也, 一个经典的反例是 [[fig:</p>
+<p><code>Thm.</code> 若 $w \rightleftarrows w&rsquo;$, 则 $w \equiv w&rsquo;$.s //</p>
+<p>一个有趣的问题是, 上述定理的逆命题成立吗? 非也, 一个经典的反例如下</p>
+<figure><img src="counter-example.jpg"
+         alt="蓝皮书p68·如来佛大战千手观音(王彦晶老师语)" width="100%"/><figcaption>
+            <p>蓝皮书p68·如来佛大战千手观音(王彦晶老师语)</p>
+        </figcaption>
+</figure>
+
+<p>上面的$M$和$M&rsquo;$很类似,二者都有无穷多条分支,不过前者各分支的长度都是有穷长的;而后者有一条无穷长的分支. 可是$w$和$w&rsquo;$是模态等价的. 这一点或许并不奇怪,正如「吾生也有涯而知无涯」, 有穷长度的公式凭什么能区分无穷的模型呢?</p>
+<p>但若对模型稍作限定,则 $\equiv$ 和 $\rightleftarrows$ 这两个关系就可以不分你我了. 称一个模型是<strong>像有穷的</strong>, 如果每个点的后继都是有穷的. 在像有穷的模型上, $\equiv$ 便和 $\rightleftarrows$ 可以视为同一.</p>
+<p><code>Thm. (Hennesy-Milner)</code> 如果 $M$ 和 $M&rsquo;$ 是两个像有穷的模型, 则
+[
+M,w \rightleftarrows M&rsquo;,w&rsquo; \Leftrightarrow  M,w \equiv M&rsquo;,w&rsquo; .
+]</p>
+<p><code>Proof</code>
+<figure><img src="proof.jpg"
+         alt="这里有一个证明" width="100%"/><figcaption>
+            <p>这里有一个证明</p>
+        </figcaption>
+</figure>
+</p>
+<p>Hennesy-Milner定理说明了, 在像有穷的模型下, 互模拟和模态等价可以视作一回事. 我们进一步抽象, 称一个模型类具有 <strong>Hennesy-Milner性质</strong>(HM性质), 如果在这个模型类中
+$\equiv \;\subseteq\; \rightleftarrows$.</p>
+<p>像有穷的模型类显然具有HM性质, 对像有穷这一概念进一步抽象, 则得到所谓的模态饱和.</p>
+<p><code>Def.(m-saturation)</code> 一个模型 $M=(W,R,V)$ 是 <strong>m饱和的</strong>,
+如果对于任意 $w\in W$ 和任意公式集 $\Gamma$, $\Gamma$ 的每个有穷子集都在 $R[w]$ 上可满足蕴含 $\Gamma$ 在 $R[w]$ 上可满足, 其中$R[w]=\{u\mid Rwu\}$. //</p>
+<p><code>Thm.</code> m饱和的模型类具有HM性质. //<br>
+<code>Proof</code> (证明的过程相对繁琐,要用到超滤扩张之类的高级玩意嘞)//</p>
 <h3 id="23--标准翻译和刻画定理">2.3 ## 标准翻译和刻画定理</h3>
+<p>模态逻辑不是一个孤儿, 他和其他逻辑有着紧密的亲缘关系, 「标准翻译」为这种分子生物学鉴定提供了工具.</p>
+<p>在模型层面, 基本模态语言通过标准翻译可以被视为FOL的一个片段, 更准确的说是 FOL$^2$ (只有两个变元的一阶语言) 的片段.
+在模型层面与模态语言相对应的一阶语言又被称为<strong>模型语言</strong>, 记作 $\mathcal{L}^1$, 它的字母表(带等词)包括一个二元关系符号$R$, 可数多个一元谓词符号 $P_i$ (对应命题变元$p_i$).</p>
+<p>标准翻译$ST_x$是从$\mathcal{L}$到$\mathcal{L}^1$到函数, 使得</p>
+<ul>
+<li>$ST_x (p) = Px$</li>
+<li>$ST_x (\bot) = x\not = x$</li>
+<li>$ST_x (\neg \varphi) = \neg ST_x(\varphi)$</li>
+<li>$ST_x (\varphi \lor \psi) = ST_x(\varphi) \lor ST_x(\psi)$</li>
+<li>$ST_x(\Diamond \varphi) = \exists y (Rxy \land ST_y(\varphi))$</li>
+</ul>
+
+
+
+<figure class="post-figure">
+    <a href="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/1.jpg">
+        
+    <img src="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/1_hue3a6b3aee6eab0e682227bbd7bf85f3a_1389885_1024x0_resize_q75_box.jpg"
+        width="1024" height="1459" 
+        alt="1·打字打不动了,先用照片吧😭 (ps. 由此得到的一个教训是,还是少用markdown写公式为好🥲)" />
+        
+    </a> 
+    <center>
+    1·打字打不动了,先用照片吧😭 (ps. 由此得到的一个教训是,还是少用markdown写公式为好🥲) <a href=""></a>
+    </center>
+</figure>
+
+
+
+<figure class="post-figure">
+    <a href="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/2.jpg">
+        
+    <img src="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/2_hu73178f5255007ebff65dfadfd21e6f2f_1352891_1024x0_resize_q75_box.jpg"
+        width="1024" height="1401" 
+        alt="2" />
+        
+    </a> 
+    <center>
+    2 <a href=""></a>
+    </center>
+</figure>
+
+
+
+<figure class="post-figure">
+    <a href="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/3.jpg">
+        
+    <img src="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/3_hub647481f85004874f13ee203f98a2dcc_1581512_1024x0_resize_q75_box.jpg"
+        width="1024" height="1474" 
+        alt="3" />
+        
+    </a> 
+    <center>
+    3 <a href=""></a>
+    </center>
+</figure>
 <h3 id="24--一丢丢-corresponding-theory">2.4 ## 一丢丢 corresponding theory</h3>
+
+
+
+<figure class="post-figure">
+    <a href="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/4.jpg">
+        
+    <img src="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/4_huf6479b905acb6afe21544bf13650fd1a_1594998_1024x0_resize_q75_box.jpg"
+        width="1024" height="1394" 
+        alt="4" />
+        
+    </a> 
+    <center>
+    4 <a href=""></a>
+    </center>
+</figure>
+
+
+
+<figure class="post-figure">
+    <a href="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/5.jpg">
+        
+    <img src="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/5_hu267246a0965600d2c5d39488d5d468fc_1369543_1024x0_resize_q75_box.jpg"
+        width="1024" height="1282" 
+        alt="5" />
+        
+    </a> 
+    <center>
+    5 <a href=""></a>
+    </center>
+</figure>
+
+
+
+<figure class="post-figure">
+    <a href="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/6.jpg">
+        
+    <img src="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/6_huf88ea18283ab4e33611d36f42dc7181f_1685937_1024x0_resize_q75_box.jpg"
+        width="1024" height="1429" 
+        alt="6" />
+        
+    </a> 
+    <center>
+    6 <a href=""></a>
+    </center>
+</figure>
 <hr>
 <h2 id="-3-completeness-theory"># 3 Completeness theory</h2>
 <p>本节主要叙述正规模态逻辑的完全性理论及其主要证明技术.
@@ -287,12 +424,14 @@ $\biguplus M_i = (W,R,V)$, 其中 $W,R$ 和 $V$ 是那堆模型论域, 通达关
 完全性(加上可靠性)则告诉我们这两种刻画方式是等价的.</p>
 <p>本节用以证明完全性的技术可以概括为 completeness-via-canonicity, 其核心工具是「典范模型」.
 而我们将会看到, 在用典范模型证明完全性的过程中, 实则体现了如下口号:
-$$\text{truth = membership}. $$</p>
+[
+\text{truth = membership}.
+]</p>
 <h3 id="-31-basic-concepts">## 3.1 basic concepts</h3>
 <p>我们依旧在基本模态逻辑语言下讨论各种逻辑.</p>
-<p><code>Def.</code> (Modal Logics, normal modal logics) 一个<strong>模态逻辑</strong>是包含所有命题重言式且对 MP,Sub 规则封闭的公式集. 用 $\vdash_\Delta \phi$ 表示 $\phi$ 属于逻辑 $\Delta$,
+<p><code>Def. (Modal Logics, normal modal logics)</code> 一个<strong>模态逻辑</strong>是包含所有命题重言式且对 MP,Sub 规则封闭的公式集. 用 $\vdash_\Delta \phi$ 表示 $\phi$ 属于逻辑 $\Delta$,
 并称 $\phi$ 为逻辑 $\Delta$ 的一条<strong>定理</strong>.  若 $\Delta$ 额外包含 K 公理 和 Dual 公理, 且对 Gen规则 封闭, 则称 $\Delta$ 是<strong>正规的</strong>. //</p>
-<p>在逻辑 $\Delta$ 中, 称 $\phi$ 从 $\Gamma$ 中可推演, 记作 $\Gamma \vdash_\Delta \phi$, 如果存在 $\Gamma$ 的有穷子集 $\Sigma$ 使得 $\vdash_\Delta \bigwedge \Sigma \to \phi$ (当 $\Sigma$ 为空集时, $\bigwedge \Sigma = \bot$).
+<p>在逻辑 $\Delta$ 中, 称 $\phi$ 从 $\Gamma$ 中<strong>可推演</strong>, 记作 $\Gamma \vdash_\Delta \phi$, 如果存在 $\Gamma$ 的有穷子集 $\Sigma$ 使得 $\vdash_\Delta \bigwedge \Sigma \to \phi$ (当 $\Sigma$ 为空集时, $\bigwedge \Sigma = \bot$).
 $\Gamma$ 是在 $\Delta$ 中是<strong>一致的</strong>, 若 $\Gamma \not \vdash_\Delta \bot$  .</p>
 <p>以下不加证明地列出一些关于推演的元性质, 这些性质虽然平平无奇, 却也不失为完全性证明地小帮手:</p>
 <p><code>Prop.</code>  对于任意逻辑 $\Delta$ 和任意公式集 $\Gamma$:</p>
@@ -301,10 +440,26 @@ $\Gamma$ 是在 $\Delta$ 中是<strong>一致的</strong>, 若 $\Gamma \not \vda
 <li>$\Gamma \not \vdash_\Delta \phi \Rightarrow$ $\Gamma \cup \{\neg \phi\}$ 是  $\Delta$一致的.</li>
 <li>$\Gamma$是$\Delta$一致的 iff $\Gamma$的每个有穷子集都是一致的. //</li>
 </ol>
-<p>「演绎定理」在模态逻辑中是否成立是个老生常谈的问题了, 如果采用上面推演的定义, 则演绎定理成立.
+<p><strong>演绎定理</strong>在模态逻辑中是否成立是个老生常谈的问题了, 如果采用上面推演的定义, 则演绎定理成立.
 反之, 如采用经典逻辑中用有穷公式序列的方式来定义推演, 则演绎定理通常在模态逻辑中便不复存在了. 其中的要点是 Gen 规则能否用在前提集上.</p>
-<p><code>Thm.</code>(演绎定理)  //</p>
-<p>最小的正规逻辑记作 <strong>K</strong>, 用 <strong>K</strong>$AA&rsquo;A&rsquo;&rsquo;\cdots$ 表示包含 $\{A,A&rsquo;, A&rsquo;&rsquo;, \dots\}$ 的最小的正规逻辑. 这些公式有时被称之为<strong>特征公理</strong>. 一些著名的特征公理列举如下:</p>
+<p><code>Thm. (Deduction Theorem)</code> 对于任意逻辑$\Delta$: $\Gamma \vdash_\Delta \varphi \to \psi$ iff $\Gamma \cup \{\varphi\} \vdash_\Delta \psi.$ //</p>
+<p><code>Proof</code>
+
+
+
+<figure class="post-figure">
+    <a href="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/deduction-thm.jpg">
+        
+    <img src="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/deduction-thm_hub66e2c9444d442ee4c0cda3710d1a7c8_467489_1024x0_resize_q75_box.jpg"
+        width="1024" height="595" 
+        alt="proof of Deduction Thm." />
+        
+    </a> 
+    <center>
+    proof of Deduction Thm. <a href=""></a>
+    </center>
+</figure></p>
+<p>最小的正规逻辑记作 <strong>K</strong>, 用 <strong>K</strong>$AA&rsquo;A&rsquo;&rsquo;\cdots$ 表示包含 $\{A,A&rsquo;, A&rsquo;&rsquo;, \dots\}$ 的最小的正规逻辑. 这些公式有时被称之为<strong>特征公理</strong>. 一些知名的特征公理列举如下:</p>
 <ul>
 <li>D: $\Box p \to \Diamond p$</li>
 <li>T: $\Box p \to p$</li>
@@ -313,20 +468,150 @@ $\Gamma$ 是在 $\Delta$ 中是<strong>一致的</strong>, 若 $\Gamma \not \vda
 <li>5: $\Box p \to \Box \Diamond p$</li>
 </ul>
 <p>通过这些公理, 可以得到如下的正规逻辑:<br>
-D := KD<br>
-T := KT<br>
-B := KTB<br>
-S4 := KT4<br>
-S5 := KT45<br>
+<strong>D</strong> := <strong>K</strong>D<br>
+<strong>T</strong> := <strong>K</strong>T<br>
+<strong>B</strong> := <strong>K</strong>TB<br>
+<strong>S4</strong> := <strong>K</strong>T4<br>
+<strong>S5</strong> := <strong>K</strong>T45<br>
 实际上, 所有正规逻辑相对于集合的包含关系形成一个「完全格」(complete lattice).</p>
 <p>回到本节主线, 下面给出可靠性和完全性的形式定义:</p>
-<p><code>Def.</code> (Soundness, Completeness)</p>
-<p>. //</p>
+<p><code>Def. (Soundness, Completeness)</code></p>
+<p>
+
+
+<figure class="post-figure">
+    <a href="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/completeness-soundness.jpg">
+        
+    <img src="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/completeness-soundness_hu1516df6b56386bd35471a7a64908f16e_473815_1024x0_resize_q75_box.jpg"
+        width="1024" height="475" 
+        alt="Soundness &amp; Completeness" />
+        
+    </a> 
+    <center>
+    Soundness &amp; Completeness <a href=""></a>
+    </center>
+</figure>
+显然, 强完全蕴含弱完全 (取$\Gamma$为空集即可), 但反之不然.</p>
+<p>是否存在「强可靠性」一说呢? 即 $\Gamma \vdash_\Delta \varphi \Rightarrow \Gamma \Vdash_S \varphi$. 实际上, 强/弱可靠性是等价的.
+因为「证明」或「推演」这类概念本质上一类有穷性概念, 只涉及有穷多个公式和有穷多个推理步骤. 但其在语义上的小伙伴 ——— 语义后承则全然不同.</p>
+<p>一般来说, 一个逻辑(相对于某个框架类)是<strong>可靠的</strong>, 这一点可以不加证明地直接得到. 或许这种处理对于可靠性来说太不公平了. 若是硬着头皮证明可靠性, 其过程也是相当流水线式的.
+欲证一个逻辑相对于某框架类可靠, 只需说明:</p>
+<ol>
+<li>该逻辑的所有公理都在这个框架类上有效;</li>
+<li>所有证明规则 (MP, Sub, Gen) 在这个框架类上保持有效性.</li>
+</ol>
+<p>因为以上三条规则在任意框架类上都是保持有效性的, 因此可靠性的证明就归结于说明公理是否有效了. 而这是十分容易做到的事情.</p>
+<p>如何证明完全性呢? 姑且一试. 欲证
+[
+\Gamma \Vdash_s \varphi \Rightarrow \Gamma \vdash_\Delta \varphi
+]
+不妨证其逆否
+[
+\Gamma \not\vdash_\Delta \varphi \Rightarrow \Gamma \not\Vdash_S \varphi.
+]</p>
+<p>假设 $\Gamma \not\vdash_\Delta \varphi$, 则 $\Gamma\cup \{\neg \varphi\}$ 是 $\Delta$ 一致的. 想要得到 $\Gamma \not\Vdash_S \varphi$,
+只需表明 $\Gamma\cup \{\neg \varphi\}$ 在框架类 $S$ 中的某个框架上可满足即可.
+更一般地说, 只需表明<em><strong>每个 $\Delta$ 一致的公式集在 $S$ 上可满足</strong></em>.</p>
+<p>如此一来, 完全性的证明就可以归结于如下口号:</p>
+<p>[“来吧! 为一致集找模型!”]</p>
+<p>怎么找呢? 自然不能瞎找, 这类模型有个响当当的名头 —— <strong>典范模型</strong> canonical models.</p>
 <h3 id="-32-canonical-model-and-its-applications">## 3.2 Canonical model and its applications</h3>
+
+
+
+<figure class="post-figure">
+    <a href="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/canonical-models.jpg">
+        
+    <img src="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/canonical-models_hub66e2c9444d442ee4c0cda3710d1a7c8_1070287_1024x0_resize_q75_box.jpg"
+        width="1024" height="1437" 
+        alt="MCSs" />
+        
+    </a> 
+    <center>
+    MCSs <a href=""></a>
+    </center>
+</figure>
+
+
+
+<figure class="post-figure">
+    <a href="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/canonical-models-2.jpg">
+        
+    <img src="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/canonical-models-2_hub66e2c9444d442ee4c0cda3710d1a7c8_926840_1024x0_resize_q75_box.jpg"
+        width="1024" height="1445" 
+        alt="Lindenbaum&#39;s Lemma" />
+        
+    </a> 
+    <center>
+    Lindenbaum&#39;s Lemma <a href=""></a>
+    </center>
+</figure>
+
+
+
+<figure class="post-figure">
+    <a href="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/canonical-models-3.jpg">
+        
+    <img src="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/canonical-models-3_hub66e2c9444d442ee4c0cda3710d1a7c8_934098_1024x0_resize_q75_box.jpg"
+        width="1024" height="1439" 
+        alt="canonical models" />
+        
+    </a> 
+    <center>
+    canonical models <a href=""></a>
+    </center>
+</figure>
+
+
+
+<figure class="post-figure">
+    <a href="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/canonical-models-4.jpg">
+        
+    <img src="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/canonical-models-4_hub66e2c9444d442ee4c0cda3710d1a7c8_820550_1024x0_resize_q75_box.jpg"
+        width="1024" height="1487" 
+        alt="Truth Lemma" />
+        
+    </a> 
+    <center>
+    Truth Lemma <a href=""></a>
+    </center>
+</figure>
+
+
+
+<figure class="post-figure">
+    <a href="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/canonical-models-5.jpg">
+        
+    <img src="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/canonical-models-5_hub66e2c9444d442ee4c0cda3710d1a7c8_936522_1024x0_resize_q75_box.jpg"
+        width="1024" height="1449" 
+        alt="canonical models 5" />
+        
+    </a> 
+    <center>
+    canonical models 5 <a href=""></a>
+    </center>
+</figure>
+<p>(ps. 一个值得注意的事情是, 在完全性证明中, 我们实际上只用到了 Truth Lemma 的一个方向, 即 membership &ndash;&gt; truth. 换而言之, 完全性证明只需要一个较弱的真值引理就足够了, 这个弱版本不妨称之为「模型存在引理」)</p>
 <h3 id="-33-two-limited-results">## 3.3 Two limited results</h3>
+<p>尽管典范模型是一种强有力的工具,但却不是万能的, 这里我们以两个较负面的结果来结束本节.</p>
+
+
+
+<figure class="post-figure">
+    <a href="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/limited-results.jpg">
+        
+    <img src="/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/limited-results_hub66e2c9444d442ee4c0cda3710d1a7c8_704647_1024x0_resize_q75_box.jpg"
+        width="1024" height="1454" 
+        alt="limited results" />
+        
+    </a> 
+    <center>
+    limited results <a href=""></a>
+    </center>
+</figure>
 <hr>
 <h2 id="4--conclusion-ml-vs-fol">4 ## Conclusion: ML vs FOL</h2>
-<p>ML是非经典逻辑中的“显学”, 而FOL则是经典逻辑中的常青树. 我们已经看到, 在模型层面,
+<p>ML是非经典逻辑中的“显学”, 而FOL则是经典逻辑中的常青树 yyds. 我们已经看到, 在模型层面,
 「标准翻译」为我们比较模态公式和一阶公式提供了桥梁,
 ML可以被视为FOL的一个片段 —— ML可以被嵌入到 $FO^2$ 中.
 而「互模拟」之于ML恰如「部分同构」之于FOL,
@@ -353,7 +638,7 @@ ML可以被视为FOL的一个片段 —— ML可以被嵌入到 $FO^2$ 中.
 <td style="text-align:center">✅</td>
 </tr>
 <tr>
-<td style="text-align:center">⬇️Lowenheim-Skolem</td>
+<td style="text-align:center">Lowenheim-Skolem</td>
 <td style="text-align:center">✅</td>
 <td style="text-align:center">✅</td>
 </tr>
@@ -379,13 +664,14 @@ ML可以被视为FOL的一个片段 —— ML可以被嵌入到 $FO^2$ 中.
 </tr>
 </tbody>
 </table>
+<hr>
 <p>最后谨以《蓝皮书》中的三个 slogans 结束此文：</p>
 <ol>
 <li>Modal languages are simple yet ecpressive languages for talking about relation structures.</li>
 <li>Modal languages provide an internal, local perspective on relational structures.</li>
 <li>Modal languages are not isolated formal systems.</li>
 </ol>
-<p>是以诸前辈罔莫孜孜而勤之, 方立今时 ML 之地位, 吾夙夜以勉.</p>
+<p>是以诸前辈罔莫孜孜而勤之, 吾夙夜以勉.</p>
 <hr>
 <h3 id="-ref"># Ref.</h3>
 <ol>
@@ -397,22 +683,24 @@ ML可以被视为FOL的一个片段 —— ML可以被嵌入到 $FO^2$ 中.
 <h3 id="acknowledgement">Acknowledgement</h3>
 <p>我曾从很多人那里学习过逻辑和模态逻辑. 感谢王轶老师将我引向模态逻辑; 感谢袁永锋老师和梁小龙师兄教授我递归论, 这推动我从不同的角度观看逻辑世界; 感谢陈锦盛老师重新燃起我对学术对热枕, 且我总能不时从您那里汲取到营养.</p>
 <p>感谢和我一起学习逻辑的诸同学们: 王莉菲, 李齐宣, 陈子豪, 覃立行, 李韵冰, 我从各位那里皆习得了不同的优秀品质, 以及共同渡过了一段遥远的且美好的时光.</p>
-<p>最后陈鑫感谢逻辑 —— 你(们)为其本无意义的人生增添了许多慰藉.
+<p>最后陈鑫感谢逻辑 —— 你(们)为其本无意义的人生平添了许多慰藉.
 Agian, <em>Long Live Logic</em>!</p>
 <hr>
 <p>(2023年7月10日整理于海琴六号, 时志鹏回乡工作, 祖平去云南游玩, 锦涛哥回重庆备考, 钟浩俊博诸人皆已离去. 叹, 「好梦由来最易醒」)</p>
+<hr>
 <p>本文存在的意义:
 <figure><img src="/images/%e7%ab%a0%e9%b1%bc%e5%93%a5%e7%9a%84%e6%a2%a6%e6%83%b31.jpg"
-         alt="Here also lies my Hopes and Dreams."/>
+         alt="Here also lies my Hopes and Dreams."/><figcaption>
+            <p>dreams &amp; hopes</p>
+        </figcaption>
 </figure>
 </p>
-<hr>
         </section>
 
         
     </article>
 
-
+    <hr>
     <span class="tags"> 
         🏷️  
         
@@ -426,17 +714,8 @@ Agian, <em>Long Live Logic</em>!</p>
     <section class="related">
          
         
-    Related articles:
+    <h4>Related articles:</h4>
             <ul>
-            
-            <li><a href="/posts/2021/04/%E7%9C%8B%E6%98%86%E6%9B%B2/">看昆曲</a>
-            </li> 
-            
-            <li><a href="/posts/2021/03/%E7%88%AC%E6%9D%BF%E9%9A%9C%E5%B1%B1/">爬板障山</a>
-            </li> 
-            
-            <li><a href="/posts/2021/01/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%90%83%E6%A4%B0%E5%AD%90%E9%B8%A1/">第一次吃椰子鸡🥥🐓</a>
-            </li> 
             
             <li><a href="/posts/2020/11/2020%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91%E4%BC%9A%E8%AE%AE%E5%8C%97%E5%B8%88%E7%8F%A0/">2020模态逻辑会议(北师珠)</a>
             </li> 
