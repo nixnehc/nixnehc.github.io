@@ -8,11 +8,11 @@
     <language>en</language>
     <lastBuildDate>Sat, 19 Aug 2023 16:57:15 +0800</lastBuildDate><atom:link href="http://nixnehc.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>&gt;Note&lt; Maria Manzano&#39;s Model Theory [[unfinished</title>
-      <link>http://nixnehc.github.io/posts/2023/08/note-maria-manzanos-model-theory-unfinished/</link>
+      <title>&gt;Notes&lt; Maria Manzano&#39;s Model Theory [[unfinished</title>
+      <link>http://nixnehc.github.io/posts/2023/08/notes-maria-manzanos-model-theory-unfinished/</link>
       <pubDate>Sat, 19 Aug 2023 16:57:15 +0800</pubDate>
       
-      <guid>http://nixnehc.github.io/posts/2023/08/note-maria-manzanos-model-theory-unfinished/</guid>
+      <guid>http://nixnehc.github.io/posts/2023/08/notes-maria-manzanos-model-theory-unfinished/</guid>
       <description>&lt;p&gt;Maria Manzano (1999), &lt;em&gt;&lt;strong&gt;Model Theory&lt;/strong&gt;&lt;/em&gt;, Oxford Logic Guides: 37. (English edition, original Spanish 1990)&lt;/p&gt;
 &lt;p&gt;才知道 Maria Manzano 是位女逻辑学家。&lt;/p&gt;
 &lt;p&gt;这本书不包括 Stability theory (Morley) 方面的内容。&lt;/p&gt;</description>
@@ -140,15 +140,6 @@
     </item>
     
     <item>
-      <title>看昆曲</title>
-      <link>http://nixnehc.github.io/posts/2021/04/%E7%9C%8B%E6%98%86%E6%9B%B2/</link>
-      <pubDate>Fri, 02 Apr 2021 19:08:21 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2021/04/%E7%9C%8B%E6%98%86%E6%9B%B2/</guid>
-      <description>&lt;p&gt;哈哈哈，社死的一天呢&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>爬板障山</title>
       <link>http://nixnehc.github.io/posts/2021/03/%E7%88%AC%E6%9D%BF%E9%9A%9C%E5%B1%B1/</link>
       <pubDate>Sat, 13 Mar 2021 19:08:21 +0800</pubDate>
@@ -174,16 +165,6 @@
       
       <guid>http://nixnehc.github.io/posts/2021/01/%E7%A7%91%E5%93%B2%E5%AE%8C%E7%BB%93%E4%BA%86/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>2020模态逻辑会议(北师珠)</title>
-      <link>http://nixnehc.github.io/posts/2020/11/2020%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91%E4%BC%9A%E8%AE%AE%E5%8C%97%E5%B8%88%E7%8F%A0/</link>
-      <pubDate>Sun, 29 Nov 2020 19:08:21 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2020/11/2020%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91%E4%BC%9A%E8%AE%AE%E5%8C%97%E5%B8%88%E7%8F%A0/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -256,37 +237,6 @@ tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</description>
 &lt;code&gt;Tikz&lt;/code&gt; 理论上什么图都可以画，这里列举一些 &lt;code&gt;Tikz&lt;/code&gt; 宏包的使用例子，
 来源的话都是从各个网站上面搬运的，择其善者而摘之。&lt;/p&gt;
 &lt;p&gt;不定期更新。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>&gt;test&lt; headings and toc</title>
-      <link>http://nixnehc.github.io/posts/1/01/test-headings-and-toc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/1/01/test-headings-and-toc/</guid>
-      <description>Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Nunc a egestas tortor, sed feugiat leo.
-Table of contents Table of contents The start The middle The end Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Nunc a egestas tortor, sed feugiat leo. Vestibulum porta tincidunt tellus, vitae ornare tortor.</description>
-    </item>
-    
-    <item>
-      <title>&gt;test&lt; shortcode &lt;postimage&gt; test</title>
-      <link>http://nixnehc.github.io/posts/1/01/test-shortcode-postimage-test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/1/01/test-shortcode-postimage-test/</guid>
-      <description>&lt;p&gt;Here are pictures from my recent trip to South Dakota.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>&gt;test&lt; Test Markdown</title>
-      <link>http://nixnehc.github.io/posts/1/01/test-test-markdown/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/1/01/test-test-markdown/</guid>
-      <description>Markdown Test Page Heading two Heading three Heading four Heading five Heading six Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-Top
-Paragraphs Incididunt ex adipisicing ea ullamco consectetur in voluptate proident fugiat tempor deserunt reprehenderit ullamco id dolore laborum.
-Officia dolore laborum aute incididunt commodo nisi velit est est elit et dolore elit exercitation. Enim aliquip magna id ipsum aliquip consectetur ad nulla quis. Incididunt pariatur dolor consectetur cillum enim velit cupidatat laborum quis ex.</description>
     </item>
     
   </channel>
