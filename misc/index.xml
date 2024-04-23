@@ -1,57 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on ChenXin&#39;s Blog</title>
+    <title>Miscellany on ChenXin&#39;s Blog</title>
     <link>http://nixnehc.github.io/misc/</link>
-    <description>Recent content in Projects on ChenXin&#39;s Blog</description>
+    <description>Recent content in Miscellany on ChenXin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Aug 2023 16:38:21 +0800</lastBuildDate><atom:link href="http://nixnehc.github.io/misc/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title> 一些有关逻辑学的乱七八糟的笔记 -_-</title>
-      <link>http://nixnehc.github.io/misc/logic-misc/</link>
-      <pubDate>Tue, 01 Aug 2023 16:38:21 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/misc/logic-misc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ʕ•́ᴥ•̀ʔっ ♡ ʕ•́ᴥ•̀ʔっ</title>
-      <link>http://nixnehc.github.io/misc/laugh/</link>
-      <pubDate>Thu, 01 Jun 2023 18:18:10 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/misc/laugh/</guid>
-      <description>&lt;p&gt;This page is for Xin, viz. myself —— when you are sad, depressing, and in darkness.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Some slogans in Logic(s)</title>
-      <link>http://nixnehc.github.io/misc/logic/</link>
-      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://nixnehc.github.io/misc/logic/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;http://nixnehc.github.io/images/do-you-like-logic.jpg&#34;
-         alt=&#34;Do you like logic? ©&#34; width=&#34;400px&#34;/&gt;&lt;figcaption&gt;
-            &lt;p&gt;Do you like logic? &lt;a href=&#34;https://i.redd.it/0wo2x6ygpp471.jpg&#34;&gt;©&lt;/a&gt;&lt;/p&gt;
-        &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Logic takes my fancy most.&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>( ͡° ͜ʖ ͡°) some Open Problems in Logic(s)</title>
-      <link>http://nixnehc.github.io/misc/open-problems-in-logics/</link>
-      <pubDate>Tue, 25 Apr 2023 18:27:52 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/misc/open-problems-in-logics/</guid>
-      <description>&lt;p&gt;这个页面记录我在学习逻辑时，所遇到一些（自认为）有趣的开放问题和方向。
-Long live Logic！&lt;/p&gt;</description>
-    </item>
-    
+    <lastBuildDate>Sun, 16 Apr 2023 16:37:06 +0800</lastBuildDate><atom:link href="http://nixnehc.github.io/misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>/ᐠ｡ꞈ｡ᐟ\ DuoDuo /ᐠ–ꞈ–ᐟ\</title>
       <link>http://nixnehc.github.io/misc/duoduo/</link>
@@ -81,28 +36,6 @@ Long live Logic！&lt;/p&gt;</description>
 or woof like a dog, but it means &amp;ldquo;dog&amp;rdquo; just the same. &lt;br&gt;
 [Steven Pinker, &lt;em&gt;The Language Instinct&lt;/em&gt;]&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>一些无处安放的笔记</title>
-      <link>http://nixnehc.github.io/misc/%E4%B8%80%E4%BA%9B%E6%97%A0%E5%A4%84%E5%AE%89%E6%94%BE%E7%9A%84%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://nixnehc.github.io/misc/%E4%B8%80%E4%BA%9B%E6%97%A0%E5%A4%84%E5%AE%89%E6%94%BE%E7%9A%84%E7%AC%94%E8%AE%B0/</guid>
-      <description>&lt;p&gt;如题，如如题🤣🤣
-一些以前写在纸上或记录在手机里的乱七八糟的东西，现将其电子化。
-关于逻辑以及其他。我已然忘记当初收集这些内容时的心境了，也不知道那时为啥要记录下来，哈，良有以也吧。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>中文-English expressions in Math &amp; Logic</title>
-      <link>http://nixnehc.github.io/misc/english-math-logic/</link>
-      <pubDate>Sat, 01 May 2021 09:11:04 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/misc/english-math-logic/</guid>
-      <description>&lt;p&gt;Some English expressions in  Logic &amp;amp; Math,
-from papers, textbooks, monographs or articles I used to read.&lt;/p&gt;
-&lt;p&gt;一些习惯用语的中文表达也很重要啦，只能写英文而不会写中文也要完蛋😭&lt;/p&gt;</description>
     </item>
     
   </channel>

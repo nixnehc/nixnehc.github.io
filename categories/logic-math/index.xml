@@ -19,15 +19,6 @@
     </item>
     
     <item>
-      <title> 一些有关逻辑学的乱七八糟的笔记 -_-</title>
-      <link>http://nixnehc.github.io/misc/logic-misc/</link>
-      <pubDate>Tue, 01 Aug 2023 16:38:21 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/misc/logic-misc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>模态逻辑: 一个关于 Box 和 Diamond (或许也有爱情) 的故事</title>
       <link>http://nixnehc.github.io/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/</link>
       <pubDate>Mon, 10 Jul 2023 17:25:14 +0800</pubDate>
@@ -52,16 +43,6 @@
     </item>
     
     <item>
-      <title>( ͡° ͜ʖ ͡°) some Open Problems in Logic(s)</title>
-      <link>http://nixnehc.github.io/misc/open-problems-in-logics/</link>
-      <pubDate>Tue, 25 Apr 2023 18:27:52 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/misc/open-problems-in-logics/</guid>
-      <description>&lt;p&gt;这个页面记录我在学习逻辑时，所遇到一些（自认为）有趣的开放问题和方向。
-Long live Logic！&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Coding Functions &amp; Dimensional Reduction Attack</title>
       <link>http://nixnehc.github.io/posts/2023/04/coding-functions-dimensional-reduction-attack/</link>
       <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
@@ -83,17 +64,6 @@ Long live Logic！&lt;/p&gt;</description>
 &lt;p&gt;最为重要的事情，就是成为自己的权威。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;希望我也能早日成为自己的权威！基于这样的理由，我将全文抄录在下面。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>中文-English expressions in Math &amp; Logic</title>
-      <link>http://nixnehc.github.io/misc/english-math-logic/</link>
-      <pubDate>Sat, 01 May 2021 09:11:04 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/misc/english-math-logic/</guid>
-      <description>&lt;p&gt;Some English expressions in  Logic &amp;amp; Math,
-from papers, textbooks, monographs or articles I used to read.&lt;/p&gt;
-&lt;p&gt;一些习惯用语的中文表达也很重要啦，只能写英文而不会写中文也要完蛋😭&lt;/p&gt;</description>
     </item>
     
   </channel>
