@@ -6,52 +6,25 @@
     <description>Recent content in latex on ChenXin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Jan 0002 00:00:00 +0000</lastBuildDate><atom:link href="http://nixnehc.github.io/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://nixnehc.github.io/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>&gt;LaTeX&lt;  From Zero to Hero (Basic setting)</title>
-      <link>http://nixnehc.github.io/posts/2/01/latex-from-zero-to-hero-basic-setting/</link>
-      <pubDate>Tue, 01 Jan 0002 00:00:00 +0000</pubDate>
+      <title>&gt;LaTeX&lt; Pdf Encryption</title>
+      <link>http://nixnehc.github.io/posts/2020/05/latex-pdf-encryption/</link>
+      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://nixnehc.github.io/posts/2/01/latex-from-zero-to-hero-basic-setting/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;http://nixnehc.github.io/images/tex_lion/tex_lion_relax.png&#34;
-         alt=&#34;(so cute lion, isn&amp;amp;rsquo;t it? ©)&#34; width=&#34;100%&#34;/&gt;&lt;figcaption&gt;
-            &lt;p&gt;(so cute lion, isn&amp;rsquo;t it? &lt;a href=&#34;https://tug.org/eplain/art.html&#34;&gt;©&lt;/a&gt;)&lt;/p&gt;
-        &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;[\LaTeX{}：从入门到入土]&lt;/p&gt;
-&lt;p&gt;This page is a crash course on $\LaTeX{}$ for myself.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>&gt;LaTeX&lt; pdf Encryption</title>
-      <link>http://nixnehc.github.io/posts/2/01/latex-pdf-encryption/</link>
-      <pubDate>Tue, 01 Jan 0002 00:00:00 +0000</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2/01/latex-pdf-encryption/</guid>
+      <guid>http://nixnehc.github.io/posts/2020/05/latex-pdf-encryption/</guid>
       <description>&lt;p&gt;在 latex 中如何使生成的 pdf 被加密或只读呢？&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>&gt;LaTeX&lt; The Philosophy of Latex</title>
-      <link>http://nixnehc.github.io/posts/2/01/latex-the-philosophy-of-latex/</link>
-      <pubDate>Tue, 01 Jan 0002 00:00:00 +0000</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2/01/latex-the-philosophy-of-latex/</guid>
-      <description>&lt;p&gt;本文主要包括一些关于 LaTeX 的编写技巧和习惯。
-这些内容大都来自网络，觉得有道理便收集到此处。不定期更新。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>&gt;LaTeX&lt; Tikz for Myself</title>
-      <link>http://nixnehc.github.io/posts/2/01/latex-tikz-for-myself/</link>
-      <pubDate>Tue, 01 Jan 0002 00:00:00 +0000</pubDate>
+      <link>http://nixnehc.github.io/posts/2020/05/latex-tikz-for-myself/</link>
+      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://nixnehc.github.io/posts/2/01/latex-tikz-for-myself/</guid>
-      <description>&lt;p&gt;写论文免不了画一些图，虽说 &lt;a href=&#34;https://www.mathcha.io/editor&#34;&gt;mathcha&lt;/a&gt; 这类有点用，但还是太弱了。
+      <guid>http://nixnehc.github.io/posts/2020/05/latex-tikz-for-myself/</guid>
+      <description>&lt;p&gt;写论文免不了画一些图，虽说 &lt;a href=&#34;https://www.mathcha.io/editor&#34;&gt;mathcha&lt;/a&gt; 这类工具有点用，但还是太弱了。
 &lt;code&gt;Tikz&lt;/code&gt; 理论上什么图都可以画，这里列举一些 &lt;code&gt;Tikz&lt;/code&gt; 宏包的使用例子，
-来源的话都是从各个网站上面搬运的，择其善者而摘之。&lt;/p&gt;
-&lt;p&gt;不定期更新。&lt;/p&gt;</description>
+来源的话都是从各个网站上面搬运的，择其善者而抄之。&lt;/p&gt;</description>
     </item>
     
   </channel>

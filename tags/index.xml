@@ -71,33 +71,6 @@
     </item>
     
     <item>
-      <title>intuitionism</title>
-      <link>http://nixnehc.github.io/tags/intuitionism/</link>
-      <pubDate>Tue, 02 May 2023 20:41:56 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/tags/intuitionism/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>math</title>
-      <link>http://nixnehc.github.io/tags/math/</link>
-      <pubDate>Tue, 02 May 2023 20:41:56 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/tags/math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>philosophy</title>
-      <link>http://nixnehc.github.io/tags/philosophy/</link>
-      <pubDate>Tue, 02 May 2023 20:41:56 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/tags/philosophy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>bullshit</title>
       <link>http://nixnehc.github.io/tags/bullshit/</link>
       <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
@@ -206,6 +179,15 @@
     </item>
     
     <item>
+      <title>math</title>
+      <link>http://nixnehc.github.io/tags/math/</link>
+      <pubDate>Fri, 22 Apr 2022 19:13:11 +0800</pubDate>
+      
+      <guid>http://nixnehc.github.io/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>淇澳岛</title>
       <link>http://nixnehc.github.io/tags/%E6%B7%87%E6%BE%B3%E5%B2%9B/</link>
       <pubDate>Sun, 09 Jan 2022 16:13:19 +0800</pubDate>
@@ -251,9 +233,18 @@
     </item>
     
     <item>
+      <title>intuitionism</title>
+      <link>http://nixnehc.github.io/tags/intuitionism/</link>
+      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nixnehc.github.io/tags/intuitionism/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>latex</title>
       <link>http://nixnehc.github.io/tags/latex/</link>
-      <pubDate>Tue, 01 Jan 0002 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
       
       <guid>http://nixnehc.github.io/tags/latex/</guid>
       <description></description>
@@ -262,9 +253,18 @@
     <item>
       <title>pdf</title>
       <link>http://nixnehc.github.io/tags/pdf/</link>
-      <pubDate>Tue, 01 Jan 0002 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
       
       <guid>http://nixnehc.github.io/tags/pdf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>philosophy</title>
+      <link>http://nixnehc.github.io/tags/philosophy/</link>
+      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nixnehc.github.io/tags/philosophy/</guid>
       <description></description>
     </item>
     

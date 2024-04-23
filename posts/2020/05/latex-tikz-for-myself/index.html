@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scale">
+<meta name="author" content="ChenXin">
+<meta name="description" content="My portfolio site">
+
+<title>&gt;LaTeX&lt; Tikz for Myself – ChenXin&#39;s Blog</title>
+
+ 
+<link rel="stylesheet" href="/css/style.min.d3e6b1e3c1405b1282c00a90e9340826c635b65081507e343c8a262f991a0bf6.css">
+
+
+
+
+
+
+
+
+
+
+</head>
+    
+
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
+    
+    <body >
+        <div class="container"><header>
+  <h1>ChenXin&#39;s Blog</h1> 
+</header>
+<nav>
+
+<a href="/">Home</a>·  
+<a href="/posts">Archives</a>·
+<a href="/categories">Categories</a>·
+<a href="/tags">Tags</a>·
+<a href="/misc">Misc</a>·
+<a href="/search">Search</a>·
+<a href="/about">About </a>
+
+</nav><main>
+    <article class="post">
+        <header>
+            <div class="list">
+            <h2>&gt;LaTeX&lt; Tikz for Myself</h2>
+            <p>
+            ✍️2020-05-30
+            ⏳4 minutes
+            🥸ChenXin 
+            <span class="categories"> 
+            💾
+            <a class="category" href="/categories/toolkit">##toolkit</a>
+                
+            </span>
+            </p>
+            </div>
+        </header>
+
+
+
+        <section class="body">
+            <p>写论文免不了画一些图，虽说 <a href="https://www.mathcha.io/editor">mathcha</a> 这类工具有点用，但还是太弱了。
+<code>Tikz</code> 理论上什么图都可以画，这里列举一些 <code>Tikz</code> 宏包的使用例子，
+来源的话都是从各个网站上面搬运的，择其善者而抄之。</p>
+<hr>
+<h3 id="图片格式">图片格式</h3>
+<p>支持矢量图：</p>
+<ul>
+<li>pdf</li>
+<li>eps</li>
+</ul>
+<p>点阵图：</p>
+<ul>
+<li>png</li>
+<li>jpg</li>
+<li>bmp</li>
+</ul>
+<p>不同编译方式所支持的图片格式：</p>
+<ul>
+<li>LaTeX &ndash;&gt; eps, bmp</li>
+<li>Pdflatex &ndash;&gt; pdf</li>
+<li>XeLaTeX &ndash;&gt; 几乎全部格式（不支持svg）</li>
+</ul>
+<hr>
+<h3 id="基本操作">基本操作</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-LaTeX" data-lang="LaTeX"><span class="line"><span class="cl"><span class="c">% 基本宏包：
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>amsmath, mathrsfs, amsfonts<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\usepackage</span><span class="nb">{</span>tikz<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\usepackage</span><span class="nb">{</span>graphicx<span class="nb">}</span>
+</span></span></code></pre></div><ul>
+<li>
+<p>tikz 中所有命令都要以分号 <code>;</code> 结尾，和C语言等类似。</p>
+</li>
+<li>
+<p><strong>显示绘图区域边界</strong>：backgrounds</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tex" data-lang="tex"><span class="line"><span class="cl"><span class="k">\usetikzlibrary</span><span class="nb">{</span>backgrounds<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>[scale=0.8, show background rectangle]
+</span></span><span class="line"><span class="cl">      ...
+</span></span><span class="line"><span class="cl">      ...
+</span></span><span class="line"><span class="cl">      ...
+</span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+</span></span></code></pre></div><p>这个功能在写文章草稿的时候挺好用的，对自己画的图大小有一个大概的把握。</p>
+</li>
+<li>
+<p>行内画图示例：
+hello <code>\tikz \draw(0pt,0pt)--(30pt,6pt);</code> world!
+hello <code>\tikz{ \draw(0pt,0pt)--(30pt,6pt); }</code> world!</p>
+</li>
+<li>
+<p>行间图示例：</p>
+<pre tabindex="0"><code class="language-tikz" data-lang="tikz">\begin{tikzpicture}
+    \draw[style=dashed] (2,.5) circle (1); % (2,.5)是圆心，(.5)是半径。
+    \draw[fill=green] (0,0) rectangle (1,1); 
+    % (0,0) 和 (1,1) 是矩形的对角线。
+    ...
+    ...
+\end{tikzpicture}
+</code></pre></li>
+<li>
+<p>一个很有用的说明文档：<code>- texdoc visualtikz</code></p>
+</li>
+</ul>
+<hr>
+<h4 id="先来画条线段吧">先来画条线段吧</h4>
+<pre tabindex="0"><code class="language-tikz" data-lang="tikz">% 线段及文字标注
+\begin{tikzpicture}
+    \draw[-&gt;] (0,0)--(5,0);   %也可以把中间的两个横杠 -- 换成 to
+    \draw[dashed, &lt;-&gt;] (0,-1)--(5,-1);
+    \draw[dotted, |&lt;-&gt;|] (0,-2)--(5,-2);
+
+% 添加文字信息
+    \draw[-&gt;] (0,1)--node[below]{这是一条线段} (5,1);  
+    % node 位置可选参数有：above, below, left, right
+
+    \draw[-&gt;] (0,1)--node[fill=witht]{这是一条线段} (5,1); 
+    % 相当于将 文本框 的那个box的背景色填充为了白色
+
+    \draw[-&gt;] (0,1)node[left]{左端点$a$} -- (5,1)node[right]{右端点$b$};  
+
+    \node at (0,4)[below]{这是一段话} ;
+
+    \fill[red] (0,0) circle (2pt); % 画一个红点
+
+\end{tikzpicture}
+</code></pre><hr>
+        </section>
+
+        
+    </article>
+
+    <hr>
+    <span class="tags"> 
+        🏷️  
+        
+        <a class="tag" href="/tags/latex">#latex</a>
+        
+        
+    </span>
+
+    
+    
+
+
+
+        </main><center>
+<footer>
+  &copy; 2024 
+  <br> 
+  Made with ❤️ by <a href="https://chenxinhello.github.io" target="_blank">Xin</a>
+
+
+
+</footer>
+</center></div>
+    </body>
+</html>
