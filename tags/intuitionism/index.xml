@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>intuitionism on ChenXin&#39;s Blog</title>
-    <link>http://nixnehc.github.io/tags/intuitionism/</link>
-    <description>Recent content in intuitionism on ChenXin&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Intuitionism on Xin&#39;s Blog</title>
+    <link>http://localhost:1313/tags/intuitionism/</link>
+    <description>Recent content in Intuitionism on Xin&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://nixnehc.github.io/tags/intuitionism/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 May 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/intuitionism/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>&gt;Notes&lt; Arend Heyting: Intuitionism(1971) [[unfinished</title>
-      <link>http://nixnehc.github.io/posts/2020/05/notes-arend-heyting-intuitionism1971-unfinished/</link>
+      <link>http://localhost:1313/posts/2020/05/notes-arend-heyting-intuitionism1971-unfinished/</link>
       <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2020/05/notes-arend-heyting-intuitionism1971-unfinished/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;你一旦被一个主题的美所打动，就得为之贡献你的一生！&lt;/li&gt;
-&lt;li&gt;是啊！只是我怀疑像直觉主义这样不确定的东西中怎么会有美。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;(哈哈，Heyting还挺毒舌的)&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2020/05/notes-arend-heyting-intuitionism1971-unfinished/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;你一旦被一个主题的美所打动，就得为之贡献你的一生！&lt;/li&gt;&#xA;&lt;li&gt;是啊！只是我怀疑像直觉主义这样不确定的东西中怎么会有美。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;(哈哈，Heyting还挺毒舌的)&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

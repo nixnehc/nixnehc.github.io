@@ -1,150 +1,110 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>life on ChenXin&#39;s Blog</title>
-    <link>http://nixnehc.github.io/categories/life/</link>
-    <description>Recent content in life on ChenXin&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Life on Xin&#39;s Blog</title>
+    <link>http://localhost:1313/categories/life/</link>
+    <description>Recent content in Life on Xin&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 23 Jul 2023 19:16:41 +0800</lastBuildDate><atom:link href="http://nixnehc.github.io/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Jul 2023 19:16:41 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/life/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>再见小橘，再见祖平</title>
-      <link>http://nixnehc.github.io/posts/2023/07/%E5%86%8D%E8%A7%81%E5%B0%8F%E6%A9%98%E5%86%8D%E8%A7%81%E7%A5%96%E5%B9%B3/</link>
+      <link>http://localhost:1313/posts/2023/07/%E5%86%8D%E8%A7%81%E5%B0%8F%E6%A9%98%E5%86%8D%E8%A7%81%E7%A5%96%E5%B9%B3/</link>
       <pubDate>Sun, 23 Jul 2023 19:16:41 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2023/07/%E5%86%8D%E8%A7%81%E5%B0%8F%E6%A9%98%E5%86%8D%E8%A7%81%E7%A5%96%E5%B9%B3/</guid>
+      <guid>http://localhost:1313/posts/2023/07/%E5%86%8D%E8%A7%81%E5%B0%8F%E6%A9%98%E5%86%8D%E8%A7%81%E7%A5%96%E5%B9%B3/</guid>
       <description>&lt;p&gt;小橘是祖平在其驾校绑架来的小猫咪，因其橘色花纹，祖平便叫它「小橘」，快四五个月大了吧，不过祖平近期好像没有让它变成“公公”的计划。我和小橘第一次见面应该是在五六月的时候，具体时日记不清了，是在祖平鸡山出租屋见的。问及他为什么要养，真是蠢蛋，这问题不问也知道罢，无非是因为寂寞之类的缘由，事实上也确实如此。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>他们毕业了</title>
-      <link>http://nixnehc.github.io/posts/2023/07/%E4%BB%96%E4%BB%AC%E6%AF%95%E4%B8%9A%E4%BA%86/</link>
+      <link>http://localhost:1313/posts/2023/07/%E4%BB%96%E4%BB%AC%E6%AF%95%E4%B8%9A%E4%BA%86/</link>
       <pubDate>Sat, 01 Jul 2023 23:31:37 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2023/07/%E4%BB%96%E4%BB%AC%E6%AF%95%E4%B8%9A%E4%BA%86/</guid>
+      <guid>http://localhost:1313/posts/2023/07/%E4%BB%96%E4%BB%AC%E6%AF%95%E4%B8%9A%E4%BA%86/</guid>
       <description>&lt;p&gt;7月1日，我的同学们大部分人都已经离校了，他们毕业了。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>北门外的可爱小狗</title>
-      <link>http://nixnehc.github.io/posts/2023/06/%E5%8C%97%E9%97%A8%E5%A4%96%E7%9A%84%E5%8F%AF%E7%88%B1%E5%B0%8F%E7%8B%97/</link>
+      <link>http://localhost:1313/posts/2023/06/%E5%8C%97%E9%97%A8%E5%A4%96%E7%9A%84%E5%8F%AF%E7%88%B1%E5%B0%8F%E7%8B%97/</link>
       <pubDate>Fri, 30 Jun 2023 19:17:20 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2023/06/%E5%8C%97%E9%97%A8%E5%A4%96%E7%9A%84%E5%8F%AF%E7%88%B1%E5%B0%8F%E7%8B%97/</guid>
+      <guid>http://localhost:1313/posts/2023/06/%E5%8C%97%E9%97%A8%E5%A4%96%E7%9A%84%E5%8F%AF%E7%88%B1%E5%B0%8F%E7%8B%97/</guid>
       <description>&lt;p&gt;明天大家都要陆续走了，晚上出去买炸鸡啤酒，遇到北门外有条可爱的小狗，谢谢你小狗！&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>新的生活方式</title>
-      <link>http://nixnehc.github.io/posts/2023/04/%E6%96%B0%E7%9A%84%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F/</link>
+      <link>http://localhost:1313/posts/2023/04/%E6%96%B0%E7%9A%84%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F/</link>
       <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2023/04/%E6%96%B0%E7%9A%84%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F/</guid>
+      <guid>http://localhost:1313/posts/2023/04/%E6%96%B0%E7%9A%84%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F/</guid>
       <description>&lt;p&gt;寻求一种新的生活方式。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>&gt;诗&lt; Spring  No.1 春日组诗·其一</title>
-      <link>http://nixnehc.github.io/posts/2023/04/%E8%AF%97-spring-no.1-%E6%98%A5%E6%97%A5%E7%BB%84%E8%AF%97%E5%85%B6%E4%B8%80/</link>
+      <link>http://localhost:1313/posts/2023/04/%E8%AF%97-spring-no.1-%E6%98%A5%E6%97%A5%E7%BB%84%E8%AF%97%E5%85%B6%E4%B8%80/</link>
       <pubDate>Sat, 22 Apr 2023 18:41:42 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2023/04/%E8%AF%97-spring-no.1-%E6%98%A5%E6%97%A5%E7%BB%84%E8%AF%97%E5%85%B6%E4%B8%80/</guid>
-      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;春日组诗·其一&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;春天就像春天一样在春天里来临。&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2023/04/%E8%AF%97-spring-no.1-%E6%98%A5%E6%97%A5%E7%BB%84%E8%AF%97%E5%85%B6%E4%B8%80/</guid>
+      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;春日组诗·其一&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;春天就像春天一样在春天里来临。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>My Two Queens</title>
-      <link>http://nixnehc.github.io/misc/two-queens/</link>
+      <link>http://localhost:1313/misc/two-queens/</link>
       <pubDate>Mon, 10 Apr 2023 16:37:35 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/misc/two-queens/</guid>
+      <guid>http://localhost:1313/misc/two-queens/</guid>
       <description>&lt;p&gt;I love insect, especially the ants. I have two ant farms.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>和七哥的寒假旅行</title>
-      <link>http://nixnehc.github.io/posts/2023/01/%E5%92%8C%E4%B8%83%E5%93%A5%E7%9A%84%E5%AF%92%E5%81%87%E6%97%85%E8%A1%8C/</link>
+      <link>http://localhost:1313/posts/2023/01/%E5%92%8C%E4%B8%83%E5%93%A5%E7%9A%84%E5%AF%92%E5%81%87%E6%97%85%E8%A1%8C/</link>
       <pubDate>Tue, 31 Jan 2023 04:49:58 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2023/01/%E5%92%8C%E4%B8%83%E5%93%A5%E7%9A%84%E5%AF%92%E5%81%87%E6%97%85%E8%A1%8C/</guid>
+      <guid>http://localhost:1313/posts/2023/01/%E5%92%8C%E4%B8%83%E5%93%A5%E7%9A%84%E5%AF%92%E5%81%87%E6%97%85%E8%A1%8C/</guid>
       <description>&lt;p&gt;今年过年总算回家了，和久违的七哥在铜仁市区逛了很久，有好几年没去大十字那边，已经全然变了模样。正值春节，这边很是热闹，川硐上面一比就格外冷清。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title> ▼(´ᴥ`)▼ 两只名叫「狗」的狗 ▼・ᴥ・▼</title>
-      <link>http://nixnehc.github.io/misc/two-dogs/</link>
+      <link>http://localhost:1313/misc/two-dogs/</link>
       <pubDate>Tue, 10 Jan 2023 16:38:21 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/misc/two-dogs/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;The word dog does not look like a dog, walk like a dog,
-or woof like a dog, but it means &amp;ldquo;dog&amp;rdquo; just the same. &lt;br&gt;
-[Steven Pinker, &lt;em&gt;The Language Instinct&lt;/em&gt;]&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+      <guid>http://localhost:1313/misc/two-dogs/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;The word dog does not look like a dog, walk like a dog,&#xA;or woof like a dog, but it means &amp;ldquo;dog&amp;rdquo; just the same. &lt;br&gt;&#xA;[Steven Pinker, &lt;em&gt;The Language Instinct&lt;/em&gt;]&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
-    
     <item>
       <title>与跆俱同学爬凤凰山</title>
-      <link>http://nixnehc.github.io/posts/2022/10/%E4%B8%8E%E8%B7%86%E4%BF%B1%E5%90%8C%E5%AD%A6%E7%88%AC%E5%87%A4%E5%87%B0%E5%B1%B1/</link>
+      <link>http://localhost:1313/posts/2022/10/%E4%B8%8E%E8%B7%86%E4%BF%B1%E5%90%8C%E5%AD%A6%E7%88%AC%E5%87%A4%E5%87%B0%E5%B1%B1/</link>
       <pubDate>Fri, 07 Oct 2022 16:13:19 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2022/10/%E4%B8%8E%E8%B7%86%E4%BF%B1%E5%90%8C%E5%AD%A6%E7%88%AC%E5%87%A4%E5%87%B0%E5%B1%B1/</guid>
+      <guid>http://localhost:1313/posts/2022/10/%E4%B8%8E%E8%B7%86%E4%BF%B1%E5%90%8C%E5%AD%A6%E7%88%AC%E5%87%A4%E5%87%B0%E5%B1%B1/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>游淇澳岛</title>
-      <link>http://nixnehc.github.io/posts/2022/01/%E6%B8%B8%E6%B7%87%E6%BE%B3%E5%B2%9B/</link>
+      <link>http://localhost:1313/posts/2022/01/%E6%B8%B8%E6%B7%87%E6%BE%B3%E5%B2%9B/</link>
       <pubDate>Sun, 09 Jan 2022 16:13:19 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2022/01/%E6%B8%B8%E6%B7%87%E6%BE%B3%E5%B2%9B/</guid>
+      <guid>http://localhost:1313/posts/2022/01/%E6%B8%B8%E6%B7%87%E6%BE%B3%E5%B2%9B/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>爬板障山</title>
-      <link>http://nixnehc.github.io/posts/2021/03/%E7%88%AC%E6%9D%BF%E9%9A%9C%E5%B1%B1/</link>
+      <link>http://localhost:1313/posts/2021/03/%E7%88%AC%E6%9D%BF%E9%9A%9C%E5%B1%B1/</link>
       <pubDate>Sat, 13 Mar 2021 19:08:21 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2021/03/%E7%88%AC%E6%9D%BF%E9%9A%9C%E5%B1%B1/</guid>
-      <description>先贴照片吧，游记以后再写
-大道尽头就是拱北口岸 静雯·杭冉·石璐·刘琳·睿姝·俺·祖平·俊博 前中戴帽者为小黄 </description>
+      <guid>http://localhost:1313/posts/2021/03/%E7%88%AC%E6%9D%BF%E9%9A%9C%E5%B1%B1/</guid>
+      <description>&lt;p&gt;先贴照片吧，游记以后再写&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&lt;figure class=&#34;post-figure&#34;&gt;&#xA;    &lt;a href=&#34;http://localhost:1313/posts/2021/03/%E7%88%AC%E6%9D%BF%E9%9A%9C%E5%B1%B1/2.jpg&#34;&gt;&#xA;        &#xA;    &lt;img src=&#34;http://localhost:1313/posts/2021/03/%E7%88%AC%E6%9D%BF%E9%9A%9C%E5%B1%B1/2_hu7062885739340075971.jpg&#34;&#xA;        width=&#34;1024&#34; height=&#34;461&#34; &#xA;        alt=&#34;&#34; /&gt;&#xA;        &#xA;    &lt;/a&gt; &#xA;    &lt;center&gt;&#xA;     &lt;a href=&#34;&#34;&gt;&lt;/a&gt;&#xA;    &lt;/center&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&lt;figure class=&#34;post-figure&#34;&gt;&#xA;    &lt;a href=&#34;http://localhost:1313/posts/2021/03/%E7%88%AC%E6%9D%BF%E9%9A%9C%E5%B1%B1/1.jpg&#34;&gt;&#xA;        &#xA;    &lt;img src=&#34;http://localhost:1313/posts/2021/03/%E7%88%AC%E6%9D%BF%E9%9A%9C%E5%B1%B1/1_hu13659871231544998701.jpg&#34;&#xA;        width=&#34;1024&#34; height=&#34;461&#34; &#xA;        alt=&#34;大道尽头就是拱北口岸&#34; /&gt;&#xA;        &#xA;    &lt;/a&gt; &#xA;    &lt;center&gt;&#xA;    大道尽头就是拱北口岸 &lt;a href=&#34;&#34;&gt;&lt;/a&gt;&#xA;    &lt;/center&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&lt;figure class=&#34;post-figure&#34;&gt;&#xA;    &lt;a href=&#34;http://localhost:1313/posts/2021/03/%E7%88%AC%E6%9D%BF%E9%9A%9C%E5%B1%B1/3.jpg&#34;&gt;&#xA;        &#xA;    &lt;img src=&#34;http://localhost:1313/posts/2021/03/%E7%88%AC%E6%9D%BF%E9%9A%9C%E5%B1%B1/3_hu2146585460660410622.jpg&#34;&#xA;        width=&#34;1024&#34; height=&#34;576&#34; &#xA;        alt=&#34;静雯·杭冉·石璐·刘琳·睿姝·俺·祖平·俊博&#34; /&gt;&#xA;        &#xA;    &lt;/a&gt; &#xA;    &lt;center&gt;&#xA;    静雯·杭冉·石璐·刘琳·睿姝·俺·祖平·俊博 &lt;a href=&#34;&#34;&gt;&lt;/a&gt;&#xA;    &lt;/center&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&lt;figure class=&#34;post-figure&#34;&gt;&#xA;    &lt;a href=&#34;http://localhost:1313/posts/2021/03/%E7%88%AC%E6%9D%BF%E9%9A%9C%E5%B1%B1/4.jpg&#34;&gt;&#xA;        &#xA;    &lt;img src=&#34;http://localhost:1313/posts/2021/03/%E7%88%AC%E6%9D%BF%E9%9A%9C%E5%B1%B1/4_hu13158727732600262593.jpg&#34;&#xA;        width=&#34;1024&#34; height=&#34;768&#34; &#xA;        alt=&#34;前中戴帽者为小黄&#34; /&gt;&#xA;        &#xA;    &lt;/a&gt; &#xA;    &lt;center&gt;&#xA;    前中戴帽者为小黄 &lt;a href=&#34;&#34;&gt;&lt;/a&gt;&#xA;    &lt;/center&gt;&#xA;&lt;/figure&gt;</description>
     </item>
-    
     <item>
       <title>第一次吃🥥🐓</title>
-      <link>http://nixnehc.github.io/posts/2021/01/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%90%83/</link>
+      <link>http://localhost:1313/posts/2021/01/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%90%83/</link>
       <pubDate>Sun, 31 Jan 2021 19:08:21 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2021/01/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%90%83/</guid>
+      <guid>http://localhost:1313/posts/2021/01/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%90%83/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>科哲完结了</title>
-      <link>http://nixnehc.github.io/posts/2021/01/%E7%A7%91%E5%93%B2%E5%AE%8C%E7%BB%93%E4%BA%86/</link>
+      <link>http://localhost:1313/posts/2021/01/%E7%A7%91%E5%93%B2%E5%AE%8C%E7%BB%93%E4%BA%86/</link>
       <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2021/01/%E7%A7%91%E5%93%B2%E5%AE%8C%E7%BB%93%E4%BA%86/</guid>
+      <guid>http://localhost:1313/posts/2021/01/%E7%A7%91%E5%93%B2%E5%AE%8C%E7%BB%93%E4%BA%86/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>&gt;诗&lt; 我也失恋</title>
-      <link>http://nixnehc.github.io/posts/2020/10/%E8%AF%97-%E6%88%91%E4%B9%9F%E5%A4%B1%E6%81%8B/</link>
+      <link>http://localhost:1313/posts/2020/10/%E8%AF%97-%E6%88%91%E4%B9%9F%E5%A4%B1%E6%81%8B/</link>
       <pubDate>Sat, 17 Oct 2020 22:50:28 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2020/10/%E8%AF%97-%E6%88%91%E4%B9%9F%E5%A4%B1%E6%81%8B/</guid>
-      <description>&lt;p&gt;我也失恋&lt;/p&gt;
-&lt;p&gt;我所爱兮在荔枝&lt;br&gt;
-欲往寻之叶繁茂&lt;br&gt;
-草涧绊脚头恍惚&lt;br&gt;
-我赠爱人纸蝴蝶&lt;br&gt;
-她回什么：太丑了&lt;br&gt;
-从此翻脸不理我&lt;br&gt;
-不知何故兮使我哀怜&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2020/10/%E8%AF%97-%E6%88%91%E4%B9%9F%E5%A4%B1%E6%81%8B/</guid>
+      <description>&lt;p&gt;我也失恋&lt;/p&gt;&#xA;&lt;p&gt;我所爱兮在荔枝&lt;br&gt;&#xA;欲往寻之叶繁茂&lt;br&gt;&#xA;草涧绊脚头恍惚&lt;br&gt;&#xA;我赠爱人纸蝴蝶&lt;br&gt;&#xA;她回什么：太丑了&lt;br&gt;&#xA;从此翻脸不理我&lt;br&gt;&#xA;不知何故兮使我哀怜&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

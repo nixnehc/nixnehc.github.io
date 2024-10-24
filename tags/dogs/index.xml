@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dogs on ChenXin&#39;s Blog</title>
-    <link>http://nixnehc.github.io/tags/dogs/</link>
-    <description>Recent content in dogs on ChenXin&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Dogs on Xin&#39;s Blog</title>
+    <link>http://localhost:1313/tags/dogs/</link>
+    <description>Recent content in Dogs on Xin&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 30 Jun 2023 19:17:20 +0800</lastBuildDate><atom:link href="http://nixnehc.github.io/tags/dogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Jun 2023 19:17:20 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/dogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>北门外的可爱小狗</title>
-      <link>http://nixnehc.github.io/posts/2023/06/%E5%8C%97%E9%97%A8%E5%A4%96%E7%9A%84%E5%8F%AF%E7%88%B1%E5%B0%8F%E7%8B%97/</link>
+      <link>http://localhost:1313/posts/2023/06/%E5%8C%97%E9%97%A8%E5%A4%96%E7%9A%84%E5%8F%AF%E7%88%B1%E5%B0%8F%E7%8B%97/</link>
       <pubDate>Fri, 30 Jun 2023 19:17:20 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2023/06/%E5%8C%97%E9%97%A8%E5%A4%96%E7%9A%84%E5%8F%AF%E7%88%B1%E5%B0%8F%E7%8B%97/</guid>
+      <guid>http://localhost:1313/posts/2023/06/%E5%8C%97%E9%97%A8%E5%A4%96%E7%9A%84%E5%8F%AF%E7%88%B1%E5%B0%8F%E7%8B%97/</guid>
       <description>&lt;p&gt;明天大家都要陆续走了，晚上出去买炸鸡啤酒，遇到北门外有条可爱的小狗，谢谢你小狗！&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title> ▼(´ᴥ`)▼ 两只名叫「狗」的狗 ▼・ᴥ・▼</title>
-      <link>http://nixnehc.github.io/misc/two-dogs/</link>
+      <link>http://localhost:1313/misc/two-dogs/</link>
       <pubDate>Tue, 10 Jan 2023 16:38:21 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/misc/two-dogs/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;The word dog does not look like a dog, walk like a dog,
-or woof like a dog, but it means &amp;ldquo;dog&amp;rdquo; just the same. &lt;br&gt;
-[Steven Pinker, &lt;em&gt;The Language Instinct&lt;/em&gt;]&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+      <guid>http://localhost:1313/misc/two-dogs/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;The word dog does not look like a dog, walk like a dog,&#xA;or woof like a dog, but it means &amp;ldquo;dog&amp;rdquo; just the same. &lt;br&gt;&#xA;[Steven Pinker, &lt;em&gt;The Language Instinct&lt;/em&gt;]&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
-    
   </channel>
 </rss>

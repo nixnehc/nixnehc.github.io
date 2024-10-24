@@ -1,36 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>idea on ChenXin&#39;s Blog</title>
-    <link>http://nixnehc.github.io/tags/idea/</link>
-    <description>Recent content in idea on ChenXin&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Idea on Xin&#39;s Blog</title>
+    <link>http://localhost:1313/tags/idea/</link>
+    <description>Recent content in Idea on Xin&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://nixnehc.github.io/tags/idea/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/idea/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>编码函数与降维打击</title>
-      <link>http://nixnehc.github.io/posts/2023/04/%E7%BC%96%E7%A0%81%E5%87%BD%E6%95%B0%E4%B8%8E%E9%99%8D%E7%BB%B4%E6%89%93%E5%87%BB/</link>
+      <link>http://localhost:1313/posts/2023/04/%E7%BC%96%E7%A0%81%E5%87%BD%E6%95%B0%E4%B8%8E%E9%99%8D%E7%BB%B4%E6%89%93%E5%87%BB/</link>
       <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2023/04/%E7%BC%96%E7%A0%81%E5%87%BD%E6%95%B0%E4%B8%8E%E9%99%8D%E7%BB%B4%E6%89%93%E5%87%BB/</guid>
-      <description>&lt;p&gt;Coding Functions &amp;amp; Dimensional Reduction Attack
-[编码函数与降维打击]&lt;/p&gt;
-&lt;p&gt;今天(2023,04,21-周五)下午递归论课上突然讨论到一些问题, 关于编码函数、降维打击、宇宙和世界的连续性等问题，觉得特别有意思, 遂记之。&lt;/p&gt;
-&lt;p&gt;(ps. 为方便偷懒，以下用 \( \omega, \omega^+ \) 分别表示&lt;strong&gt;自然数集&lt;/strong&gt;和&lt;strong&gt;正整数集&lt;/strong&gt;，毕竟 &lt;code&gt;\omega&lt;/code&gt; 比起 &lt;code&gt;\mathbb{N}&lt;/code&gt; 要少按很多下键盘了，不是咩😜)&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2023/04/%E7%BC%96%E7%A0%81%E5%87%BD%E6%95%B0%E4%B8%8E%E9%99%8D%E7%BB%B4%E6%89%93%E5%87%BB/</guid>
+      <description>&lt;p&gt;Coding Functions &amp;amp; Dimensional Reduction Attack&#xA;[编码函数与降维打击]&lt;/p&gt;&#xA;&lt;p&gt;今天(2023,04,21-周五)下午递归论课上突然讨论到一些问题, 关于编码函数、降维打击、宇宙和世界的连续性等问题，觉得特别有意思, 遂记之。&lt;/p&gt;&#xA;&lt;p&gt;(ps. 为方便偷懒，以下用 \( \omega, \omega^+ \) 分别表示&lt;strong&gt;自然数集&lt;/strong&gt;和&lt;strong&gt;正整数集&lt;/strong&gt;，毕竟 &lt;code&gt;\omega&lt;/code&gt; 比起 &lt;code&gt;\mathbb{N}&lt;/code&gt; 要少按很多下键盘了，不是咩😜)&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>&gt;转载&lt; 严酷的现实</title>
-      <link>http://nixnehc.github.io/posts/2022/04/%E8%BD%AC%E8%BD%BD-%E4%B8%A5%E9%85%B7%E7%9A%84%E7%8E%B0%E5%AE%9E/</link>
+      <link>http://localhost:1313/posts/2022/04/%E8%BD%AC%E8%BD%BD-%E4%B8%A5%E9%85%B7%E7%9A%84%E7%8E%B0%E5%AE%9E/</link>
       <pubDate>Fri, 22 Apr 2022 19:13:11 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2022/04/%E8%BD%AC%E8%BD%BD-%E4%B8%A5%E9%85%B7%E7%9A%84%E7%8E%B0%E5%AE%9E/</guid>
-      <description>&lt;p&gt;[序]我最早是在网易云的播客中听到此文的，具体的时月早已忘记了，但对其印象很深，在脑中久久不能忘却。后来在中珠图书馆中偶然发现了原文，是收录在高等教育出版社 2010 年出版的《解码者：数学探秘之旅》中的。我之后借阅了该书，这本书里面都是数学家们写的随想和短文，语言清新优美，平淡自然却韵味深远，还有很多人物照片，最重要的是也有小猫猫的图片🥳。在看完整本书后，我还是尤为喜欢&lt;strong&gt;孔涅&lt;/strong&gt;的《严酷的现实》这一篇，其中十分让我感动话是：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;最为重要的事情，就是成为自己的权威。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;希望我也能早日成为自己的权威！基于这样的理由，我将全文抄录在下面。&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2022/04/%E8%BD%AC%E8%BD%BD-%E4%B8%A5%E9%85%B7%E7%9A%84%E7%8E%B0%E5%AE%9E/</guid>
+      <description>&lt;p&gt;[序]我最早是在网易云的播客中听到此文的，具体的时月早已忘记了，但对其印象很深，在脑中久久不能忘却。后来在中珠图书馆中偶然发现了原文，是收录在高等教育出版社 2010 年出版的《解码者：数学探秘之旅》中的。我之后借阅了该书，这本书里面都是数学家们写的随想和短文，语言清新优美，平淡自然却韵味深远，还有很多人物照片，最重要的是也有小猫猫的图片🥳。在看完整本书后，我还是尤为喜欢&lt;strong&gt;孔涅&lt;/strong&gt;的《严酷的现实》这一篇，其中十分让我感动话是：&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;最为重要的事情，就是成为自己的权威。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;希望我也能早日成为自己的权威！基于这样的理由，我将全文抄录在下面。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

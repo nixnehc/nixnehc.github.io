@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>凤凰 on ChenXin&#39;s Blog</title>
-    <link>http://nixnehc.github.io/tags/%E5%87%A4%E5%87%B0/</link>
-    <description>Recent content in 凤凰 on ChenXin&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>凤凰 on Xin&#39;s Blog</title>
+    <link>http://localhost:1313/tags/%E5%87%A4%E5%87%B0/</link>
+    <description>Recent content in 凤凰 on Xin&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 31 Jan 2023 04:49:58 +0800</lastBuildDate><atom:link href="http://nixnehc.github.io/tags/%E5%87%A4%E5%87%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Jan 2023 04:49:58 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E5%87%A4%E5%87%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>和七哥的寒假旅行</title>
-      <link>http://nixnehc.github.io/posts/2023/01/%E5%92%8C%E4%B8%83%E5%93%A5%E7%9A%84%E5%AF%92%E5%81%87%E6%97%85%E8%A1%8C/</link>
+      <link>http://localhost:1313/posts/2023/01/%E5%92%8C%E4%B8%83%E5%93%A5%E7%9A%84%E5%AF%92%E5%81%87%E6%97%85%E8%A1%8C/</link>
       <pubDate>Tue, 31 Jan 2023 04:49:58 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2023/01/%E5%92%8C%E4%B8%83%E5%93%A5%E7%9A%84%E5%AF%92%E5%81%87%E6%97%85%E8%A1%8C/</guid>
+      <guid>http://localhost:1313/posts/2023/01/%E5%92%8C%E4%B8%83%E5%93%A5%E7%9A%84%E5%AF%92%E5%81%87%E6%97%85%E8%A1%8C/</guid>
       <description>&lt;p&gt;今年过年总算回家了，和久违的七哥在铜仁市区逛了很久，有好几年没去大十字那边，已经全然变了模样。正值春节，这边很是热闹，川硐上面一比就格外冷清。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

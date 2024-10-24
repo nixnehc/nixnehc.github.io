@@ -1,38 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on ChenXin&#39;s Blog</title>
-    <link>http://nixnehc.github.io/categories/</link>
-    <description>Recent content in Categories on ChenXin&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Categories on Xin&#39;s Blog</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on Xin&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Jan 2020 15:17:39 -0500</lastBuildDate><atom:link href="http://nixnehc.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Aug 2023 16:57:15 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>logic &amp; math</title>
-      <link>http://nixnehc.github.io/categories/logic-math/</link>
+      <title>Logic &amp; Math</title>
+      <link>http://localhost:1313/categories/logic--math/</link>
       <pubDate>Sat, 19 Aug 2023 16:57:15 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/categories/logic-math/</guid>
+      <guid>http://localhost:1313/categories/logic--math/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>life</title>
-      <link>http://nixnehc.github.io/categories/life/</link>
+      <title>Life</title>
+      <link>http://localhost:1313/categories/life/</link>
       <pubDate>Sun, 23 Jul 2023 19:16:41 +0800</pubDate>
-      
-      <guid>http://nixnehc.github.io/categories/life/</guid>
+      <guid>http://localhost:1313/categories/life/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>toolkit</title>
-      <link>http://nixnehc.github.io/categories/toolkit/</link>
+      <title>Toolkit</title>
+      <link>http://localhost:1313/categories/toolkit/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://nixnehc.github.io/categories/toolkit/</guid>
+      <guid>http://localhost:1313/categories/toolkit/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

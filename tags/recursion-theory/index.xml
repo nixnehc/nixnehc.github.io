@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>recursion-theory on ChenXin&#39;s Blog</title>
-    <link>http://nixnehc.github.io/tags/recursion-theory/</link>
-    <description>Recent content in recursion-theory on ChenXin&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Recursion-Theory on Xin&#39;s Blog</title>
+    <link>http://localhost:1313/tags/recursion-theory/</link>
+    <description>Recent content in Recursion-Theory on Xin&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://nixnehc.github.io/tags/recursion-theory/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/recursion-theory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>编码函数与降维打击</title>
-      <link>http://nixnehc.github.io/posts/2023/04/%E7%BC%96%E7%A0%81%E5%87%BD%E6%95%B0%E4%B8%8E%E9%99%8D%E7%BB%B4%E6%89%93%E5%87%BB/</link>
+      <link>http://localhost:1313/posts/2023/04/%E7%BC%96%E7%A0%81%E5%87%BD%E6%95%B0%E4%B8%8E%E9%99%8D%E7%BB%B4%E6%89%93%E5%87%BB/</link>
       <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2023/04/%E7%BC%96%E7%A0%81%E5%87%BD%E6%95%B0%E4%B8%8E%E9%99%8D%E7%BB%B4%E6%89%93%E5%87%BB/</guid>
-      <description>&lt;p&gt;Coding Functions &amp;amp; Dimensional Reduction Attack
-[编码函数与降维打击]&lt;/p&gt;
-&lt;p&gt;今天(2023,04,21-周五)下午递归论课上突然讨论到一些问题, 关于编码函数、降维打击、宇宙和世界的连续性等问题，觉得特别有意思, 遂记之。&lt;/p&gt;
-&lt;p&gt;(ps. 为方便偷懒，以下用 \( \omega, \omega^+ \) 分别表示&lt;strong&gt;自然数集&lt;/strong&gt;和&lt;strong&gt;正整数集&lt;/strong&gt;，毕竟 &lt;code&gt;\omega&lt;/code&gt; 比起 &lt;code&gt;\mathbb{N}&lt;/code&gt; 要少按很多下键盘了，不是咩😜)&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2023/04/%E7%BC%96%E7%A0%81%E5%87%BD%E6%95%B0%E4%B8%8E%E9%99%8D%E7%BB%B4%E6%89%93%E5%87%BB/</guid>
+      <description>&lt;p&gt;Coding Functions &amp;amp; Dimensional Reduction Attack&#xA;[编码函数与降维打击]&lt;/p&gt;&#xA;&lt;p&gt;今天(2023,04,21-周五)下午递归论课上突然讨论到一些问题, 关于编码函数、降维打击、宇宙和世界的连续性等问题，觉得特别有意思, 遂记之。&lt;/p&gt;&#xA;&lt;p&gt;(ps. 为方便偷懒，以下用 \( \omega, \omega^+ \) 分别表示&lt;strong&gt;自然数集&lt;/strong&gt;和&lt;strong&gt;正整数集&lt;/strong&gt;，毕竟 &lt;code&gt;\omega&lt;/code&gt; 比起 &lt;code&gt;\mathbb{N}&lt;/code&gt; 要少按很多下键盘了，不是咩😜)&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

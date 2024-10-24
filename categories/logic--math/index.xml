@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Logic &amp; Math on Xin&#39;s Blog</title>
+    <link>http://localhost:1313/categories/logic--math/</link>
+    <description>Recent content in Logic &amp; Math on Xin&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 19 Aug 2023 16:57:15 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/logic--math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&gt;Notes&lt; Maria Manzano&#39;s Model Theory [[unfinished</title>
+      <link>http://localhost:1313/posts/2023/08/notes-maria-manzanos-model-theory-unfinished/</link>
+      <pubDate>Sat, 19 Aug 2023 16:57:15 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2023/08/notes-maria-manzanos-model-theory-unfinished/</guid>
+      <description>&lt;p&gt;Maria Manzano (1999), &lt;em&gt;&lt;strong&gt;Model Theory&lt;/strong&gt;&lt;/em&gt;, Oxford Logic Guides: 37. (English edition, original Spanish 1990)&lt;/p&gt;&#xA;&lt;p&gt;才知道 Maria Manzano 是位女逻辑学家。&lt;/p&gt;&#xA;&lt;p&gt;这本书不包括 Stability theory (Morley) 方面的内容。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>模态逻辑: 一个关于 Box 和 Diamond (或许也有爱情) 的故事</title>
+      <link>http://localhost:1313/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/</link>
+      <pubDate>Mon, 10 Jul 2023 17:25:14 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2023/07/%E6%A8%A1%E6%80%81%E9%80%BB%E8%BE%91-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E-box-%E5%92%8C-diamond-%E6%88%96%E8%AE%B8%E4%B9%9F%E6%9C%89%E7%88%B1%E6%83%85-%E7%9A%84%E6%95%85%E4%BA%8B/</guid>
+      <description>&lt;p&gt;[写在前面]&#xA;以下内容是为7月5日 &lt;strong&gt;模态逻辑&lt;/strong&gt; 考试所准备的草稿, 整整考了4个小时, 真是有生之年考过最长的考试了😭, 但准备的内容似乎还是太多了, 根本写不完.&#xA;望着这些准备好的稿纸, 虽无甚洞见, 但毕竟是自己一段时间内的心血, 想着弃之可惜, 遂又加以整理, 姑且当作一篇博文让其静静地躺在这里吧. 写到这里时却不免又悲从中来, 文章尚有「安生立命」之所, 作文者有焉?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>编码函数与降维打击</title>
+      <link>http://localhost:1313/posts/2023/04/%E7%BC%96%E7%A0%81%E5%87%BD%E6%95%B0%E4%B8%8E%E9%99%8D%E7%BB%B4%E6%89%93%E5%87%BB/</link>
+      <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/%E7%BC%96%E7%A0%81%E5%87%BD%E6%95%B0%E4%B8%8E%E9%99%8D%E7%BB%B4%E6%89%93%E5%87%BB/</guid>
+      <description>&lt;p&gt;Coding Functions &amp;amp; Dimensional Reduction Attack&#xA;[编码函数与降维打击]&lt;/p&gt;&#xA;&lt;p&gt;今天(2023,04,21-周五)下午递归论课上突然讨论到一些问题, 关于编码函数、降维打击、宇宙和世界的连续性等问题，觉得特别有意思, 遂记之。&lt;/p&gt;&#xA;&lt;p&gt;(ps. 为方便偷懒，以下用 \( \omega, \omega^+ \) 分别表示&lt;strong&gt;自然数集&lt;/strong&gt;和&lt;strong&gt;正整数集&lt;/strong&gt;，毕竟 &lt;code&gt;\omega&lt;/code&gt; 比起 &lt;code&gt;\mathbb{N}&lt;/code&gt; 要少按很多下键盘了，不是咩😜)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>&gt;转载&lt; 严酷的现实</title>
+      <link>http://localhost:1313/posts/2022/04/%E8%BD%AC%E8%BD%BD-%E4%B8%A5%E9%85%B7%E7%9A%84%E7%8E%B0%E5%AE%9E/</link>
+      <pubDate>Fri, 22 Apr 2022 19:13:11 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2022/04/%E8%BD%AC%E8%BD%BD-%E4%B8%A5%E9%85%B7%E7%9A%84%E7%8E%B0%E5%AE%9E/</guid>
+      <description>&lt;p&gt;[序]我最早是在网易云的播客中听到此文的，具体的时月早已忘记了，但对其印象很深，在脑中久久不能忘却。后来在中珠图书馆中偶然发现了原文，是收录在高等教育出版社 2010 年出版的《解码者：数学探秘之旅》中的。我之后借阅了该书，这本书里面都是数学家们写的随想和短文，语言清新优美，平淡自然却韵味深远，还有很多人物照片，最重要的是也有小猫猫的图片🥳。在看完整本书后，我还是尤为喜欢&lt;strong&gt;孔涅&lt;/strong&gt;的《严酷的现实》这一篇，其中十分让我感动话是：&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;最为重要的事情，就是成为自己的权威。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;希望我也能早日成为自己的权威！基于这样的理由，我将全文抄录在下面。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>&gt;Notes&lt; Arend Heyting: Intuitionism(1971) [[unfinished</title>
+      <link>http://localhost:1313/posts/2020/05/notes-arend-heyting-intuitionism1971-unfinished/</link>
+      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2020/05/notes-arend-heyting-intuitionism1971-unfinished/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;你一旦被一个主题的美所打动，就得为之贡献你的一生！&lt;/li&gt;&#xA;&lt;li&gt;是啊！只是我怀疑像直觉主义这样不确定的东西中怎么会有美。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;(哈哈，Heyting还挺毒舌的)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

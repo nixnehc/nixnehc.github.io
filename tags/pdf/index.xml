@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>pdf on ChenXin&#39;s Blog</title>
-    <link>http://nixnehc.github.io/tags/pdf/</link>
-    <description>Recent content in pdf on ChenXin&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Pdf on Xin&#39;s Blog</title>
+    <link>http://localhost:1313/tags/pdf/</link>
+    <description>Recent content in Pdf on Xin&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://nixnehc.github.io/tags/pdf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 May 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/pdf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>&gt;LaTeX&lt; Pdf Encryption</title>
-      <link>http://nixnehc.github.io/posts/2020/05/latex-pdf-encryption/</link>
+      <link>http://localhost:1313/posts/2020/05/latex-pdf-encryption/</link>
       <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://nixnehc.github.io/posts/2020/05/latex-pdf-encryption/</guid>
+      <guid>http://localhost:1313/posts/2020/05/latex-pdf-encryption/</guid>
       <description>&lt;p&gt;在 latex 中如何使生成的 pdf 被加密或只读呢？&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
